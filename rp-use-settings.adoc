@@ -1,0 +1,373 @@
+---
+sidebar: sidebar 
+permalink: rp-use-settings.html 
+keywords: ransomware protection, protect against ransomware attacks, anti-ransomware settings, backup destination 
+summary: Você pode configurar várias opções, incluindo um destino de backup, no serviço de proteção contra ransomware do BlueXP . 
+---
+= Configurar as configurações de proteção contra ransomware do BlueXP 
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media
+
+
+[role="lead"]
+Você pode configurar um destino de backup ou habilitar a deteção de ameaças revisando recomendações no Painel de Controle ou acessando a opção *Configurações*.
+
+A ativação da deteção de ameaças envia automaticamente dados para o seu sistema de gerenciamento de eventos e segurança (SIEM) para análise de ameaças.
+
+
+
+== Acesse a página Configurações diretamente
+
+Pode aceder facilmente à página Definições a partir da opção ações junto do menu superior.
+
+. No menu de proteção contra ransomware BlueXP , selecione a image:button-actions-vertical.png["Ações verticais"]opção vertical ... no canto superior direito.
+. No menu suspenso, selecione *Configurações*.
+. Na página Configurações, você pode fazer o seguinte:
++
+** Adicionar um destino de cópia de segurança.
+** Conete seu sistema de gerenciamento de eventos e segurança (SIEM) para análise e deteção de ameaças.
+
+
+
+
+
+
+== Adicionar um destino de cópia de segurança
+
+A proteção contra ransomware do BlueXP  identifica workloads que ainda não têm backups e também workloads que ainda não têm destinos de backup atribuídos.
+
+Para proteger esses workloads, você deve adicionar um destino de backup. Você pode escolher um dos seguintes destinos de backup:
+
+* NetApp StorageGRID
+* Amazon Web Services (AWS)
+* Google Cloud Platform
+* Microsoft Azure
+
+
+Você pode adicionar um destino de backup com base em uma ação recomendada no Dashboard.
+
+
+
+=== Aceda às opções de destino da cópia de segurança a partir das ações recomendadas do Painel de controlo
+
+O Dashboard fornece muitas recomendações. Uma recomendação pode ser configurar um destino de backup.
+
+.Passos
+. Na navegação à esquerda do BlueXP , selecione *proteção* > *proteção contra ransomware*.
+. Revise o painel ações recomendadas do Dashboard.
++
+image:screen-dashboard.png["Página do painel de instrumentos"]
+
+. No Painel, selecione *Rever e corrigir* para a recomendação de "preparar <backup provider> como destino de backup".
+. Continue com as instruções, dependendo do provedor de backup.
+
+
+
+
+=== Aceda às opções de destino da cópia de segurança a partir do menu pendente ações
+
+Pode aceder facilmente à página Definições a partir da opção ações junto do menu superior.
+
+. No menu de proteção contra ransomware BlueXP , selecione a image:button-actions-vertical.png["Ações verticais"]opção vertical ... no canto superior direito.
+. No menu suspenso, selecione *Configurações*.
+. Para adicionar um destino de cópia de segurança, selecione *Add*.
+
+
+
+
+=== Adicione StorageGRID como destino de backup
+
+Para configurar o NetApp StorageGRID como destino de cópia de segurança, introduza as seguintes informações.
+
+. Na página *Definições > Destinos de cópia de segurança*, selecione *Adicionar*.
+. Introduza um nome para o destino da cópia de segurança.
++
+image:screen-settings-backup-destination.png["Página de destinos de backup"]
+
+. Selecione *StorageGRID*.
+. Selecione a seta para baixo junto a cada definição e introduza ou selecione valores:
++
+** * Configurações do provedor*:
++
+*** Crie um novo bucket ou traga seu próprio bucket que armazenará os backups.
+*** Nome de domínio, porta, chave de acesso StorageGRID e credenciais de chave secreta totalmente qualificadas do nó de gateway StorageGRID.
+
+
+** *Networking*: Escolha o IPspace.
++
+*** O IPspace é o cluster onde residem os volumes que você deseja fazer backup. As LIFs entre clusters para este espaço IPspace devem ter acesso de saída à Internet.
+
+
+
+
+. Selecione *Adicionar*.
+
+
+.Resultado
+O novo destino de cópia de segurança é adicionado à lista de destinos de cópia de segurança.
+
+image:screen-settings-backup-destinations-list2.png["Página de destinos de backup a opção Configurações"]
+
+
+
+=== Adicione o Amazon Web Services como destino de backup
+
+Para configurar a AWS como um destino de backup, insira as informações a seguir.
+
+Para obter detalhes sobre como gerenciar seu storage da AWS no BlueXP , https://docs.netapp.com/us-en/bluexp-setup-admin/task-viewing-amazon-s3.html["Gerencie seus buckets do Amazon S3"^] consulte .
+
+. Na página *Definições > Destinos de cópia de segurança*, selecione *Adicionar*.
+. Introduza um nome para o destino da cópia de segurança.
++
+image:screen-settings-backup-destination.png["Página de destinos de backup"]
+
+. Selecione *Amazon Web Services*.
+. Selecione a seta para baixo junto a cada definição e introduza ou selecione valores:
++
+** * Configurações do provedor*:
++
+*** Crie um novo bucket, selecione um bucket existente se já existir um no BlueXP  ou traga seu próprio bucket que armazenará os backups.
+*** Conta, região, chave de acesso e chave secreta da AWS para credenciais da AWS
++
+https://docs.netapp.com/us-en/bluexp-s3-storage/task-add-s3-bucket.html["Se você quiser trazer seu próprio balde, consulte Adicionar baldes S3"^].
+
+
+
+** *Criptografia*: Se você estiver criando um novo bucket do S3, insira as informações da chave de criptografia fornecidas pelo provedor. Se você escolher um bucket existente, as informações de criptografia já estarão disponíveis.
++
+Por padrão, os dados no bucket são criptografados com chaves gerenciadas pela AWS. Você pode continuar usando chaves gerenciadas pela AWS ou gerenciar a criptografia de seus dados usando suas próprias chaves.
+
+** *Networking*: Escolha o IPspace e se você usará um endpoint privado.
++
+*** O IPspace é o cluster onde residem os volumes que você deseja fazer backup. As LIFs entre clusters para este espaço IPspace devem ter acesso de saída à Internet.
+*** Opcionalmente, escolha se você usará um endpoint privado da AWS (PrivateLink) que você configurou anteriormente.
++
+Se você quiser usar o AWS PrivateLink, https://docs.aws.amazon.com/AmazonS3/latest/userguide/privatelink-interface-endpoints.html["AWS PrivateLink para Amazon S3"^] consulte .
+
+
+
+** *Bloqueio de backup*: Escolha se você deseja que o serviço proteja os backups de serem modificados ou excluídos. Esta opção usa a tecnologia NetApp DataLock. Cada backup será bloqueado durante o período de retenção, ou por um mínimo de 30 dias, além de um período de buffer de até 14 dias.
++
+
+CAUTION: Se você configurar a configuração de bloqueio de backup agora, não poderá alterar a configuração mais tarde depois que o destino de backup for configurado.
+
++
+*** *Modo de governança*: Usuários específicos (com permissão S3:BypassGovernanceRetention) podem substituir ou excluir arquivos protegidos durante o período de retenção.
+*** *Modo de conformidade*: Os usuários não podem substituir ou excluir arquivos de backup protegidos durante o período de retenção.
+
+
+
+
+. Selecione *Adicionar*.
+
+
+.Resultado
+O novo destino de cópia de segurança é adicionado à lista de destinos de cópia de segurança.
+
+image:screen-settings-backup-destinations-list2.png["Página de destinos de backup a opção Configurações"]
+
+
+
+=== Adicione o Google Cloud Platform como destino de backup
+
+Para configurar o Google Cloud Platform (GCP) como destino de backup, insira as informações a seguir.
+
+Para obter detalhes sobre como gerenciar o armazenamento do GCP no BlueXP , https://docs.netapp.com/us-en/bluexp-setup-admin/concept-install-options-google.html["Opções de instalação do conetor no Google Cloud"^] consulte .
+
+. Na página *Definições > Destinos de cópia de segurança*, selecione *Adicionar*.
+. Introduza um nome para o destino da cópia de segurança.
++
+image:screen-settings-backup-destination-gcp.png["Página de destinos de backup"]
+
+. Selecione *Google Cloud Platform*.
+. Selecione a seta para baixo junto a cada definição e introduza ou selecione valores:
++
+** * Configurações do provedor*:
++
+*** Crie um novo bucket. Introduza a chave de acesso e a chave secreta.
+*** Insira ou selecione seu projeto e região do Google Cloud Platform.
+
+
+** *Criptografia*: Se você estiver criando um novo bucket, insira as informações da chave de criptografia fornecidas pelo provedor. Se você escolher um bucket existente, as informações de criptografia já estarão disponíveis.
++
+Os dados no intervalo são criptografados com chaves gerenciadas pelo Google por padrão. Você pode continuar a usar as chaves gerenciadas pelo Google.
+
+** *Networking*: Escolha o IPspace e se você usará um endpoint privado.
++
+*** O IPspace é o cluster onde residem os volumes que você deseja fazer backup. As LIFs entre clusters para este espaço IPspace devem ter acesso de saída à Internet.
+*** Opcionalmente, escolha se você usará um endpoint privado do GCP (PrivateLink) que você configurou anteriormente.
+
+
+
+
+. Selecione *Adicionar*.
+
+
+.Resultado
+O novo destino de cópia de segurança é adicionado à lista de destinos de cópia de segurança.
+
+
+
+=== Adicione o Microsoft Azure como destino de backup
+
+Para configurar o Azure como um destino de backup, insira as seguintes informações.
+
+Para obter detalhes sobre como gerenciar suas credenciais do Azure e assinaturas de marketplace no BlueXP , https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-azure-accounts.html["Gerencie suas credenciais do Azure e assinaturas do marketplace"^] consulte .
+
+. Na página *Definições > Destinos de cópia de segurança*, selecione *Adicionar*.
+. Introduza um nome para o destino da cópia de segurança.
++
+image:screen-settings-backup-destination.png["Página de destinos de backup"]
+
+. Selecione *Azure*.
+. Selecione a seta para baixo junto a cada definição e introduza ou selecione valores:
++
+** * Configurações do provedor*:
++
+*** Crie uma nova conta de armazenamento, selecione uma existente se já existir uma no BlueXP  ou traga sua própria conta de armazenamento que armazenará os backups.
+*** Subscrição, região e grupo de recursos do Azure para credenciais do Azure
++
+https://docs.netapp.com/us-en/bluexp-blob-storage/task-add-blob-storage.html["Se você quiser trazer sua própria conta de storage, consulte Adicionar contas de armazenamento de Blob do Azure"^].
+
+
+
+** *Criptografia*: Se você estiver criando uma nova conta de armazenamento, insira as informações da chave de criptografia fornecidas pelo provedor. Se você escolher uma conta existente, as informações de criptografia já estarão disponíveis.
++
+Por padrão, os dados na conta são criptografados com chaves gerenciadas pela Microsoft. Pode continuar a utilizar chaves geridas pela Microsoft ou pode gerir a encriptação dos seus dados utilizando as suas próprias chaves.
+
+** *Networking*: Escolha o IPspace e se você usará um endpoint privado.
++
+*** O IPspace é o cluster onde residem os volumes que você deseja fazer backup. As LIFs entre clusters para este espaço IPspace devem ter acesso de saída à Internet.
+*** Opcionalmente, escolha se você usará um endpoint privado do Azure que você configurou anteriormente.
++
+Se você quiser usar o Azure PrivateLink, https://azure.microsoft.com/en-us/products/private-link/["Azure PrivateLink"^] consulte .
+
+
+
+
+
+. Selecione *Adicionar*.
+
+
+.Resultado
+O novo destino de cópia de segurança é adicionado à lista de destinos de cópia de segurança.
+
+image:screen-settings-backup-destinations-list2.png["Página de destinos de backup a opção Configurações"]
+
+
+
+== Ativar a deteção de ameaças
+
+Você pode enviar dados automaticamente para o seu sistema de gerenciamento de eventos e segurança (SIEM) para análise e deteção de ameaças. Você pode selecionar o AWS Security Hub ou o Splunk Cloud como seu SIEM.
+
+Antes de ativar a proteção contra ransomware BlueXP , você precisa configurar seu sistema SIEM.
+
+
+
+=== Configure o AWS Security Hub para deteção de ameaças
+
+Antes de ativar o AWS Security Hub na proteção contra ransomware do BlueXP , você precisará fazer as seguintes etapas de alto nível no AWS Security Hub:
+
+* Configurar permissões no AWS Security Hub.
+* Configure a chave de acesso de autenticação e a chave secreta no AWS Security Hub. (Estes passos não são fornecidos aqui.)
+
+
+.Etapas para configurar permissões no AWS Security Hub
+. Vá para *Console do AWS IAM*.
+. Selecione *políticas*.
+. Crie uma política usando o seguinte código no formato JSON:
++
+[listing]
+----
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "NetAppSecurityHubFindings",
+      "Effect": "Allow",
+      "Action": [
+        "securityhub:BatchImportFindings",
+        "securityhub:BatchUpdateFindings"
+      ],
+      "Resource": [
+        "arn:aws:securityhub:*:*:product/*/default",
+        "arn:aws:securityhub:*:*:hub/default"
+      ]
+    }
+  ]
+}
+----
+
+
+
+
+=== Configurar o Splunk Cloud para detecção de ameaças
+
+Antes de ativar a proteção contra ransomware do BlueXP , você precisará seguir as etapas de alto nível abaixo:
+
+* Habilite um coletor de eventos HTTP no Splunk Cloud para receber dados de eventos via HTTP ou HTTPS do BlueXP .
+* Criar um token de Event Collector no Splunk Cloud.
+
+
+.Etapas para habilitar um coletor de eventos HTTP no Splunk
+. Vá para o Splunk Cloud.
+. Selecione *Definições* > *entradas de dados*.
+. Selecione *Coletor de eventos HTTP* > *Configurações globais*.
+. Na alternância todos os tokens, selecione *ativado*.
+. Para que o Event Collector ouça e se comunique por HTTPS em vez de HTTP, selecione *Ativar SSL*.
+. Insira uma porta em *número da porta HTTP* para o coletor de eventos HTTP.
+
+
+.Etapas para criar um token de Event Collector no Splunk
+. Vá para o Splunk Cloud.
+. Selecione *Definições* > *Adicionar dados*.
+. Selecione *Monitor* > *Coletor de eventos HTTP*.
+. Digite um Nome para o token e selecione *Next*.
+. Selecione um *índice padrão* onde os eventos serão enviados e, em seguida, selecione *Revisão*.
+. Confirme se todas as configurações para o endpoint estão corretas e selecione *Enviar*.
+. Copie o token e cole-o em outro documento para que ele esteja pronto para a etapa Autenticação.
+
+
+
+
+=== Conete SIEM na proteção contra ransomware BlueXP 
+
+A ativação DO SIEM envia dados da proteção contra ransomware BlueXP  para seu servidor SIEM para análise e geração de relatórios de ameaças.
+
+. No menu BlueXP , selecione *proteção* > *proteção contra ransomware*.
+. No menu de proteção contra ransomware BlueXP , selecione a image:button-actions-vertical.png["Ações verticais"]opção vertical ... no canto superior direito.
+. Selecione *Definições*.
++
+A página Configurações é exibida.
+
++
+image:screen-settings-threat-detection3.png["Página de definições"]
+
+. Na página Configurações, selecione *conetar* no painel de conexão SIEM.
+. Escolha um dos sistemas SIEM.
+. Insira os detalhes de token e autenticação configurados no AWS Security Hub ou Splunk Cloud.
++
+
+NOTE: As informações inseridas dependem do SIEM selecionado.
+
+. Selecione *Ativar*.
++
+A página Configurações mostra "conectado".
+
+
+
+
+
+=== Desligue Siem
+
+Desconetar SIEM impede que o serviço envie dados para o servidor SIEM.
+
+.Passos
+. No menu BlueXP , selecione *proteção* > *proteção contra ransomware*.
+. No menu de proteção contra ransomware BlueXP , selecione a image:button-actions-vertical.png["Ações verticais"]opção vertical ... no canto superior direito.
+. Selecione *Definições*.
+. No painel de conexão SIEM, selecione *Disconnect*.
+. Na página de confirmação, selecione *Disconnect*.
+

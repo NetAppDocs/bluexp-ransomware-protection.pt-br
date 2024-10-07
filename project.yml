@@ -1,0 +1,63 @@
+---
+settings:
+  name: BlueXP ransomware protection
+  platform: cloud
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  rss_page: whats-new.html
+  langs: pt-br,us-en,ja-jp,ko-kr,zh-cn,zh-tw,de-de,es-es,fr-fr,it-it
+sidebar:
+  entries:
+  - title: Documentos de proteção contra ransomware da BlueXP 
+    url: "/index.html"
+  - title: Notas de lançamento
+    url: "/whats-new.html"
+  - title: Comece agora
+    entries:
+    - title: Saiba mais sobre a proteção contra ransomware BlueXP 
+      url: "/concept-ransomware-protection.html"
+    - title: Pré-requisitos
+      url: "/rp-start-prerequisites.html"
+    - title: Início rápido
+      url: "/rp-start-quick-start.html"
+    - title: Configurar a proteção contra ransomware do BlueXP 
+      url: "/rp-start-setup.html"
+    - title: Acesse a proteção contra ransomware do BlueXP 
+      url: "/rp-start-login.html"
+    - title: Configure o licenciamento
+      url: "/rp-start-licenses.html"
+    - title: Localizar workloads
+      url: "/rp-start-discover.html"
+    - title: Configurar destinos de backup e ativar a deteção de ameaças
+      url: "/rp-use-settings.html"
+    - title: FAQ
+      url: "/rp-start-faq.html"
+  - title: Use a proteção contra ransomware do BlueXP 
+    entries:
+    - title: Use a visão geral da proteção contra ransomware do BlueXP 
+      url: "/rp-use-overview.html"
+    - title: Exibir a integridade do workload usando o Dashboard
+      url: "/rp-use-dashboard.html"
+    - title: Proteja workloads
+      entries:
+      - title: Proteja workloads com estratégias de proteção de ransomware
+        url: "/rp-use-protect.html"
+    - title: Responda a um alerta detetado
+      url: "/rp-use-alert.html"
+    - title: Recuperar de um ataque de ransomware
+      url: "/rp-use-recover.html"
+    - title: Transferir relatórios
+      url: "/rp-use-reports.html"
+  - section: support
+  - title: Referência
+    entries:
+    - title: Controles de acesso baseados em função Privileges
+      url: "/rp-reference-roles.html"
+  - title: Avisos legais
+    url: "/legal-notices.html"
+product-family:
+  name: BlueXP
+  repo: bluexp-family

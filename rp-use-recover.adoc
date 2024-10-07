@@ -1,0 +1,334 @@
+---
+sidebar: sidebar 
+permalink: rp-use-recover.html 
+keywords: ransomware protection recovery, recover from a ransomware attack, recovery point, RPA 
+summary: 'Após um ataque, a proteção contra ransomware do BlueXP  verifica se os dados de backup no storage secundário estão limpos, recomenda um ponto de recuperação real (RPA) e orquestra o fluxo de trabalho para uma recuperação resistente a falhas.' 
+---
+= Recuperar de um ataque de ransomware (após os incidentes serem neutralizados)
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media
+
+
+[role="lead"]
+Depois que os workloads forem marcados como "Restauração necessária", a proteção contra ransomware da BlueXP  recomenda um ponto de recuperação real (RPA) e orquestra o fluxo de trabalho para uma recuperação resistente a falhas.
+
+* Se a aplicação ou VM for gerenciada pelo SnapCenter, a proteção contra ransomware do BlueXP  restaura o aplicativo ou a VM de volta ao estado anterior e à última transação usando o processo consistente com aplicativos ou consistente com VMs. A restauração consistente com a aplicação ou VM adiciona aos dados no volume quaisquer dados que não os tenham transformado em storage, por exemplo, dados no cache ou em uma operação de e/S.
+* Se o aplicativo ou VM for _não_ gerenciado pelo SnapCenter e for gerenciado pelo backup e recuperação do BlueXP  ou pela proteção contra ransomware do BlueXP , a proteção contra ransomware do BlueXP  executará uma restauração consistente com falhas, onde todos os dados que estavam no volume no mesmo ponto de tempo serão restaurados, por exemplo, se o sistema falhar.
++
+É possível restaurar o workload selecionando todos os volumes, volumes específicos ou arquivos específicos.
+
+
+
+
+TIP: A recuperação do workload pode afetar os workloads em execução. Você deve coordenar os processos de recuperação com as partes interessadas apropriadas.
+
+Uma carga de trabalho pode ter um dos seguintes status de restauração:
+
+* *Restore needed*: A carga de trabalho precisa ser restaurada.
+* *Em andamento*: A operação de restauração está em andamento.
+* *Restaurado*: A carga de trabalho foi restaurada.
+* *Falhou*: O processo de restauração da carga de trabalho não pôde ser concluído.
+
+
+
+
+== Veja os workloads que estão prontos para serem restaurados
+
+Revise as cargas de trabalho que estão no status de recuperação "Restaurar necessário".
+
+.Passos
+. Execute um dos seguintes procedimentos:
++
+** No Painel, revise os totais "Restaurar necessário" no painel Alertas e selecione *Exibir tudo*.
+** No menu, selecione *recuperação*.
+
+
+. Revise as informações da carga de trabalho na página *recuperação*.
++
+image:screen-recovery2.png["Página de recuperação"]
+
+
+
+
+
+== Restaure um workload gerenciado pelo SnapCenter
+
+Com a proteção contra ransomware do BlueXP , o administrador de storage pode determinar a melhor maneira de restaurar workloads a partir do ponto de restauração recomendado ou do ponto de restauração preferido.
+
+O estado da aplicação muda se necessário para a restauração. O aplicativo será restaurado para o seu estado anterior a partir de arquivos de controle, se eles forem incluídos no backup. Após a conclusão da restauração, o aplicativo será aberto no modo LEITURA-GRAVAÇÃO.
+
+.Passos
+. No menu de proteção contra ransomware BlueXP , selecione *recuperação*.
+. Revise as informações da carga de trabalho na página *recuperação*.
+. Selecione uma carga de trabalho que esteja no estado "Restaurar necessário".
+. Para restaurar, selecione *Restaurar*.
+. *Restaurar escopo*: Consistente com aplicativos (ou para SnapCenter para VMs, o escopo de restauração é "por VM")
+. *Fonte*: Selecione a seta para baixo ao lado de fonte para ver os detalhes. Selecione o ponto de restauração que deseja usar para restaurar os dados.
++
+
+TIP: A proteção contra ransomware do BlueXP  identifica o melhor ponto de restauração como o backup mais recente pouco antes do incidente e mostra uma indicação "recomendada".
+
+. *Destino*: Selecione a seta para baixo ao lado de destino para ver os detalhes.
++
+.. Selecione o local original ou alternativo.
+.. Selecione o ambiente de trabalho.
+.. Selecione a VM de armazenamento.
+
+
+. Se o destino original não tiver espaço suficiente para restaurar a carga de trabalho, será exibida uma linha de "armazenamento temporário". Você pode selecionar o armazenamento temporário para restaurar os dados da carga de trabalho. Os dados restaurados serão copiados do armazenamento temporário para o local original. Clique na seta *para baixo* na linha de armazenamento temporário e defina o cluster de destino, a VM de armazenamento e o nível local.
+. Selecione *Guardar*.
+. Selecione *seguinte*.
+. Reveja as suas seleções.
+. Selecione *Restaurar*.
+. No menu superior, selecione *recuperação* para revisar a carga de trabalho na página recuperação onde o status da operação se move pelos estados.
+
+
+
+
+== Restaure um workload não gerenciado pelo SnapCenter
+
+Com a proteção contra ransomware do BlueXP , o administrador de storage pode determinar a melhor maneira de restaurar workloads a partir do ponto de restauração recomendado ou do ponto de restauração preferido.
+
+O administrador de armazenamento de segurança pode recuperar dados em diferentes níveis:
+
+* Recuperação de todos os volumes
+* Recupere uma aplicação no nível do volume ou no nível do ficheiro e da pasta.
+* Recupere um compartilhamento de arquivos no nível de volume, diretório ou arquivo/pasta.
+* Recupere de um datastore em um nível de VM.
+
+
+O processo difere ligeiramente dependendo do tipo de carga de trabalho.
+
+.Passos
+. No menu de proteção contra ransomware BlueXP , selecione *recuperação*.
+. Revise as informações da carga de trabalho na página *recuperação*.
+. Selecione uma carga de trabalho que esteja no estado "Restaurar necessário".
+. Para restaurar, selecione *Restaurar*.
+. *Restore Scope*: Selecione o tipo de restauração que deseja concluir:
++
+** Todos os volumes
+** Por volume
+** Por arquivo: Você pode especificar uma pasta ou arquivos únicos para restaurar.
++
+
+TIP: Pode selecionar até 100 ficheiros ou uma única pasta.
+
+
+
+. Continue com um dos procedimentos a seguir, dependendo se você escolheu o aplicativo, o volume ou o arquivo.
+
+
+
+
+=== Restaure todos os volumes
+
+. No menu de proteção contra ransomware BlueXP , selecione *recuperação*.
+. Selecione uma carga de trabalho que esteja no estado "Restaurar necessário".
+. Para restaurar, selecione *Restaurar*.
+. Na página Restaurar, no âmbito Restaurar, selecione *todos os volumes*.
++
+image:screen-recovery-all-volumes.png["Restaurar por todos os volumes página"]
+
+. *Fonte*: Selecione a seta para baixo ao lado de fonte para ver os detalhes.
++
+.. Selecione o ponto de restauração que deseja usar para restaurar os dados.
++
+
+TIP: A proteção contra ransomware do BlueXP  identifica o melhor ponto de restauração como o backup mais recente imediatamente antes do incidente e mostra uma indicação "mais seguro para todos os volumes". Isso significa que todos os volumes serão restaurados para uma cópia antes do primeiro ataque ao primeiro volume detetado.
+
+
+
+. *Destino*: Selecione a seta para baixo ao lado de destino para ver os detalhes.
++
+.. Selecione o ambiente de trabalho.
+.. Selecione a VM de armazenamento.
+.. Selecione o agregado.
+.. Altere o prefixo de volume que será prepended para todos os novos volumes.
++
+
+TIP: O novo nome do volume aparece como prefixo, nome do volume original, nome da cópia de segurança e data da cópia de segurança.
+
+
+
+. Selecione *Guardar*.
+. Selecione *seguinte*.
+. Reveja as suas seleções.
+. Selecione *Restaurar*.
+. No menu superior, selecione *recuperação* para revisar a carga de trabalho na página recuperação onde o status da operação se move pelos estados.
+
+
+
+
+=== Restaurar um workload de aplicação no nível de volume
+
+. No menu de proteção contra ransomware BlueXP , selecione *recuperação*.
+. Selecione uma carga de trabalho de aplicativo que esteja no estado "Restaurar necessário".
+. Para restaurar, selecione *Restaurar*.
+. Na página Restaurar, no âmbito Restaurar, selecione *por volume*.
++
+image:screen-recovery-byvolume.png["Restaurar por página de volume"]
+
+. Na lista de volumes, selecione o volume que deseja restaurar.
+. *Fonte*: Selecione a seta para baixo ao lado de fonte para ver os detalhes.
++
+.. Selecione o ponto de restauração que deseja usar para restaurar os dados.
++
+
+TIP: A proteção contra ransomware do BlueXP  identifica o melhor ponto de restauração como o backup mais recente pouco antes do incidente e mostra uma indicação "recomendada".
+
+
+
+. *Destino*: Selecione a seta para baixo ao lado de destino para ver os detalhes.
++
+.. Selecione o ambiente de trabalho.
+.. Selecione a VM de armazenamento.
+.. Selecione o agregado.
+.. Reveja o novo nome do volume.
++
+
+TIP: O novo nome do volume aparece como o nome do volume original, o nome da cópia de segurança e a data da cópia de segurança.
+
+
+
+. Selecione *Guardar*.
+. Selecione *seguinte*.
+. Reveja as suas seleções.
+. Selecione *Restaurar*.
+. No menu superior, selecione *recuperação* para revisar a carga de trabalho na página recuperação onde o status da operação se move pelos estados.
+
+
+
+
+=== Restaure um workload de aplicação no nível do arquivo
+
+Antes de restaurar uma carga de trabalho de aplicação no nível do ficheiro, pode ver uma lista de ficheiros afetados. Pode aceder à página Alertas para transferir uma lista de ficheiros afetados. Em seguida, use a página recuperação para carregar a lista e escolher quais arquivos restaurar.
+
+É possível restaurar um workload de aplicação no nível do arquivo para o mesmo ambiente de trabalho ou diferente.
+
+.Etapas para obter a lista de arquivos afetados
+Use a página Alertas para recuperar a lista de arquivos afetados.
+
+
+TIP: Se um volume tiver vários alertas, você precisará baixar a lista CSV de arquivos afetados para cada alerta.
+
+. No menu de proteção contra ransomware BlueXP , selecione *Alertas*.
+. Na página Alertas, classifique os resultados por workload para mostrar os alertas da carga de trabalho do aplicativo que você deseja restaurar.
+. Na lista de alertas para essa carga de trabalho, selecione um alerta.
+. Para esse alerta, selecione um único incidente.
++
+image:screen-alerts-incidents-impacted-files.png["lista de arquivos afetados para um alerta específico"]
+
+. Para ver a lista completa de arquivos, selecione *clique aqui* na parte superior do painel arquivos afetados.
+. Para esse incidente, selecione o ícone de download e faça o download da lista de arquivos afetados no formato CSV.
+
+
+.Passos para restaurar esses arquivos
+. No menu de proteção contra ransomware BlueXP , selecione *recuperação*.
+. Selecione uma carga de trabalho de aplicativo que esteja no estado "Restaurar necessário".
+. Para restaurar, selecione *Restaurar*.
+. Na página Restaurar, no âmbito Restaurar, selecione *por ficheiro*.
+. Na lista de volumes, selecione o volume que contém os ficheiros que pretende restaurar.
+. *Ponto de restauração*: Selecione a seta para baixo ao lado de *ponto de restauração* para ver os detalhes. Selecione o ponto de restauração que deseja usar para restaurar os dados.
++
+
+NOTE: A coluna motivo no painel pontos de restauração mostra o motivo do instantâneo ou do backup como "resposta programada" ou "resposta automatizada a incidentes de ransomware".
+
+. *Ficheiros*:
++
+** * Selecione automaticamente arquivos*: Deixe a proteção contra ransomware BlueXP  selecionar os arquivos a serem restaurados.
+** * Carregar lista de arquivos*: Carregue um arquivo CSV que contém a lista de arquivos afetados que você obteve da página Alertas ou que você tem. Você pode restaurar até 10.000 arquivos de cada vez.
++
+image:screen-recovery-app-by-file-upload-csv.png["Carregue o arquivo CSV que lista os arquivos afetados para o alerta"]
+
+** * Selecione manualmente arquivos*: Selecione até 10.000 arquivos ou uma única pasta para restaurar.
++
+image:screen-recovery-app-by-file-select-files.png["Selecione ficheiros manualmente para restaurar"]
+
++
+
+NOTE: Se nenhum arquivo não puder ser restaurado usando o ponto de restauração selecionado, uma mensagem será exibida indicando o número de arquivos que não podem ser restaurados e permite que você baixe a lista desses arquivos selecionando *Download list of impacted files*.
+
+
+
+. *Destino*: Selecione a seta para baixo ao lado de destino para ver os detalhes.
++
+.. Escolha onde restaurar os dados: Local de origem original ou um local alternativo que você pode especificar.
++
+
+TIP: Enquanto os arquivos originais ou diretório serão substituídos pelos dados restaurados, os nomes originais do arquivo e da pasta permanecerão os mesmos, a menos que você especifique novos nomes.
+
+.. Selecione o ambiente de trabalho.
+.. Selecione a VM de armazenamento.
+.. Opcionalmente, insira o caminho.
++
+
+TIP: Se você não especificar um caminho para a restauração, os arquivos serão restaurados para um novo volume no diretório de nível superior.
+
+.. Selecione se pretende que os nomes dos ficheiros ou diretório restaurados sejam os mesmos nomes que a localização atual ou nomes diferentes.
+
+
+. Selecione *seguinte*.
+. Reveja as suas seleções.
+. Selecione *Restaurar*.
+. No menu superior, selecione *recuperação* para revisar a carga de trabalho na página recuperação onde o status da operação se move pelos estados.
+
+
+
+
+=== Restaure um compartilhamento de arquivos ou datastore
+
+. Depois de selecionar um compartilhamento de arquivos ou datastore para restaurar, na página Restaurar, no escopo de restauração, selecione *por volume*.
++
+image:screen-recovery-fileshare.png["Página de recuperação mostrando recuperação de compartilhamento de arquivo"]
+
+. Na lista de volumes, selecione o volume que deseja restaurar.
+. *Fonte*: Selecione a seta para baixo ao lado de fonte para ver os detalhes.
++
+.. Selecione o ponto de restauração que deseja usar para restaurar os dados.
++
+
+TIP: A proteção contra ransomware do BlueXP  identifica o melhor ponto de restauração como o backup mais recente pouco antes do incidente e mostra uma indicação "recomendada".
+
+
+
+. *Destino*: Selecione a seta para baixo ao lado de destino para ver os detalhes.
++
+.. Escolha onde restaurar os dados: Local de origem original ou um local alternativo que você pode especificar.
++
+
+TIP: Enquanto os arquivos originais ou diretório serão substituídos pelos dados restaurados, os nomes originais do arquivo e da pasta permanecerão os mesmos, a menos que você especifique novos nomes.
+
+.. Selecione o ambiente de trabalho.
+.. Selecione a VM de armazenamento.
+.. Opcionalmente, insira o caminho.
++
+
+TIP: Se você não especificar um caminho para a restauração, os arquivos serão restaurados para um novo volume no diretório de nível superior.
+
+
+
+. Selecione *Guardar*.
+. Reveja as suas seleções.
+. Selecione *Restaurar*.
+. No menu, selecione *recuperação* para revisar a carga de trabalho na página recuperação onde o status da operação se move pelos estados.
+
+
+
+
+=== Restaure um compartilhamento de arquivo VM no nível da VM
+
+Na página recuperação depois de selecionar uma VM para restaurar, continue com estas etapas.
+
+. *Fonte*: Selecione a seta para baixo ao lado de fonte para ver os detalhes.
++
+image:screen-recovery-vm.png["Página de recuperação mostrando uma VM sendo restaurada"]
+
+. Selecione o ponto de restauração que deseja usar para restaurar os dados.
+. *Destino*: Para localização original.
+. Selecione *seguinte*.
+. Reveja as suas seleções.
+. Selecione *Restaurar*.
+. No menu, selecione *recuperação* para revisar a carga de trabalho na página recuperação onde o status da operação se move pelos estados.
+

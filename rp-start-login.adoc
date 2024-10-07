@@ -1,0 +1,48 @@
+---
+sidebar: sidebar 
+permalink: rp-start-login.html 
+keywords: bluexp login, ransomware protection, bluexp,cyber attack, log in 
+summary: Comece a usar a proteção contra ransomware do BlueXP  acessando o serviço no BlueXP . 
+---
+= Acesse a proteção contra ransomware do BlueXP 
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media
+
+
+[role="lead"]
+Você usa o NetApp BlueXP  para fazer login no serviço de proteção contra ransomware da BlueXP .
+
+A proteção contra ransomware do BlueXP  usa o controle de acesso baseado em funções (RBAC) para controlar o acesso que cada usuário tem a ações específicas. Para obter detalhes sobre as ações que cada função pode executar, link:rp-reference-roles.html["Privileges de controle de acesso baseado em funções de proteção contra ransomware da BlueXP "]consulte .
+
+Para fazer login no BlueXP , você pode usar as credenciais do site de suporte da NetApp ou se inscrever para fazer login na nuvem do NetApp usando seu e-mail e uma senha. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html["Saiba mais sobre como fazer login"^].
+
+.Passos
+. Abra um navegador da Web e vá para o https://console.bluexp.netapp.com/["Consola BlueXP"^].
++
+É apresentada a página de início de sessão do NetApp BlueXP .
+
+. Inicie sessão no BlueXP .
+. Na navegação à esquerda do BlueXP , selecione *proteção* > *proteção contra ransomware*.
++
+Se esta for a primeira vez que fizer login neste serviço, a página de destino será exibida.
+
++
+image:screen-landing.png["Captura de tela da página inicial para proteção contra ransomware BlueXP "]
+
++
+Caso contrário, o Dashboard de proteção contra ransomware do BlueXP  será exibido.
+
++
+image:screen-dashboard.png["Dashboard de proteção contra ransomware da BlueXP "]
+
++
+
+NOTE: Se você não tiver um conetor BlueXP  ou não for o único para este serviço, talvez seja necessário entrar em Contato com o suporte da NetApp.
+
+. Se você ainda não fez isso, selecione a opção *descobrir cargas de trabalho*.
++
+link:rp-start-discover.html["Localizar workloads"]Consulte a .
+
+

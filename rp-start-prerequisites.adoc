@@ -1,0 +1,93 @@
+---
+sidebar: sidebar 
+permalink: rp-start-prerequisites.html 
+keywords: what are bluexp ransomware protection requirements, bluexp ransomware protection, ransomware protection prerequisites 
+summary: Comece a usar a proteção contra ransomware do BlueXP  verificando o suporte para seu ambiente, acesso à rede, login e navegador da Web. 
+---
+= Pré-requisitos de proteção contra ransomware da BlueXP 
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/get-started/
+
+
+[role="lead"]
+Comece a usar a proteção contra ransomware do BlueXP  verificando a prontidão do seu ambiente operacional, login, acesso à rede e navegador da Web.
+
+Para usar a proteção contra ransomware do BlueXP , você precisará desses pré-requisitos.
+
+
+
+== Em BlueXP 
+
+* Uma conta de usuário do BlueXP  com o administrador da organização Privileges para descobrir recursos.
+* Organização do BlueXP  com pelo menos um conector BlueXP  ativo que se conecta a clusters ONTAP locais ou que se conecta ao Cloud Volumes ONTAP na AWS ou no Azure.
+* Pelo menos um ambiente de trabalho do BlueXP  com um cluster ONTAP no local do NetApp ou Cloud volume ONTAP na AWS ou Azure (usando protocolos nas ou CIFS).
++
+** Os clusters ONTAP ou Cloud volume ONTAP com ONTAP os versão 9.11.1 ou superior são compatíveis.
+** Se os clusters do ONTAP no local ou o Cloud volume ONTAP na AWS ou na nuvem do Azure ainda não estiverem integrados no BlueXP , você precisará de um BlueXP  Connector.
++
+ https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["Saiba como configurar um conetor BlueXP "]Consulte e https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["Requisitos padrão do BlueXP"^].
+
++
+
+NOTE: Se você tiver vários conetores BlueXP  em uma única organização do BlueXP , o serviço de proteção contra ransomware da BlueXP  verificará os recursos do ONTAP em todos os conetores além daquele que está selecionado atualmente na IU do BlueXP .
+
+
+
+
+
+
+
+== Em ONTAP 9.11,1 e posterior
+
+* Uma licença para a proteção autônoma contra ransomware do NetApp, usada pela proteção contra ransomware do BlueXP , habilitada na instância do ONTAP local, dependendo da versão do ONTAP que você estiver usando. Consulte a https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Visão geral da proteção autônoma contra ransomware"^].
++
+
+NOTE: O lançamento geral da proteção contra ransomware do BlueXP , ao contrário da versão prévia, inclui uma licença para a tecnologia NetApp Autonomous ransomware Protection.  https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Visão geral da proteção autônoma contra ransomware"^]Consulte para obter detalhes.
+
++
+Para obter mais detalhes sobre o licenciamento, link:concept-ransomware-protection.html["Saiba mais sobre a proteção contra ransomware BlueXP "]consulte .
+
+* Para aplicar configurações de proteção (como habilitar a proteção Autônoma contra ransomware e outras), a proteção contra ransomware do BlueXP  precisa de permissões de administrador no cluster do ONTAP. O cluster do ONTAP deve ter sido integrado somente usando as credenciais de usuário do administrador do cluster do ONTAP.
+* Se o cluster do ONTAP já estiver integrado no BlueXP  usando credenciais de usuário não administrativas, as permissões de usuário que não sejam administrativas devem ser atualizadas com as permissões necessárias fazendo login no cluster do ONTAP, descrito nesta página.
+
+
+
+
+== Para backups de dados
+
+* Uma conta no NetApp StorageGRID, AWS S3 ou Azure Blob para destinos de backup e o conjunto de permissões de acesso.
++
+Consulte https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html["Lista de permissões AWS, Azure ou S3"^] para obter mais informações.
+
+* O serviço de backup e recuperação do BlueXP  não precisa ser ativado no ambiente de trabalho.
++
+O serviço de proteção contra ransomware do BlueXP  ajuda a configurar um destino de backup por meio da opção Configurações. link:rp-use-settings.html["Configure as definições"]Consulte .
+
+
+
+
+
+== Atualizar permissões de usuário que não sejam administradores em um ambiente de trabalho do ONTAP
+
+Se você precisar atualizar permissões de usuário que não sejam administradores para um ambiente de trabalho específico, execute estas etapas.
+
+. Faça login no BlueXP  e procure o ambiente de trabalho que precisa de suas permissões de usuário do ONTAP atualizadas.
+. Clique duas vezes no ambiente de trabalho para ver os detalhes.
+. Clique em *Exibir informações adicionais* que mostram o nome de usuário.
+. Faça login na CLI do cluster do ONTAP usando o usuário admin.
+. Exibir as funções existentes para esse usuário. Introduza:
++
+[listing]
+----
+security login show -user-or-group-name <username>
+----
+. Altere a função para o utilizador. Introduza:
++
+[listing]
+----
+security login modify -user-or-group-name <username> -application console|http|ontapi|ssh|telnet -authentication-method password -role admin
+----
+. Retorne à IU de proteção contra ransomware do BlueXP  para usá-la.
+

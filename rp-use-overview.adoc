@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: rp-use-overview.html 
+keywords: ransomware protection, ransomware protection, detect ransomware attacks, recover from ransomware attack 
+summary: Com a proteção contra ransomware do BlueXP , você pode visualizar a integridade do workload e proteger workloads. 
+---
+= Use a proteção contra ransomware do BlueXP 
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Com a proteção contra ransomware do BlueXP , você pode visualizar a integridade do workload e proteger workloads.
+
+* link:rp-start-discover.html["Descubra workloads na proteção de ransomware BlueXP "].
+* link:rp-use-dashboard.html["Visualize a proteção e a integridade do workload no Dashboard"].
++
+** Revise e aja de acordo com as recomendações de proteção contra ransomware.
+
+
+* link:rp-use-protect.html["Proteja workloads"]:
++
+** Atribua uma estratégia de proteção contra ransomware aos workloads.
+** Aumentar a proteção das aplicações para evitar futuros ataques de ransomware.
+** Crie, altere ou exclua uma estratégia de proteção.
+
+
+* link:rp-use-alert.html["Responda à detecção de possíveis ataques de ransomware"].
+* link:rp-use-recover.html["Recuperar de um ataque"] (depois que os incidentes são neutralizados).
+* link:rp-use-settings.html["Configure as definições de proteçãoão"].
+

@@ -1,0 +1,174 @@
+---
+sidebar: sidebar 
+permalink: rp-use-alert.html 
+keywords: ransomware protection alert, ransomware protection attack, detect ransomware alert 
+summary: Se a proteção contra ransomware do BlueXP  detectar um possível ataque, um alerta será exibido no Painel de proteção contra ransomware do BlueXP  indicando um possível ataque. O serviço também inicia imediatamente a obtenção de uma cópia Snapshot. Neste ponto, você deve olhar para o risco potencial na guia Alertas de proteção contra ransomware do BlueXP . 
+---
+= Responda a um alerta de ransomware detetado
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Se a proteção contra ransomware do BlueXP  detectar um possível ataque, um alerta será exibido no Painel de proteção contra ransomware do BlueXP  e nas notificações do BlueXP , no canto superior direito, indicando um possível ataque de ransomware. O serviço também inicia imediatamente a obtenção de uma cópia Snapshot. Neste ponto, você deve olhar para o risco potencial na guia *Alertas* de proteção contra ransomware BlueXP .
+
+Você pode ignorar falsos positivos ou decidir recuperar seus dados imediatamente.
+
+
+TIP: Se você decidir ignorar o alerta, o serviço irá aprender esse comportamento e associá-lo a operações normais e não iniciar um alerta sobre tal comportamento novamente.
+
+Para começar a recuperar seus dados, marque o alerta como pronto para recuperação para que seu administrador de armazenamento possa iniciar o processo de recuperação.
+
+Cada alerta pode ter vários incidentes em volumes diferentes com status diferentes, portanto, certifique-se de olhar para todos os incidentes.
+
+O serviço fornece informações chamadas _Evidence_ sobre o que causou a emissão do alerta, como o seguinte:
+
+* Extensões de arquivo foram criadas ou alteradas
+* A criação de arquivos ocorreu e aumentou em uma porcentagem listada
+* A exclusão de arquivos ocorreu e aumentou em uma porcentagem listada
+
+
+Um alerta é baseado nos seguintes tipos de comportamento:
+
+* *Ataque potencial*: Um alerta ocorre quando o Autonomous ransomware Protection deteta uma nova extensão e a ocorrência é repetida mais de 20 vezes nas últimas 24 horas (comportamento padrão).
+* *Aviso*: Um aviso ocorre com base nos seguintes comportamentos:
++
+** A deteção de uma nova extensão não foi identificada antes e o mesmo comportamento não repete tempos suficientes para declará-la como um ataque.
+** Alta entropia é observada.
+** As operações de leitura/gravação/renomeação/exclusão de arquivos tiveram um aumento de 100% na atividade além da linha de base.
+
+
+
+
+As evidências são baseadas em informações da proteção autônoma contra ransomware no ONTAP. Para obter detalhes, https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Visão geral da proteção autônoma contra ransomware"^] consulte .
+
+Um alerta pode ter um dos seguintes Estados:
+
+* *Novo*
+* *Inativo*
+
+
+Um incidente de alerta é categorizado em um dos seguintes estados:
+
+* *Novo*: Todos os incidentes são marcados como "novo" quando são identificados pela primeira vez.
+* *Demitido*: Se você suspeitar que a atividade não é um ataque de ransomware, você pode alterar o status para "demitido".
++
+
+CAUTION: Depois de descartar um ataque, você não pode alterar isso de volta. Se você ignorar um workload, todas as cópias Snapshot feitas automaticamente em resposta ao possível ataque de ransomware serão excluídas permanentemente.
+
+* *Dismissing*: O incidente está em processo de desistência.
+* *Resolvido*: O incidente foi mitigado.
+
+
+
+
+== Ver alertas
+
+Você pode acessar alertas do Painel de proteção contra ransomware do BlueXP  ou na guia *Alertas*.
+
+.Passos
+. No Painel de proteção contra ransomware do BlueXP , revise o painel Alertas.
+. Selecione *Ver tudo* sob uma das estátuas.
+. Clique num alerta para rever todos os incidentes em cada volume para cada alerta.
+. Para rever alertas adicionais, clique em *Alerta* no breadcrumbs no canto superior esquerdo.
+. Reveja os alertas na página Alertas.
++
+image:screen-alerts.png["Página de alertas"]
+
+. Continuar:
++
+** <<Marque os incidentes de ransomware como prontos para recuperação (após os incidentes serem neutralizados)>>.
+** <<Descarte incidentes que não sejam potenciais ataques>>.
+
+
+
+
+
+
+== Marque os incidentes de ransomware como prontos para recuperação (após os incidentes serem neutralizados)
+
+Depois de atenuar o ataque e estar pronto para recuperar cargas de trabalho, você deve se comunicar com sua equipe de administração de storage que os dados estão prontos para recuperação para que possam iniciar o processo de recuperação.
+
+.Passos
+. No menu de proteção contra ransomware BlueXP , selecione *Alertas*.
++
+image:screen-alerts.png["Página de alertas"]
+
+. Na página Alertas, selecione o alerta.
+. Reveja os incidentes no alerta.
++
+image:screen-alerts-incidents2.png["Página de incidentes de alerta"]
+
+. Se você determinar que os incidentes estão prontos para recuperação, selecione *Marcar restauração necessária*.
+. Confirme a ação e selecione *Marcar restauração necessária*.
+. Para iniciar a recuperação da carga de trabalho, selecione a carga de trabalho *Recover* na mensagem ou selecione a guia *Recovery*.
+
+
+.Resultado
+Depois que o alerta é marcado para restauração, o alerta passa da guia Alertas para a guia recuperação.
+
+
+
+== Descarte incidentes que não sejam potenciais ataques
+
+Depois de analisar incidentes, você precisa determinar se os incidentes são potenciais ataques. Se não, eles podem ser demitidos.
+
+Você pode ignorar falsos positivos ou decidir recuperar seus dados imediatamente. Se você decidir ignorar o alerta, o serviço irá aprender esse comportamento e associá-lo a operações normais e não iniciar um alerta sobre tal comportamento novamente.
+
+Se você ignorar um workload, todas as cópias Snapshot feitas automaticamente em resposta ao possível ataque de ransomware serão excluídas permanentemente.
+
+
+CAUTION: Se você ignorar um alerta, não poderá alterar esse status de volta para qualquer outro status e não poderá desfazer essa alteração.
+
+.Passos
+. No menu de proteção contra ransomware BlueXP , selecione *Alertas*.
++
+image:screen-alerts.png["Página de alertas"]
+
+. Na página Alertas, selecione o alerta.
++
+image:screen-alerts-incidents2.png["Página de incidentes de alerta"]
+
+. Selecione um ou mais incidentes. Ou selecione todos os incidentes selecionando a caixa ID do Incidente no canto superior esquerdo da tabela.
+. Se você determinar que o incidente não é uma ameaça, ignore-o como um falso positivo:
++
+** Se você selecionou um incidente, selecione o ícone *ações*... à direita, selecione *Editar status*.
+** Se você selecionou vários incidentes, selecione o botão *Editar status* acima da tabela.
++
+image:screen-alerts-status-edit.png["Página Status de edição de alerta"]
+
+
+
+. Na caixa Editar status, selecione o status *"demitido"*.
++
+São exibidas informações adicionais sobre o workload e quais cópias Snapshot serão excluídas.
+
+. Selecione *Guardar*.
++
+O status sobre o incidente ou incidentes muda para "demitido".
+
+
+
+
+
+== Exibir uma lista de arquivos afetados
+
+Antes de restaurar uma carga de trabalho de aplicação no nível do ficheiro, pode ver uma lista de ficheiros afetados. Pode aceder à página Alertas para transferir uma lista de ficheiros afetados. Em seguida, use a página recuperação para carregar a lista e escolher quais arquivos restaurar.
+
+.Passos
+Use a página Alertas para recuperar a lista de arquivos afetados.
+
+
+TIP: Se um volume tiver vários alertas, talvez seja necessário fazer o download da lista CSV de arquivos afetados para cada alerta.
+
+. No menu de proteção contra ransomware BlueXP , selecione *Alertas*.
+. Na página Alertas, classifique os resultados por workload para mostrar os alertas da carga de trabalho do aplicativo que você deseja restaurar.
+. Na lista de alertas para essa carga de trabalho, selecione um alerta.
+. Para esse alerta, selecione um único incidente.
++
+image:screen-alerts-incidents-impacted-files.png["lista de arquivos afetados para um alerta específico"]
+
+. Para esse incidente, selecione o ícone de download e faça o download da lista de arquivos afetados no formato CSV.
+

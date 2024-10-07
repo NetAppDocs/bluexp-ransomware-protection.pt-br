@@ -1,0 +1,75 @@
+---
+sidebar: sidebar 
+permalink: rp-start-setup.html 
+keywords: bluexp, ransomware protection, aws, azure 
+summary: Para usar a proteção contra ransomware do BlueXP , execute algumas etapas para configurá-la. 
+---
+= Configurar a proteção contra ransomware do BlueXP 
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: /media/
+
+
+[role="lead"]
+Para usar a proteção contra ransomware do BlueXP , execute algumas etapas para configurá-la.
+
+Antes de começar, revise link:rp-start-prerequisites.html["pré-requisitos"] para garantir que seu ambiente esteja pronto.
+
+
+
+== Prepare o destino da cópia de segurança
+
+Prepare um dos seguintes destinos de backup:
+
+* NetApp StorageGRID
+* Amazon Web Services
+* Microsoft Azure
+
+
+Depois de configurar as opções no próprio destino de backup, você o configurará posteriormente como um destino de backup no serviço de proteção contra ransomware BlueXP .
+
+
+
+=== Prepare o StorageGRID para se tornar um destino de backup
+
+Se pretender utilizar o StorageGRID como destino da cópia de segurança, consulte https://docs.netapp.com/us-en/storagegrid-117/index.html["Documentação do StorageGRID"^] para obter detalhes sobre o StorageGRID.
+
+
+
+=== Prepare a AWS para se tornar um destino de backup
+
+* Configure uma conta na AWS.
+* Configure https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html["Permissões da AWS"^] na AWS.
+
+
+Para obter detalhes sobre como gerenciar seu storage da AWS no BlueXP , https://docs.netapp.com/us-en/bluexp-setup-admin/task-viewing-amazon-s3.html["Gerencie seus buckets do Amazon S3"^] consulte .
+
+
+
+=== Prepare o Azure para se tornar um destino de backup
+
+* Configure uma conta no Azure.
+* Configurar https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html["Permissões do Azure"^] no Azure.
+
+
+Para obter detalhes sobre como gerenciar seu storage Azure no BlueXP , https://docs.netapp.com/us-en/bluexp-blob-storage/task-view-azure-blob-storage.html["Gerencie suas contas de storage do Azure"^] consulte .
+
+
+
+== Configure o BlueXP 
+
+A próxima etapa é configurar o BlueXP  e o serviço de proteção contra ransomware BlueXP .
+
+Revisão https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["Requisitos padrão do BlueXP"^].
+
+
+
+=== Crie um conetor no BlueXP
+
+Deve contactar o seu representante de vendas da NetApp para experimentar ou utilizar este serviço. Em seguida, ao usar o BlueXP  Connector, ele incluirá as funcionalidades apropriadas para o serviço de proteção contra ransomware.
+
+Para criar um conetor no BlueXP  antes de usar o serviço, consulte a documentação do BlueXP  que descreve https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["Como criar um conetor BlueXP"^]o .
+
+
+NOTE: Se você tiver vários conetores BlueXP , o serviço verificará os dados em todos os conetores além daquele que aparece atualmente na IU do BlueXP . Este serviço descobre todos os projetos e todos os conetores associados a esta organização.
