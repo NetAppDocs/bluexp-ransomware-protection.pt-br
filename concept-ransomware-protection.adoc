@@ -72,6 +72,9 @@ A proteção contra ransomware da BlueXP  oferece os seguintes benefícios:
 
 O NetApp não cobra pelo uso da versão de avaliação da proteção contra ransomware do BlueXP .
 
+
+NOTE: Com o lançamento de outubro de 2024, novas implantações de proteção contra ransomware BlueXP  têm 30 dias para uma avaliação gratuita. Anteriormente, a proteção contra ransomware da BlueXP  forneceu 90 dias como uma avaliação gratuita. Se você já está no teste gratuito de 90 dias, essa oferta continua por 90 dias.
+
 Se você tiver backup e recuperação do BlueXP  e proteção contra ransomware BlueXP , todos os dados comuns protegidos por ambos os produtos serão cobrados apenas pela proteção contra ransomware do BlueXP .
 
 Depois de comprar uma licença ou uma assinatura do PayGo, qualquer workload que tenha uma política de detecção de ransomware (proteção autônoma contra ransomware) habilitada (descoberta ou definida pela proteção contra ransomware do BlueXP ) e pelo menos uma política de snapshot ou backup, a proteção contra ransomware do BlueXP  classifica-a como "protegida" e conta com relação à capacidade adquirida ou à assinatura do PayGo. Se uma carga de trabalho for descoberta sem uma diretiva de deteção (ARP), mesmo que tenha políticas de backup ou snapshot, ela será classificada como "em risco" e _não_ conta em relação à capacidade adquirida.
@@ -84,7 +87,7 @@ Workloads protegidos contam com a capacidade adquirida ou com a assinatura após
 
 Com a proteção contra ransomware do BlueXP , você pode usar diferentes planos de licenciamento, incluindo uma avaliação gratuita, uma assinatura paga conforme o uso em breve ou trazer sua própria licença.
 
-O serviço de proteção contra ransomware da BlueXP  requer uma licença NetApp ONTAP.
+O serviço de proteção contra ransomware do BlueXP  requer uma licença do NetApp ONTAP One.
 
 A licença de proteção contra ransomware da BlueXP  não inclui produtos NetApp adicionais. A proteção contra ransomware do BlueXP  pode usar o backup e a recuperação do BlueXP  mesmo que você não tenha uma licença para ele.
 
@@ -167,7 +170,7 @@ Use a proteção contra ransomware do BlueXP  para ver a resiliência dos dados
 * ONTAP nas no local (usando protocolos NFS e CIFS) com ONTAP versão 9.11.1 e posterior
 * Cloud Volumes ONTAP 9.11.1 ou posterior para AWS (usando protocolos NFS e CIFS)
 * Cloud Volumes ONTAP 9.11.1 ou posterior para Google Cloud Platform (usando protocolos NFS e CIFS)
-* Cloud Volumes ONTAP 9.11.1 ou superior para Microsoft Azure (usando protocolos NFS e CIFS)
+* Cloud Volumes ONTAP 9.12.1 ou superior para Microsoft Azure (usando protocolos NFS e CIFS)
 
 
 

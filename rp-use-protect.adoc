@@ -8,7 +8,7 @@ summary: Você pode proteger workloads contra ataques de ransomware atribuindo p
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media
+:imagesdir: ./media/
 
 
 [role="lead"]
@@ -75,7 +75,7 @@ Uma das primeiras etapas para proteger cargas de trabalho é visualizar suas car
 ** No painel proteção de dados no Painel, selecione *Exibir tudo*.
 ** No menu, selecione *proteção*.
 +
-image:screen-protection3.png["Página de proteção"]
+image:screen-protection.png["Página de proteção"]
 
 
 
@@ -253,14 +253,14 @@ Você pode adicionar uma estratégia de proteção contra ransomware aos workloa
 Se as políticas de snapshot ou backup não existirem na carga de trabalho, você poderá criar uma estratégia de proteção contra ransomware, que pode incluir as seguintes políticas criadas na proteção contra ransomware do BlueXP :
 
 * Política do Snapshot
-* política de backup
+* Política de backup
 * Política de detecção de ransomware
 
 
 .Etapas para criar uma estratégia de proteção contra ransomware
 . No menu proteção contra ransomware BlueXP , selecione *proteção*.
 +
-image:screen-protection3.png["Gerenciar página de estratégia"]
+image:screen-protection.png["Gerenciar página de estratégia"]
 
 . Na página proteção, selecione *Gerenciar estratégias de proteção*.
 +
@@ -331,7 +331,7 @@ Outros serviços, como backup e recuperação do BlueXP  e SnapCenter, usam os 
 .Passos
 . No menu proteção contra ransomware BlueXP , selecione *proteção*.
 +
-image:screen-protection3.png["Gerenciar página de estratégia"]
+image:screen-protection.png["Gerenciar página de estratégia"]
 
 . Na página proteção, selecione uma carga de trabalho e selecione *proteger*.
 +
@@ -378,7 +378,7 @@ Agrupar compartilhamentos de arquivos facilita a proteção de seu data Estate. 
 .Passos
 . No menu proteção contra ransomware BlueXP , selecione *proteção*.
 +
-image:screen-protection3.png["Gerenciar página de estratégia"]
+image:screen-protection.png["Gerenciar página de estratégia"]
 
 . Na página proteção, selecione a guia *grupos de proteção*.
 +
@@ -418,52 +418,6 @@ image:screen-protection-groups-policy.png["Adicionar grupo de proteção - Pági
 . Selecione *seguinte*.
 . Reveja as seleções para o grupo de proteçãoão.
 . Selecione *Adicionar*.
-
-
-
-
-=== Adicione mais workloads a um grupo
-
-Mais tarde, talvez seja necessário adicionar mais cargas de trabalho a um grupo existente.
-
-Se o grupo incluir workloads gerenciados apenas pela proteção contra ransomware BlueXP  (e não pelo backup e recuperação do SnapCenter ou BlueXP ), use grupos separados para workloads gerenciados apenas pela proteção contra ransomware BlueXP  e outro grupo para workloads gerenciados por outros serviços.
-
-.Passos
-. No menu proteção contra ransomware BlueXP , selecione *proteção*.
-. Na página proteção, selecione a guia *grupos de proteção*.
-+
-image:screen-protection-groups.png["Página grupos de proteção"]
-
-. Selecione o grupo ao qual você deseja adicionar mais cargas de trabalho.
-+
-image:screen-protection-groups-more-workloads.png["Página de detalhes do grupo de proteção"]
-
-. Na página do grupo de proteção selecionado, selecione *Adicionar*.
-+
-A proteção contra ransomware do BlueXP  mostra apenas os workloads que ainda não estão no grupo que usam as mesmas políticas de snapshot e backup que o grupo.
-
-+
-
-TIP: A parte superior da página mostra qual serviço mantém as políticas de snapshot, backup e deteção.
-
-. Selecione as cargas de trabalho adicionais que devem ser adicionadas ao grupo.
-. Selecione *Guardar*.
-
-
-
-
-=== Editar a proteção do grupo
-
-Você pode alterar a política de deteção em um grupo existente. Se a política de deteção ainda não for adicionada a este grupo, pode adicioná-la agora.
-
-.Passos
-. No menu proteção contra ransomware BlueXP , selecione *proteção*.
-. Na página proteção, selecione a guia *grupos de proteção*.
-+
-image:screen-protection-groups-edit.png["Página de grupos de proteção mostrando a opção Editar"]
-
-. No painel proteção, selecione *Editar proteção*.
-. Selecione ou adicione uma política de deteção a este grupo.
 
 
 

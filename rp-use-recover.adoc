@@ -8,7 +8,7 @@ summary: 'Após um ataque, a proteção contra ransomware do BlueXP  verifica s
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media
+:imagesdir: ./media/
 
 
 [role="lead"]

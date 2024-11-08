@@ -4,21 +4,32 @@ permalink: rp-use-protect-classify.html
 keywords: ransomware protection, protect against ransomware attacks, anti-ransomware policies, cds, sensitive, pii, classification 
 summary: No serviço de proteção contra ransomware da BlueXP , você pode usar a classificação do BlueXP , um componente essencial da família BlueXP , para verificar e classificar seus dados em um workload de compartilhamento de arquivos. A classificação de dados ajuda a identificar se os seus dados incluem informações pessoais ou privadas, o que pode aumentar os riscos de segurança. 
 ---
-= Procure dados confidenciais pessoalmente identificáveis com a classificação BlueXP 
+= Procure informações pessoalmente identificáveis com a classificação BlueXP 
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media
+:imagesdir: ./media/
 
 
 [role="lead"]
-No serviço de proteção contra ransomware da BlueXP , você pode usar a classificação do BlueXP , um componente essencial da família BlueXP , para verificar e classificar seus dados em um workload de compartilhamento de arquivos. A classificação de dados ajuda a identificar se os seus dados incluem informações pessoais ou privadas, o que pode aumentar os riscos de segurança.
+No serviço de proteção contra ransomware da BlueXP , você pode usar a classificação do BlueXP , um componente essencial da família BlueXP , para verificar e classificar seus dados em um workload de compartilhamento de arquivos. Classificar dados ajuda a identificar se seus dados incluem informações de identificação pessoal (PII), o que pode aumentar os riscos de segurança.
+
+
+IMPORTANT: A classificação do BlueXP  pode ser implantada no local, na nuvem (implantações não SaaS) ou como modelo SaaS em uma prévia de tecnologia. Ao usar implantações não SaaS ou implantações existentes, a verificação de dados PII na proteção de ransomware do BlueXP  geralmente está disponível e não na visualização. Para ativar os recursos de visualização, use a opção *Configurações* de proteção contra ransomware do BlueXP . link://rp-use-settings-html["Configurar as configurações de proteção contra ransomware do BlueXP "]Consulte a .
+
+
+TIP: Esse processo pode afetar a importância da carga de trabalho para garantir que você tenha a proteção adequada.
 
 
 
 === Ativar a classificação BlueXP 
 
 Antes de usar a classificação do BlueXP  no serviço de proteção contra ransomware da BlueXP , você precisa habilitar a classificação do BlueXP  para Escanear seus dados.
+
+
+TIP: Você só faz isso uma vez; você não precisa ativar a classificação do BlueXP  novamente se você escolher outra carga de trabalho de compartilhamento de arquivos para identificar a exposição.
+
+Usando a IU de classificação do BlueXP  como um método alternativo, um administrador pode ativar a classificação do BlueXP  na proteção contra ransomware do BlueXP .
 
 Para obter detalhes sobre a classificação do BlueXP  antes de começar a usar o serviço, pode ser útil analisar esses recursos.
 
@@ -31,9 +42,9 @@ Para obter detalhes sobre a classificação do BlueXP  antes de começar a usar
 . No menu proteção contra ransomware BlueXP , selecione *proteção*.
 . Na página proteção, localize uma carga de trabalho de compartilhamento de arquivos na coluna carga de trabalho.
 +
-image:screen-protection3.png["Página de proteção"]
+image:screen-protection-sensitive-preview-column.png["Página de proteção mostrando a coluna exposição à privacidade"]
 
-. Para ativar a classificação do BlueXP  para verificar os dados confidenciais, na coluna exposição à privacidade, selecione *Identify exposure*.
+. Para ativar a classificação BlueXP  para verificar os seus dados para dados pessoais identificáveis, na coluna *exposição à privacidade*, selecione *Identify exposure*.
 +
 image:screen-protection-sensitive-data.png["Tela identificar dados confidenciais"]
 
@@ -42,12 +53,12 @@ image:screen-protection-sensitive-data.png["Tela identificar dados confidenciais
 
 
 .Resultado
-A classificação do BlueXP  instala um BlueXP  Connector, se conecta remotamente aos dados da sua carga de trabalho e verifica os dados na nuvem do NetApp. Apenas os insights e as métricas identificados permanecem na nuvem do NetApp; seus dados não.
+A classificação BlueXP  instala um conetor BlueXP , coneta remotamente aos dados da sua carga de trabalho e os verifica na nuvem NetApp (Amazon Web Services, US-West-1). Apenas insights e métricas identificados permanecem na nuvem do NetApp.
 
 
 NOTE: A digitalização pode demorar vários minutos, dependendo da quantidade de dados. A página proteção mostra que a classificação BlueXP  está identificando arquivos e fornece uma indicação do número de arquivos que está digitalizando.
 
-Quando a digitalização estiver concluída, a coluna exposição à privacidade exibe o nível de exposição, por exemplo, Alto.
+Quando a digitalização estiver concluída, a coluna exposição à privacidade exibe o nível de exposição como baixo, Médio ou Alto.
 
 
 
@@ -66,13 +77,21 @@ Os dados PII podem ter um dos seguintes Estados de risco de exposição à priva
 . No menu proteção contra ransomware BlueXP , selecione *proteção*.
 . Na página proteção, localize a carga de trabalho de compartilhamento de arquivos na coluna carga de trabalho que mostra um status na coluna exposição à privacidade.
 +
-image:screen-protection3.png["Tela de proteção mostrando a coluna exposição à privacidade"]
+image:screen-protection-sensitive-preview-column-medium.png["Página de proteção mostrando a coluna exposição à privacidade"]
+
++
+
+TIP: Se o status mudar, uma seta para cima ou para baixo aparece na coluna exposição à privacidade para indicar a alteração da exposição à privacidade.
 
 . Selecione o link da carga de trabalho na coluna carga de trabalho para ver os detalhes da carga de trabalho.
 +
-image:screen-protection-workload-details-privacy-exposure.png["Tela de detalhes da carga de trabalho mostrando o painel exposição à privacidade"]
+image:screen-protection-workload-details-privacy-exposure.png["Tela de detalhes da carga de trabalho mostrando o mosaico exposição à privacidade"]
 
-. Na página Detalhes da carga de trabalho, reveja as informações no painel exposição à privacidade.
+. Na página Detalhes da carga de trabalho, reveja as informações no mosaico exposição à privacidade.
++
+
+TIP: Se a alteração da exposição à privacidade afetar a importância da carga de trabalho, uma seta para cima ou para baixo será exibida ao lado do status importância da carga de trabalho.
+
 
 
 
@@ -107,24 +126,35 @@ Alta
 |===
 
 
-== Investigue dados confidenciais diretamente na classificação BlueXP 
+== Investigue a exposição à privacidade diretamente na classificação BlueXP 
+
+Na proteção contra ransomware do BlueXP , você pode selecionar uma carga de trabalho, visualizar seus detalhes e investigar a exposição na classificação do BlueXP .
 
 .Passos
 . No menu proteção contra ransomware BlueXP , selecione *proteção*.
 . Na página proteção, localize a carga de trabalho de compartilhamento de arquivos na coluna carga de trabalho que mostra um status na coluna exposição à privacidade.
 +
-image:screen-protection3.png["Tela de proteção mostrando a coluna exposição à privacidade"]
+image:screen-protection-sensitive-preview-column-medium.png["Página de proteção mostrando a coluna exposição à privacidade"]
 
 . Selecione a carga de trabalho na coluna carga de trabalho para ver seus detalhes.
 +
 image:screen-protection-workload-details-privacy-exposure.png["Tela de detalhes da carga de trabalho mostrando o painel exposição à privacidade"]
 
-. Na página Detalhes da carga de trabalho, reveja as informações no painel exposição à privacidade.
+. Na página Detalhes da carga de trabalho, reveja as informações no mosaico exposição à privacidade.
 . Para investigar a exposição na classificação BlueXP , selecione *investigar*.
 +
-O serviço de classificação BlueXP  abre-se para apresentar o separador investigar.
+O serviço de classificação BlueXP  abre-se para apresentar o separador Investigation (Investigação).
+
++
+image:screen-protection-classification-investigation.png["Classificação BlueXP"]
+
+. Reveja as informações no separador Investigation (Investigação).
+. Para retornar ao serviço de proteção contra ransomware BlueXP , selecione *voltar para proteção contra ransomware BlueXP *.
 
 
+
+
+== Para mais informações
 
 Para obter detalhes sobre a classificação BlueXP , consulte os seguintes tópicos de classificação BlueXP :
 
