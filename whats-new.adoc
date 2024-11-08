@@ -18,7 +18,7 @@ Saiba o que há de novo na proteção contra ransomware do BlueXP .
 
 
 
-== 6 de novembro de 2024
+== 7 de novembro de 2024
 
 Esse lançamento da proteção contra ransomware do BlueXP  inclui as seguintes atualizações.
 
