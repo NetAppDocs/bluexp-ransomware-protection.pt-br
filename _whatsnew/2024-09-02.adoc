@@ -1,0 +1,35 @@
+= Avaliação de riscos de segurança do Digital Advisor
+:allow-uri-read: 
+
+
+
+
+=== Avaliação de riscos de segurança do Digital Advisor
+
+A proteção contra ransomware da BlueXP  agora reúne informações sobre riscos de segurança altos e críticos relacionados a um cluster do consultor digital da NetApp. Se algum risco for encontrado, a proteção contra ransomware do BlueXP  fornece uma recomendação no painel *ações recomendadas* do Painel: "Corrigir uma vulnerabilidade de segurança conhecida no cluster <name>." A partir da recomendação no Dashboard, clicar em *Review and FIX* sugere rever o Digital Advisor e um artigo CVE (Common Vulnerability & Exposure) para resolver o risco de segurança. Se houver vários riscos de segurança, revise as informações no Digital Advisor.
+
+Consulte a https://docs.netapp.com/us-en/active-iq/index.html["Documentação do Digital Advisor"^].
+
+
+
+=== Faça backup do Google Cloud Platform
+
+Com essa versão, você pode definir um destino de backup para um bucket do Google Cloud Platform. Anteriormente, você poderia adicionar destinos de backup apenas ao NetApp StorageGRID, Amazon Web Services e Microsoft Azure.
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Saiba mais sobre como configurar as configurações de proteção contra ransomware do BlueXP"].
+
+
+
+=== Suporte para o Google Cloud Platform
+
+O serviço agora oferece suporte ao Cloud Volumes ONTAP para proteção de storage. Anteriormente, o serviço suportava apenas o Cloud Volumes ONTAP para Amazon Web Services e o Microsoft Azure, juntamente com nas no local.
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["Saiba mais sobre a proteção contra ransomware da BlueXP  e fontes de dados compatíveis, destinos de backup e ambientes de trabalho"].
+
+
+
+=== Controles de acesso baseados em função
+
+Agora é possível limitar o acesso a atividades específicas com o controle de acesso baseado em funções (RBAC). A proteção contra ransomware do BlueXP  usa duas funções do BlueXP : Administrador de conta do BlueXP  e administrador não-conta (visualizador).
+
+Para obter detalhes sobre as ações que cada função pode executar, https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-roles.html["Controles de acesso baseados em função Privileges"] consulte .
