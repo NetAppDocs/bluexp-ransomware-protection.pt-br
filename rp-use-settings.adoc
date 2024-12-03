@@ -12,7 +12,7 @@ summary: Você pode configurar várias opções, incluindo um destino de backup,
 
 
 [role="lead"]
-Você pode configurar um destino de backup ou habilitar a deteção de ameaças revisando recomendações no Painel de Controle ou acessando a opção *Configurações*. Você também pode mostrar os recursos de visualização futura.
+Você pode configurar um destino de backup ou habilitar a deteção de ameaças revisando recomendações no Painel de Controle ou acessando a opção *Configurações*.
 
 A ativação da deteção de ameaças envia automaticamente dados para o seu sistema de gerenciamento de eventos e segurança (SIEM) para análise de ameaças.
 
@@ -28,7 +28,6 @@ Pode aceder facilmente à página Definições a partir da opção ações junto
 +
 ** Adicionar um destino de cópia de segurança.
 ** Conete seu sistema de gerenciamento de eventos e segurança (SIEM) para análise e deteção de ameaças.
-** Mostrar as próximas funcionalidades de pré-visualização.
 
 
 
@@ -477,24 +476,4 @@ NOTE: As informações inseridas dependem do SIEM selecionado.
 +
 A página Configurações mostra "conectado".
 
-
-
-
-
-== Mostrar funcionalidades de pré-visualização
-
-Você pode experimentar os próximos recursos rotulados "Preview" antes de serem lançados. Esses recursos aparecem na IU com um rótulo "Preview".
-
-.Antes de começar
-Você precisará de uma chave da equipe de produtos de proteção contra ransomware do BlueXP  para mostrar os recursos do Preview. Para obter a chave, envie um e-mail para NetApp.com.
-
-.Passos
-. No menu de proteção contra ransomware BlueXP , selecione a image:button-actions-vertical.png["Ações verticais"]opção vertical ... no canto superior direito.
-. Selecione *Definições*.
-+
-image:screen-settings2.png["Página de definições"]
-
-. No bloco *Preview features*, selecione *Show*.
-. Introduza a chave.
-. Selecione *Mostrar*.
 

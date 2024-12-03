@@ -33,7 +33,7 @@ image:screen-dashboard.png["Página do painel de instrumentos"]
 ** *Proteção de dados de carga de trabalho*: Clique em *Exibir tudo* para ver todas as cargas de trabalho que estão em risco ou protegidas na página proteção. As cargas de trabalho estão em risco quando os níveis de proteção não correspondem a uma política de proteção. link:rp-use-protect.html["Proteja workloads"]Consulte a .
 +
 
-TIP: Clique na nota i para ver dicas sobre esses dados. Para aumentar o limite de carga de trabalho, clique em *aumentar o limite de carga de trabalho* dentro desta nota eu. Clicar nisso leva você à página de suporte da BlueXP , onde você pode criar um ticket de caso.
+TIP: Clique na nota "i" para ver dicas sobre esses dados. Para aumentar o limite de carga de trabalho, clique em *aumentar o limite de carga de trabalho* dentro desta nota eu. Clicar nisso leva você à página de suporte da BlueXP , onde você pode criar um ticket de caso.
 
 ** *Alertas e recuperação de dados da carga de trabalho*: Clique em *Exibir todos* para ver incidentes ativos que afetaram sua carga de trabalho, estão prontos para recuperação após incidentes serem neutralizados ou estão em recuperação. link:rp-use-alert.html["Responda a um alerta detetado"]Consulte a .
 +

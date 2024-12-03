@@ -8,23 +8,13 @@
 
 Com essa versão, você pode habilitar a classificação do BlueXP , um componente essencial da família BlueXP , para verificar e classificar dados em seus workloads de compartilhamento de arquivos. A classificação de dados ajuda a identificar se os seus dados incluem informações pessoais ou privadas, o que pode aumentar os riscos de segurança. Esse processo também afeta a importância da carga de trabalho e ajuda a garantir que você esteja protegendo as cargas de trabalho com o nível certo de proteção.
 
-A verificação de dados PII na proteção contra ransomware BlueXP  geralmente está disponível para clientes que implantaram a classificação BlueX. A classificação do BlueXP  está disponível como parte da plataforma BlueXP  sem custo adicional e pode ser implantada no local ou na nuvem do cliente.
-
-A classificação BlueXP  também pode ser implantada como um modelo SaaS como parte de uma prévia de tecnologia. Para ativar os recursos de visualização, use a opção *Configurações* de proteção contra ransomware do BlueXP . Se você habilitar Visualizar, um rótulo "Visualizar" aparecerá ao lado da coluna *exposição à privacidade* na página proteção, juntamente com outros locais.
+A verificação de dados PII na proteção contra ransomware do BlueXP  geralmente está disponível para clientes que implantaram a classificação BlueXP . A classificação do BlueXP  está disponível como parte da plataforma BlueXP  sem custo adicional e pode ser implantada no local ou na nuvem do cliente.
 
 Consulte a https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Configurar as configurações de proteção contra ransomware do BlueXP "].
 
 Para iniciar a digitalização, na página proteção, clique em *Identify exposure* (identificar exposição à privacidade) na coluna Privacy exposure (exposição à privacidade).
 
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect-classify.html["Procure dados confidenciais pessoalmente identificáveis com a classificação BlueXP "].
-
-
-
-=== Experimente as próximas funcionalidades de pré-visualização antes de serem lançadas
-
-Agora você pode experimentar alguns recursos rotulados "Preview" antes de serem lançados. Para fazer isso, use a opção *Configurações* para mostrar esses recursos, que são marcados com um rótulo "Visualizar".
-
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Saiba mais sobre como configurar as configurações de proteção contra ransomware do BlueXP"].
 
 
 

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: rp-start-discover.html 
-keywords: bluexp, ransomware protection, protection, risk, cyber attack, security 
+keywords: bluexp, ransomware protection, protection, risk, cyber attack, security,data security, data protection, data recovery, data discovery 
 summary: Durante a detecção, a proteção contra ransomware do BlueXP  analisa todos os volumes e arquivos em ambientes de trabalho em todos os conetores e contas do BlueXP . 
 ---
 = Descubra workloads na proteção de ransomware BlueXP 
