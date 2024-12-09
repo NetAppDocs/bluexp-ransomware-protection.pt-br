@@ -42,10 +42,7 @@ image:screen-protection-sensitive-preview-column.png["Página de proteção most
 
 
 .Resultado
-A classificação BlueXP  instala um conetor BlueXP , coneta remotamente aos dados da sua carga de trabalho e os verifica na nuvem NetApp (Amazon Web Services, US-West-1). Apenas insights e métricas identificados permanecem na nuvem do NetApp.
-
-
-NOTE: A digitalização pode demorar vários minutos, dependendo da quantidade de dados. A página proteção mostra que a classificação BlueXP  está identificando arquivos e fornece uma indicação do número de arquivos que está digitalizando.
+A digitalização pode demorar vários minutos, dependendo da quantidade de dados. A página proteção mostra que a classificação BlueXP  está identificando arquivos e fornece uma indicação do número de arquivos que está digitalizando.
 
 Quando a digitalização estiver concluída, a coluna exposição à privacidade exibe o nível de exposição como baixo, Médio ou Alto.
 
