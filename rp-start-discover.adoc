@@ -21,6 +21,18 @@ NOTE: As cargas de trabalho com volumes que usam FlexGroup ou iSCSI não serão 
 
 O serviço avalia o nível de proteção existente, incluindo as opções atuais de proteção de backup, cópias Snapshot e proteção Autonomous ransomware do NetApp. Com base na avaliação, o serviço recomenda como melhorar a proteção contra ransomware.
 
+Você pode fazer o seguinte:
+
+* Em cada conetor, selecione os ambientes de trabalho onde você deseja descobrir cargas de trabalho. Você pode se beneficiar desse recurso se quiser proteger cargas de trabalho específicas em seu ambiente e não em outros.
+* Descubra cargas de trabalho recém-criadas para ambientes de trabalho selecionados anteriormente.
+
+
+
+
+== Selecione workloads para descobrir e proteger
+
+Em cada conetor, selecione os ambientes de trabalho onde você deseja descobrir cargas de trabalho.
+
 .Passos
 . Na navegação à esquerda do BlueXP , selecione *proteção* > *proteção contra ransomware*.
 +
@@ -31,7 +43,32 @@ image:screen-landing.png["Captura de tela da página inicial para proteção con
 
 . Na página inicial, selecione *Comece descobrindo cargas de trabalho*.
 +
-O serviço detecta dados de workload e mostra a integridade da proteção de dados no Dashboard.
+O serviço encontra seus ambientes de trabalho em seus conetores BlueXP .
+
++
+
+TIP: Este processo pode demorar alguns minutos.
+
++
+image:screen-discover-workloads.png["Descobrir captura de tela de cargas de trabalho"]
+
+. Na lista de conetores BlueXP , selecione *Localizar novos ambientes de trabalho* ao lado do conetor onde você deseja descobrir cargas de trabalho.
+. Selecione os ambientes de trabalho em que você deseja descobrir o workload ou marque a caixa no topo da tabela para localizar workloads em todos os ambientes de workload descobertos.
+. Selecione *Discover*.
++
+O serviço detecta dados de workload somente para esses conetores com ambientes de trabalho selecionados.
+
++
+
+TIP: Este processo pode demorar alguns minutos.
+
++
+image:screen-discover-workloads-found.png["Captura de tela de cargas de trabalho descobertas"]
+
+. Para fazer o download da lista de cargas de trabalho descobertas, selecione *Download Results (CSV)*.
+. Para exibir o Painel de proteção contra ransomware do BlueXP , selecione *ir para Painel*.
++
+O Dashboard mostra a integridade da proteção de dados. O número de cargas de trabalho protegidas ou em risco aumenta com base nas cargas de trabalho descobertas recentemente.
 
 +
 image:screen-dashboard.png["Dashboard de proteção contra ransomware da BlueXP "]
@@ -39,4 +76,32 @@ image:screen-dashboard.png["Dashboard de proteção contra ransomware da BlueXP�
 +
 link:rp-use-dashboard.html["Saiba o que o Dashboard mostra."]
 
+
+
+
+
+== Descubra cargas de trabalho recém-criadas para ambientes de trabalho selecionados anteriormente
+
+Se você já selecionou ambientes de trabalho para descoberta, poderá descobrir cargas de trabalho recém-criadas para esses ambientes.
+
+.Passos
+. Na navegação à esquerda do BlueXP , selecione *proteção* > *proteção contra ransomware*.
+. Para identificar a data da última descoberta, no Dashboard, selecione o ícone de informações ao lado do link *Discover workloads* no canto superior direito.
+. No Dashboard, selecione *Discover cargas de trabalho*.
++
+Pode visualizar os ambientes de trabalho previamente selecionados para cada conetor e encontrar novos ambientes de trabalho.
+
+. Para cada conetor, selecione *Localizar novos ambientes de trabalho*.
++
+image:screen-discover-workloads-newly-discovered.png["Captura de tela de ambientes de trabalho recém-descobertos"]
+
++
+
+TIP: Este processo pode demorar alguns minutos.
+
++
+image:screen-discover-workloads-select.png["Descobrir captura de tela de cargas de trabalho"]
+
+. Selecione os ambientes de trabalho onde você deseja descobrir workloads ou marque a caixa na parte superior da tabela para descobrir workloads em todos os ambientes de workload descobertos.
+. Selecione *ir para Painel*.
 

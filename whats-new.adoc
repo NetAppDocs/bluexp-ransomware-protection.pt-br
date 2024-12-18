@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, ransomware protection, bluexp, anti-ransomware, cyber attack, ransomware, protection, detection, ARP' 
+keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, ransomware protection, bluexp, anti-ransomware, cyber attack, ransomware, protection, detection, ARP, netapp' 
 summary: Saiba o que há de novo na proteção contra ransomware do BlueXP . 
 ---
 = Novidades na proteção contra ransomware do BlueXP 
@@ -15,6 +15,35 @@ summary: Saiba o que há de novo na proteção contra ransomware do BlueXP .
 
 [role="lead"]
 Saiba o que há de novo na proteção contra ransomware do BlueXP .
+
+
+
+== 16 de dezembro de 2024
+
+
+
+=== Detecte um comportamento anômalo do usuário usando a segurança de workloads de storage do Data Infrastructure Insights
+
+Com esta versão, você pode usar a segurança de workload de storage do Data Infrastructure Insights para detectar um comportamento incomum dos usuários em seus workloads de storage. Esse recurso ajuda você a identificar possíveis ameaças à segurança e bloquear usuários potencialmente maliciosos para proteger seus dados.
+
+Para obter detalhes, link://rp-use-alert.html["Responda a um alerta de ransomware detetado"]consulte .
+
+Antes de usar a segurança de workload de storage para detectar comportamento anômalo do usuário, você precisa configurar a opção usando a opção *Configurações* de proteção contra ransomware da BlueXP .
+
+link://rp-use-settings-html["Configurar as configurações de proteção contra ransomware do BlueXP "]Consulte a .
+
+
+
+=== Selecione workloads para descobrir e proteger
+
+Com esta versão, agora você pode fazer o seguinte:
+
+* Em cada conetor, selecione os ambientes de trabalho onde você deseja descobrir cargas de trabalho. Você pode se beneficiar desse recurso se quiser proteger cargas de trabalho específicas em seu ambiente e não em outros.
+* Durante a descoberta do workload, é possível habilitar a detecção automática de workloads por conector. Esse recurso permite selecionar as cargas de trabalho que você deseja proteger.
+* Descubra cargas de trabalho recém-criadas para ambientes de trabalho selecionados anteriormente.
+
+
+link://rp-start-discover-html["Localizar workloads"]Consulte a .
 
 
 

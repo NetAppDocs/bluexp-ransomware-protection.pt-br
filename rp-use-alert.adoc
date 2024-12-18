@@ -12,7 +12,7 @@ summary: Se a proteção contra ransomware do BlueXP  detectar um possível ata
 
 
 [role="lead"]
-Se a proteção contra ransomware do BlueXP  detectar um possível ataque, um alerta será exibido no Painel de proteção contra ransomware do BlueXP  e nas notificações do BlueXP , no canto superior direito, indicando um possível ataque de ransomware. O serviço também inicia imediatamente a obtenção de uma cópia Snapshot. Neste ponto, você deve olhar para o risco potencial na guia *Alertas* de proteção contra ransomware BlueXP .
+Se a proteção contra ransomware do BlueXP  detectar um possível ataque, um alerta será exibido no Painel de proteção contra ransomware do BlueXP  e nas notificações do BlueXP , no canto superior direito, indicando um possível ataque de ransomware. O serviço também inicia imediatamente a obtenção de uma cópia snapshot. Neste ponto, você deve olhar para o risco potencial na guia *Alertas* de proteção contra ransomware BlueXP .
 
 Você pode ignorar falsos positivos ou decidir recuperar seus dados imediatamente.
 
@@ -66,11 +66,11 @@ CAUTION: Depois de descartar um ataque, você não pode alterar isso de volta. S
 
 == Ver alertas
 
-Você pode acessar alertas do Painel de proteção contra ransomware do BlueXP  ou na guia *Alertas*.
+Você pode acessar alertas no Painel de proteção contra ransomware do BlueXP  ou na guia *Alertas*.
 
 .Passos
 . No Painel de proteção contra ransomware do BlueXP , revise o painel Alertas.
-. Selecione *Ver tudo* sob uma das estátuas.
+. Selecione *Ver tudo* em um dos Estados.
 . Clique num alerta para rever todos os incidentes em cada volume para cada alerta.
 . Para rever alertas adicionais, clique em *Alerta* no breadcrumbs no canto superior esquerdo.
 . Reveja os alertas na página Alertas.
@@ -79,8 +79,101 @@ image:screen-alerts.png["Página de alertas"]
 
 . Continuar:
 +
+** <<Detect anomalous user behavior>>.
 ** <<Marque os incidentes de ransomware como prontos para recuperação (após os incidentes serem neutralizados)>>.
 ** <<Descarte incidentes que não sejam potenciais ataques>>.
+
+
+
+
+
+
+== Detectar atividades maliciosas e comportamento anômalo do usuário
+
+Olhando para a guia Alertas, você pode identificar se há atividade maliciosa. Os detalhes que aparecem dependem de como o alerta foi acionado:
+
+* Acionado pelo recurso Autonomous ransomware Protection no ONTAP. Isso deteta atividades maliciosas com base no comportamento dos arquivos no volume.
+* Acionado por Data Infrastructure Insights Workload Security. Isso requer uma licença para a segurança de workload do Insights da infraestrutura de dados e que você a habilite na proteção contra ransomware do BlueXP . Esse recurso detecta um comportamento anômalo do usuário nos workloads de storage e permite que você bloqueie acesso adicional a esse usuário.
++
+Para ativar a segurança de cargas de trabalho na proteção contra ransomware do BlueXP , vá para a página *Configurações* e selecione a opção *conexão de segurança de carga de trabalho*.
+
++
+Para obter uma visão geral do Data Infrastuture Insights Workload Security, consulte https://docs.netapp.com/us-en/data-infrastructure-insights/cs_intro.html["Sobre o Workload Security"^]
+
+
+
+
+TIP: Se você não tiver uma licença para segurança de workload de infraestrutura de dados e não a ativar na proteção contra ransomware do BlueXP , não verá as informações anômalas de comportamento do usuário.
+
+Quando ocorre atividade maliciosa, um alerta é gerado e um instantâneo automatizado é obtido.
+
+
+
+=== Visualizar apenas atividades maliciosas do Autonomous ransomware Protection
+
+Quando o Autonomous ransomware Protection aciona um alerta na proteção contra ransomware do BlueXP , você pode visualizar os seguintes detalhes:
+
+* Entropia de dados de entrada
+* Taxa de criação esperada de novos arquivos em comparação com a taxa detetada
+* Taxa de exclusão esperada de arquivos em comparação com a taxa detetada
+* Taxa de renomeação esperada dos arquivos em comparação com a taxa detetada
+
+
+.Passos
+. No menu de proteção contra ransomware BlueXP , selecione *Alertas*.
+. Selecione um alerta.
+. Reveja os incidentes no alerta.
++
+image:screen-alerts-incidents3.png["Página de incidentes de alerta"]
+
+. Selecione um incidente para rever os detalhes do incidente.
++
+image:screen-alerts-incidents-details-arp.png["Página de detalhes do incidente"]
+
+
+
+
+
+=== Veja um comportamento anômalo do usuário no Data Infrastructure Insights Workload Security
+
+Quando a segurança de workload aciona um alerta na proteção de ransomware do BlueXP , você pode visualizar o usuário suspeito, bloquear o usuário e investigar a atividade do usuário diretamente no sistema de segurança de workloads da infraestrutura de dados.
+
+
+TIP: Esses recursos são além dos detalhes disponíveis no Just Autonomous ransomware Protection.
+
+.Antes de começar
+Essa opção requer uma licença para segurança de workload do Insights da infraestrutura de dados e sua ativação na proteção contra ransomware do BlueXP .
+
+Para habilitar a segurança de workloads na proteção contra ransomware do BlueXP , faça o seguinte:
+
+. Vá para a página *Configurações*.
+. Selecione a opção *conexão de segurança de carga de trabalho*.
++
+Para obter detalhes, link:rp-use-settings.html["Configurar as configurações de proteção contra ransomware do BlueXP "]consulte .
+
+
+
+.Passos
+. No menu de proteção contra ransomware BlueXP , selecione *Alertas*.
+. Selecione um alerta.
+. Reveja os incidentes no alerta.
++
+image:screen-alerts-incidents-diiws.png["Página de incidentes de alerta mostrando os detalhes de Segurança de carga de trabalho"]
+
+. Para bloquear um usuário suspeito de acesso adicional em seu ambiente monitorado pelo BlueXP , selecione o link *Bloquear usuário*.
+. PESQUISE o alerta ou um incidente no alerta:
++
+.. Para pesquisar o alerta ainda mais no Data Infrastructure Insights Workload Security, selecione o link *Investigate in Workload Security*.
+.. Selecione um incidente para rever os detalhes do incidente.
++
+image:screen-alerts-incidents-details-arp-diiws.png["Página de detalhes do incidente mostrando os detalhes de Segurança do workload"]
+
++
+O Data Infrastructure Insights Workload Security é aberto em uma nova guia.
+
++
+image:screen-alerts-incidents-diiws-diiwspage.png["Investigue em Segurança de carga de trabalho"]
+
 
 
 
@@ -99,7 +192,7 @@ image:screen-alerts.png["Página de alertas"]
 . Na página Alertas, selecione o alerta.
 . Reveja os incidentes no alerta.
 +
-image:screen-alerts-incidents2.png["Página de incidentes de alerta"]
+image:screen-alerts-incidents3.png["Página de incidentes de alerta"]
 
 . Se você determinar que os incidentes estão prontos para recuperação, selecione *Marcar restauração necessária*.
 . Confirme a ação e selecione *Marcar restauração necessária*.
@@ -134,8 +227,8 @@ image:screen-alerts-incidents2.png["Página de incidentes de alerta"]
 . Selecione um ou mais incidentes. Ou selecione todos os incidentes selecionando a caixa ID do Incidente no canto superior esquerdo da tabela.
 . Se você determinar que o incidente não é uma ameaça, ignore-o como um falso positivo:
 +
-** Se você selecionou um incidente, selecione o ícone *ações*... à direita, selecione *Editar status*.
-** Se você selecionou vários incidentes, selecione o botão *Editar status* acima da tabela.
+** Selecione o incidente.
+** Selecione o botão *Editar status* acima da tabela.
 +
 image:screen-alerts-status-edit.png["Página Status de edição de alerta"]
 
