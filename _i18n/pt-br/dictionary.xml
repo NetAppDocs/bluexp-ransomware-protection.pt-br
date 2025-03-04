@@ -431,7 +431,6 @@
   <block id="780faaa43a4865ecb4711d9dd7329a52" category="inline-link">Como criar um conetor BlueXP</block>
   <block id="41c2dbad4db714d9e8ccd5fdc1897747" category="paragraph">Para criar um conetor no BlueXP  antes de usar o serviço, consulte a documentação do BlueXP  que descreve<block ref="32b465f89042a610ea5ceeabf276817a" category="inline-link-rx"></block>o .</block>
   <block id="157728f4599cc3ddabf4c2d8076aa8c0" category="admonition">Se você tiver vários conetores BlueXP , o serviço verificará os dados em todos os conetores além daquele que aparece atualmente na IU do BlueXP . Este serviço descobre todos os projetos e todos os conetores associados a esta organização.</block>
-  <block id="4f8bbc1e1bfabe0de65bf89f703d9f6c" category="summary">Se a proteção contra ransomware do BlueXP  detectar um possível ataque, um alerta será exibido no Painel de proteção contra ransomware do BlueXP  indicando um possível ataque. O serviço também inicia imediatamente a obtenção de uma cópia Snapshot. Neste ponto, você deve olhar para o risco potencial na guia Alertas de proteção contra ransomware do BlueXP .</block>
   <block id="839e0e7efb1b67f6416081c6e82a4aa9" category="doc">Responda a um alerta de ransomware detetado</block>
   <block id="4c8cd66676ad1c434108e699d9777408" category="paragraph">Você pode ignorar falsos positivos ou decidir recuperar seus dados imediatamente.</block>
   <block id="a6353f372e3179976808720c16462be2" category="admonition">Se você decidir ignorar o alerta, o serviço irá aprender esse comportamento e associá-lo a operações normais e não iniciar um alerta sobre tal comportamento novamente.</block>
@@ -1553,7 +1552,6 @@
   <block id="31565cee794bb7c0060f825cf5913e0b" category="paragraph">Você pode acessar alertas no Painel de proteção contra ransomware do BlueXP  ou na guia *Alertas*.</block>
   <block id="6f619b1b7d17720e868f27a6a00e82c3" category="list-text">Selecione *Ver tudo* em um dos Estados.</block>
   <block id="1b02c89819a9f8ec9b1164be1da7b688" category="paragraph"><block ref="1b02c89819a9f8ec9b1164be1da7b688" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="803f5091a12e3e35b6d3d6140feba229" category="list-text"><block ref="19af54988de342a4a41b6206c0236ba4" category="inline-xref-macro-rx"></block>.</block>
   <block id="be962bd392a7a1672125ea27465c8bd8" category="section-title">Detectar atividades maliciosas e comportamento anômalo do usuário</block>
   <block id="0e7cf92e4233591a071d880a54dd482a" category="paragraph">Olhando para a guia Alertas, você pode identificar se há atividade maliciosa. Os detalhes que aparecem dependem de como o alerta foi acionado:</block>
   <block id="bb74e4460d1a07bd08ea60f0fbde3d0d" category="list-text">Acionado pelo recurso Autonomous ransomware Protection no ONTAP. Isso deteta atividades maliciosas com base no comportamento dos arquivos no volume.</block>
@@ -1617,4 +1615,6 @@
   <block id="c33f35ab44944cc0d09e5bb702125592" category="section-title">16 de dezembro de 2024</block>
   <block id="51713ddd834a60df7d06db728cf08e05" category="paragraph">Para obter detalhes,<block ref="7a6c0b2db283aa3c348e6e1a2f1f32b0" category="inline-link-rx"></block> consulte .</block>
   <block id="9ac7153dab130e828e160c247e5ccb61" category="paragraph">Consulte a<block ref="24a34ebfc2a0852de6406d8f5a18bd02" category="inline-link-rx"></block>.</block>
+  <block id="22ce28643829ddd0f15a1b23febaeee6" category="summary">Se a proteção contra ransomware do BlueXP  detectar um possível ataque, um alerta será exibido no Painel de proteção contra ransomware do BlueXP  indicando um possível ataque. O serviço também inicia imediatamente a obtenção de uma cópia Snapshot. Neste ponto, você deve olhar para o risco potencial na guia Alertas de proteção contra ransomware do BlueXP .</block>
+  <block id="16bb8d2d09aea22c9fad5f111efb3676" category="list-text"><block ref="d322145e637b6e2be162f7cd827e67de" category="inline-xref-macro-rx"></block>.</block>
 </blocks>

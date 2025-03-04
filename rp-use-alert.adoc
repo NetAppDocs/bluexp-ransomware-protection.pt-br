@@ -79,7 +79,7 @@ image:screen-alerts.png["Página de alertas"]
 
 . Continuar:
 +
-** <<Detect anomalous user behavior>>.
+** <<Detectar atividades maliciosas e comportamento anômalo do usuário>>.
 ** <<Marque os incidentes de ransomware como prontos para recuperação (após os incidentes serem neutralizados)>>.
 ** <<Descarte incidentes que não sejam potenciais ataques>>.
 
