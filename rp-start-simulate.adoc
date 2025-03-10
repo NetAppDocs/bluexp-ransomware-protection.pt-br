@@ -1,0 +1,229 @@
+---
+sidebar: sidebar 
+permalink: rp-start-simulate.html 
+keywords: ransomware protection alert, ransomware protection attack, detect ransomware alert, simulate, readiness drill, practice, ransomware attack, ransomware attack response, ransomware attack readiness drill 
+summary: Faça um drill de prontidão para ransomware simulando um ataque de ransomware em um workload de amostra recém-criado. Em seguida, investigue o ataque simulado e recupere a carga de trabalho de amostra. Você pode executar um exercício de prontidão para ransomware várias vezes. 
+---
+= Simule um ataque de ransomware conduzindo um exercício de prontidão
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Faça um drill de prontidão para ransomware simulando um ataque de ransomware em um workload de amostra recém-criado. Em seguida, investigue o ataque simulado e recupere a carga de trabalho de amostra. Esse recurso ajuda você a saber que está preparado no caso de um ataque real de ransomware, testando processos de notificação, resposta e recuperação de alertas. Você pode executar um exercício de prontidão para ransomware várias vezes.
+
+
+TIP: Seus dados reais da carga de trabalho não serão afetados.
+
+
+
+== Configurar um exercício de prontidão para ataques de ransomware
+
+Antes de realizar uma simulação, você precisa configurar uma análise usando a página Configurações. Pode aceder facilmente à página Definições a partir da opção ações junto do menu superior.
+
+.Passos
+. No menu de proteção contra ransomware BlueXP , selecione a image:button-actions-vertical.png["Ações verticais"]opção vertical ... no canto superior direito.
+. No menu suspenso, selecione *Configurações*.
+. No cartão de preparação na página Configurações, selecione *Configurar*.
++
+A página Configurar disponibilidade é exibida.
+
++
+image:screen-settings-alert-drill-configure.png["Configurar página de exercícios de prontidão"]
+
+. Selecione o conetor BlueXP  que pretende utilizar para a broca de preparação.
+. Selecione um ambiente de trabalho de teste.
+. Selecione um novo workload de teste a ser criado.
+. Selecione *Guardar*.
++
+É apresentada uma mensagem de que o ambiente de exercício de prontidão está configurado. Nessa mensagem, selecione *Iniciar exercício de prontidão* para iniciar a perfuração.
+
+
+
+
+TIP: Você pode editar a configuração da broca de prontidão mais tarde usando a página Configurações.
+
+
+
+== Inicie um exercício de prontidão
+
+Depois de configurar o exercício de prontidão, você pode iniciar o exercício.
+
+.Passos
+. Execute um dos seguintes procedimentos:
++
+** No menu Configurações de proteção contra ransomware do BlueXP , selecione *Iniciar exercício de prontidão*.
+** OU, na página Configurações, no cartão de preparação, selecione *Iniciar exercício de prontidão*.
+
+
+. Execute um dos seguintes procedimentos:
++
+** Se você ainda não configurou o exercício de prontidão, uma mensagem será exibida informando que primeiro você precisa configurar o exercício de prontidão.
++
+image:screen-settings-alert-drill-needtoconfigure.png["Página de configurações que mostra a mensagem do exercício de prontidão de que você precisa para configurar o exercício de prontidão"]
+
++
+*** Selecione *Configurar ambiente de teste de preparação*.
+*** Continue com as instruções na seção anterior para configurar o ambiente de teste de perfuração na opção Configurações.
+
+
+** Se você já tiver configurado o exercício de prontidão, a página de exercícios de preparação inicial será exibida:
++
+image:screen-settings-alert-drill-start.png["Inicie a página de exercícios de prontidão"]
+
+
+
+. Selecione *Iniciar*.
+
+
+
+NOTE: Após o início do exercício, não é possível editar a configuração do exercício de prontidão. Você pode, em vez disso, pará-lo.
+
+
+
+== Limpe e pare um exercício de prontidão
+
+Se você precisar parar um exercício de prontidão, você pode fazê-lo a qualquer momento. Quando você interrompe o exercício, a proteção contra ransomware do BlueXP  limpa a carga de trabalho de teste e remove os arquivos de teste.
+
+.Passos
+. Execute um dos seguintes procedimentos:
++
+** No menu Configurações de proteção contra ransomware do BlueXP , passe o Mouse sobre a opção Editar no bloco de exercícios de preparação e selecione *Limpar disponibilidade*.
+** No menu de proteção contra ransomware BlueXP , selecione a image:button-actions-vertical.png["Ações verticais"]opção vertical ... no canto superior direito e selecione *Limpar disponibilidade*.
++
+image:screen-settings-alert-drill-cleanup.png["Página de definições que mostra a opção de paragem de perfuração de prontidão"]
+
++
+
+NOTE: Você também pode parar ou limpar um exercício de prontidão na página Configurações que mostra o cartão de treinamento de prontidão.
+
+
+
+. Revise as informações de exercícios de prontidão da carga de trabalho.
+. Selecione *Limpar*.
+
+
+
+
+== Responda a um alerta de preparação
+
+Teste sua prontidão respondendo a um alerta de prontidão.
+
+.Passos
+. Execute um dos seguintes procedimentos:
++
+** No menu de proteção contra ransomware BlueXP , selecione *Alertas*.
+** Ou, no menu, selecione o ícone *notificações*, selecione *Ver alerta* ao lado do alerta de disponibilidade.
++
+image:screen-notifications-alert-drill.png["Secção de notificações que mostra o alerta de preparação"]
+
++
+A página Alertas é exibida. Na coluna ID de alerta na página Alertas, "broca de preparação" aparece ao lado da ID.
+
++
+image:screen-alerts-readiness.png["Página de alertas mostrando o alerta de disponibilidade"]
+
+
+
+. Selecione o incidente com a indicação "Readiness drill".
++
+image:screen-alerts-readiness-incidents.png["Página do incidente mostrando o alerta de preparação"]
+
+. Reveja os detalhes do alerta.
++
+Aqui estão algumas coisas para procurar:
+
++
+** Olhe para o tipo de ataque potencial. Se o tipo indicar que um usuário é suspeito de atividade maliciosa, revise o nome do usuário.
++
+*** Você pode querer bloquear o usuário selecionando *Bloquear usuário*.
+*** Você também pode querer investigar mais o usuário no Data Infrastructure Insights Workload Security selecionando *Investigate in Workload security*.
+
+
+** Veja a atividade do arquivo e os processos suspeitos:
++
+*** Observe os dados detetados recebidos em comparação com os dados esperados.
+*** Observe a taxa de criação de arquivos detetados em comparação com a taxa esperada.
+*** Observe a taxa de renomeação de arquivos detetada em comparação com a taxa esperada.
+*** Olhe para a taxa de exclusão em comparação com a taxa esperada.
+
+
+** Veja a lista de arquivos afetados. Observe as extensões que podem estar causando o ataque.
+** Determine o impactos e a amplitude do ataque revisando o número de arquivos e diretórios afetados.
+
+
+
+
+
+
+== Restaure o workload de teste
+
+Depois de analisar o alerta de perfuratriz de prontidão, talvez você queira restaurar a carga de trabalho de teste.
+
+.Passos
+. Voltar à página de detalhes do alerta.
+. Se a carga de trabalho de teste deve ser restaurada, faça o seguinte:
++
+** Selecione *Marcar restauração necessária*.
+** Revise a confirmação e selecione *Marcar restauração necessária* na caixa de confirmação.
++
+*** No menu de proteção contra ransomware BlueXP , selecione *recuperação*.
+*** Selecione o workload de teste que você deseja restaurar.
+*** Selecione *Restaurar*.
+*** Na página Restaurar , forneça informações para a restauração:
+
+
+** Selecione a cópia instantânea de origem.
+** Selecione o volume de destino.
+
+
+. Na página Restaurar revisão, selecione *Restaurar*.
++
+A página recuperação mostra o status da restauração da broca de preparação como "em andamento".
+
++
+Após a conclusão da restauração, o status da carga de trabalho muda para *Restored*.
+
+. Revise a carga de trabalho restaurada.
+
+
+
+TIP: Para obter detalhes sobre o processo de restauração, link:rp-use-recover.html["Recuperar de um ataque de ransomware (após os incidentes serem neutralizados)"]consulte .
+
+
+
+== Altere o status Alertas após o exercício de prontidão
+
+Depois de analisar o alerta de disponibilidade e restaurar a carga de trabalho, talvez você queira alterar o status do alerta.
+
+.Passos
+. Voltar à página de detalhes do alerta.
+. Selecione o alerta novamente.
+. Indique o status selecionando *Editar* e altere o status para um dos seguintes:
++
+** Demitido: Se você suspeitar que a atividade não é um ataque de ransomware, altere o status para demitido.
++
+
+IMPORTANT: Depois que você descartar um ataque, você não pode alterá-lo de volta. Se você ignorar um workload, todas as cópias snapshot bloqueado automaticamente em resposta ao possível ataque de ransomware serão excluídas permanentemente. Se você ignorar o alerta, o exercício de prontidão será considerado concluído.
+
+** Em curso
+** Resolvido: O incidente foi mitigado.
+
+
+
+
+
+
+== Reveja os relatórios sobre o exercício de prontidão
+
+Após a conclusão do exercício de prontidão, você pode querer revisar e salvar um relatório na perfuratriz.
+
+.Passos
+. No menu proteção contra ransomware do BlueXP , selecione *relatórios*.
++
+image:screen-reports.png["Página de relatórios que mostra o relatório de exercícios de prontidão"]
+
+. Selecione *exercícios de prontidão* e *Download* para fazer o download do relatório de exercícios de prontidão.
+

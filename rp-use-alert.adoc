@@ -28,6 +28,7 @@ O serviço fornece informações chamadas _Evidence_ sobre o que causou a emiss�
 * Extensões de arquivo foram criadas ou alteradas
 * A criação de arquivos ocorreu e aumentou em uma porcentagem listada
 * A exclusão de arquivos ocorreu e aumentou em uma porcentagem listada
+* Quando a criptografia é alta, sem alterações na extensão do arquivo
 
 
 Um alerta é baseado nos seguintes tipos de comportamento:
@@ -93,17 +94,17 @@ image:screen-alerts.png["Página de alertas"]
 Olhando para a guia Alertas, você pode identificar se há atividade maliciosa. Os detalhes que aparecem dependem de como o alerta foi acionado:
 
 * Acionado pelo recurso Autonomous ransomware Protection no ONTAP. Isso deteta atividades maliciosas com base no comportamento dos arquivos no volume.
-* Acionado por Data Infrastructure Insights Workload Security. Isso requer uma licença para a segurança de workload do Insights da infraestrutura de dados e que você a habilite na proteção contra ransomware do BlueXP . Esse recurso detecta um comportamento anômalo do usuário nos workloads de storage e permite que você bloqueie acesso adicional a esse usuário.
+* Acionado pela segurança de workload do Data Infrastructure Insights. Isso requer uma licença para a segurança de workload do Insights da infraestrutura de dados e para a habilitar na proteção contra ransomware do BlueXP . Esse recurso detecta um comportamento anômalo do usuário nos workloads de storage e permite que você bloqueie acesso adicional a esse usuário.
 +
-Para ativar a segurança de cargas de trabalho na proteção contra ransomware do BlueXP , vá para a página *Configurações* e selecione a opção *conexão de segurança de carga de trabalho*.
+Para ativar a segurança de carga de trabalho na proteção contra ransomware BlueXP , vá para a página *Configurações* e selecione a opção *conexão de segurança de carga de trabalho*.
 
 +
-Para obter uma visão geral do Data Infrastuture Insights Workload Security, consulte https://docs.netapp.com/us-en/data-infrastructure-insights/cs_intro.html["Sobre o Workload Security"^]
+Para obter uma visão geral da segurança de carga de trabalho do Data Infrastucture Insights, consulte https://docs.netapp.com/us-en/data-infrastructure-insights/cs_intro.html["Sobre a segurança do workload"^].
 
 
 
 
-TIP: Se você não tiver uma licença para segurança de workload de infraestrutura de dados e não a ativar na proteção contra ransomware do BlueXP , não verá as informações anômalas de comportamento do usuário.
+TIP: Se você não tiver uma licença para a segurança de workload da infraestrutura de dados e não a ativar na proteção contra ransomware do BlueXP , não verá as informações anômalas de comportamento do usuário.
 
 Quando ocorre atividade maliciosa, um alerta é gerado e um instantâneo automatizado é obtido.
 
@@ -117,6 +118,7 @@ Quando o Autonomous ransomware Protection aciona um alerta na proteção contra 
 * Taxa de criação esperada de novos arquivos em comparação com a taxa detetada
 * Taxa de exclusão esperada de arquivos em comparação com a taxa detetada
 * Taxa de renomeação esperada dos arquivos em comparação com a taxa detetada
+* Arquivos e diretórios impactados
 
 
 .Passos
@@ -127,24 +129,21 @@ Quando o Autonomous ransomware Protection aciona um alerta na proteção contra 
 image:screen-alerts-incidents3.png["Página de incidentes de alerta"]
 
 . Selecione um incidente para rever os detalhes do incidente.
-+
-image:screen-alerts-incidents-details-arp.png["Página de detalhes do incidente"]
 
 
 
 
+=== Veja um comportamento anômalo do usuário na segurança de workload do Data Infrastructure Insights
 
-=== Veja um comportamento anômalo do usuário no Data Infrastructure Insights Workload Security
-
-Quando a segurança de workload aciona um alerta na proteção de ransomware do BlueXP , você pode visualizar o usuário suspeito, bloquear o usuário e investigar a atividade do usuário diretamente no sistema de segurança de workloads da infraestrutura de dados.
+Quando a segurança de workload do Insights da infraestrutura de dados aciona um alerta na proteção de ransomware do BlueXP , você pode visualizar o usuário suspeito, bloquear o usuário e investigar a atividade do usuário diretamente na segurança de carga de trabalho do Insights da infraestrutura de dados.
 
 
 TIP: Esses recursos são além dos detalhes disponíveis no Just Autonomous ransomware Protection.
 
 .Antes de começar
-Essa opção requer uma licença para segurança de workload do Insights da infraestrutura de dados e sua ativação na proteção contra ransomware do BlueXP .
+Essa opção requer uma licença para a segurança de workload do Insights da infraestrutura de dados e sua ativação na proteção contra ransomware do BlueXP .
 
-Para habilitar a segurança de workloads na proteção contra ransomware do BlueXP , faça o seguinte:
+Para habilitar a segurança de workload na proteção contra ransomware do BlueXP , faça o seguinte:
 
 . Vá para a página *Configurações*.
 . Selecione a opção *conexão de segurança de carga de trabalho*.
@@ -163,11 +162,8 @@ image:screen-alerts-incidents-diiws.png["Página de incidentes de alerta mostran
 . Para bloquear um usuário suspeito de acesso adicional em seu ambiente monitorado pelo BlueXP , selecione o link *Bloquear usuário*.
 . PESQUISE o alerta ou um incidente no alerta:
 +
-.. Para pesquisar o alerta ainda mais no Data Infrastructure Insights Workload Security, selecione o link *Investigate in Workload Security*.
+.. Para pesquisar o alerta ainda mais na segurança de carga de trabalho do Data Infrastructure Insights, selecione o link *investigue em segurança de carga de trabalho*.
 .. Selecione um incidente para rever os detalhes do incidente.
-+
-image:screen-alerts-incidents-details-arp-diiws.png["Página de detalhes do incidente mostrando os detalhes de Segurança do workload"]
-
 +
 O Data Infrastructure Insights Workload Security é aberto em uma nova guia.
 
@@ -222,7 +218,7 @@ image:screen-alerts.png["Página de alertas"]
 
 . Na página Alertas, selecione o alerta.
 +
-image:screen-alerts-incidents2.png["Página de incidentes de alerta"]
+image:screen-alerts-incidents3.png["Página de incidentes de alerta"]
 
 . Selecione um ou mais incidentes. Ou selecione todos os incidentes selecionando a caixa ID do Incidente no canto superior esquerdo da tabela.
 . Se você determinar que o incidente não é uma ameaça, ignore-o como um falso positivo:

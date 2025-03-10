@@ -119,9 +119,7 @@
   <block id="c95623cd0395d5a6bb6105b9d32f197b" category="inline-link">Aviso para BlueXP</block>
   <block id="52ba8ac12050d2494572b940a0d65b25" category="list-text"><block ref="52ba8ac12050d2494572b940a0d65b25" category="inline-link-rx"></block></block>
   <block id="ae72665b43b17f1ecc3f55a8fbc20e5f" category="doc">Privileges de controle de acesso baseado em funções de proteção contra ransomware da BlueXP </block>
-  <block id="5bac227a5b1720d5ee51b7149ecac99d" category="paragraph">A tabela a seguir indica quais ações cada função pode executar.</block>
   <block id="4420e7353184ac575b539cdce1b991db" category="cell">Recurso e ação</block>
-  <block id="0371c9bce0004c4306667ba97106f696" category="cell">Não Admin (Visualizador)</block>
   <block id="78c7efbfa07116553a52f59800129dde" category="cell">Inicie o teste gratuito</block>
   <block id="57cec4137b614c87cb4e24a3d003a3e0" category="paragraph">Y</block>
   <block id="8d9c307cb7f3c4a32822a51922d1ceaa" category="paragraph">N</block>
@@ -170,7 +168,6 @@
   <block id="28017f63775595195f8bc7296bf383df" category="paragraph">Para usar a proteção contra ransomware da BlueXP , o serviço precisa primeiro descobrir os dados. Durante a detecção, a proteção contra ransomware do BlueXP  analisa todos os volumes e arquivos em ambientes de trabalho em todos os conetores e projetos do BlueXP  dentro de uma organização.</block>
   <block id="fb1df121fb2b3f59dd7275d439c2774c" category="paragraph">A proteção contra ransomware do BlueXP  avalia aplicações MySQL, aplicações Oracle, datastores VMware e compartilhamentos de arquivos.</block>
   <block id="2959d474ff1650966063b3116dafc4bc" category="admonition">As cargas de trabalho com volumes que usam FlexGroup ou iSCSI não serão descobertas.</block>
-  <block id="c3eceaec7c4fe81904561526dfaeb25c" category="paragraph">O serviço avalia o nível de proteção existente, incluindo as opções atuais de proteção de backup, cópias Snapshot e proteção Autonomous ransomware do NetApp. Com base na avaliação, o serviço recomenda como melhorar a proteção contra ransomware.</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">Passos</block>
   <block id="418b4b9a475f5fd63689cdd03a605bd0" category="list-text">Na navegação à esquerda do BlueXP , selecione *proteção* &gt; *proteção contra ransomware*.</block>
   <block id="04f45bf7defd11ead0b4c56cf8c3f371" category="paragraph">Se esta for a primeira vez que fizer login neste serviço, a página de destino será exibida.</block>
@@ -472,7 +469,6 @@
   <block id="9d6e925ee1290815ef828d96d28218c6" category="list-text">Na página Alertas, selecione o alerta.</block>
   <block id="d60f513868a8fce63eaa0a934a11b3a3" category="list-text">Reveja os incidentes no alerta.</block>
   <block id="44dd4f71dc5510ad8843ca6c09b8fa4f" category="inline-image-macro">Página de incidentes de alerta</block>
-  <block id="ef35dbc1c892eb98e8055a8fda65dbe1" category="paragraph"><block ref="ef35dbc1c892eb98e8055a8fda65dbe1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7653f5c79b2366b4b1f0ef3befb20349" category="list-text">Se você determinar que os incidentes estão prontos para recuperação, selecione *Marcar restauração necessária*.</block>
   <block id="07ccfc9aed173b3b6e1c64cf6a14d4b0" category="list-text">Confirme a ação e selecione *Marcar restauração necessária*.</block>
   <block id="6faff9d182a89c619b1ad36913af4fa5" category="list-text">Para iniciar a recuperação da carga de trabalho, selecione a carga de trabalho *Recover* na mensagem ou selecione a guia *Recovery*.</block>
@@ -985,7 +981,6 @@
   <block id="812cd95f23a06cb24d767a5152f3fda4" category="list-text">No menu suspenso, selecione *Configurações*.</block>
   <block id="da2fbabdbd3825fa7db60fd0aad60099" category="list-text">Na página Configurações, você pode fazer o seguinte:</block>
   <block id="d9e0cef30d1fd79b64dd0675b6e2eb12" category="list-text">Adicionar um destino de cópia de segurança.</block>
-  <block id="276d02dfbae672be9018a2aa5bc7082a" category="list-text">Conete seu sistema de gerenciamento de eventos e segurança (SIEM) para análise e deteção de ameaças.</block>
   <block id="55483e3219b15f38112442f737a1bf92" category="section-title">Adicionar um destino de cópia de segurança</block>
   <block id="1fef47997e25bd52e3b7f4f31b33964e" category="paragraph">A proteção contra ransomware do BlueXP  identifica workloads que ainda não têm backups e também workloads que ainda não têm destinos de backup atribuídos.</block>
   <block id="dc0a4770af38e660c7408d8ac2fac395" category="paragraph">Para proteger esses workloads, você deve adicionar um destino de backup. Você pode escolher um dos seguintes destinos de backup:</block>
@@ -1332,8 +1327,6 @@
   <block id="248b0512a0978346a77e8e8124cf2634" category="admonition">Com o lançamento de outubro de 2024, novas implantações de proteção contra ransomware BlueXP  têm 30 dias para uma avaliação gratuita. Anteriormente, a proteção contra ransomware da BlueXP  forneceu 90 dias como uma avaliação gratuita. Se você já está no teste gratuito de 90 dias, essa oferta continua por 90 dias.</block>
   <block id="19bb2bd2050ae1b493e68252954c103c" category="paragraph">O serviço de proteção contra ransomware do BlueXP  requer uma licença do NetApp ONTAP One.</block>
   <block id="4d32d1cc8c36c71c8d57d570d802694f" category="list-text">Cloud Volumes ONTAP 9.12.1 ou superior para Microsoft Azure (usando protocolos NFS e CIFS)</block>
-  <block id="8231c4d0bf8a7556608115dd91204c4f" category="summary">A proteção contra ransomware do BlueXP  usa o controle de acesso baseado em funções (RBAC) para controlar o acesso que cada usuário tem a recursos e ações específicos. O serviço usa as principais funções do BlueXP  de Administrador e Visualizador da Organização (não Administrador da Organização).</block>
-  <block id="42f944e4939f6034a8d450266d2e5079" category="cell">Administrador da Organização BlueXP </block>
   <block id="63f202b7fcd80e9277a9e585cd35c7ae" category="list-text">Inscreva-se para uma avaliação gratuita de 30 dias.</block>
   <block id="a50976a8a60ebbc86ce147a2bc58e5b2" category="list-text">Compre uma assinatura PAYGO (pay-as-you-go) com o Amazon Web Services (AWS) Marketplace, o Google Cloud Marketplace e o Microsoft Azure Marketplace (em breve).</block>
   <block id="8b77b7b1461ed2ee1005a76b8bde413d" category="inline-link"><block ref="8b77b7b1461ed2ee1005a76b8bde413d" category="inline-link-rx"></block></block>
@@ -1520,30 +1513,17 @@
   <block id="9c5ddfb123b6c64ea81793c4ce56b957" category="list-text">Determina os arquivos e mapas suspeitos específicos que atacam as cargas de trabalho associadas, usando as tecnologias ONTAP, Autonomous ransomware Protection, Data Infrastructure Insights (anteriormente Cloud Insights) e FPolicy.</block>
   <block id="7c74958c48ce3d27f457ae44b83cfb4c" category="paragraph">Você pode fazer o seguinte:</block>
   <block id="1ad499ee6cba4f056f735fb9eae4b5ce" category="paragraph">Em cada conetor, selecione os ambientes de trabalho onde você deseja descobrir cargas de trabalho.</block>
-  <block id="c652a8d71e48f9b9881bfbc97927bdee" category="paragraph">O serviço encontra seus ambientes de trabalho em seus conetores BlueXP .</block>
   <block id="98ab4e23cce41ca38b39c7baf6ef4567" category="admonition">Este processo pode demorar alguns minutos.</block>
   <block id="18eb5242d6e5ac768698e677b047a0eb" category="inline-image-macro">Descobrir captura de tela de cargas de trabalho</block>
   <block id="d79f191c2ec9abafe65a74f3afd2fd3e" category="paragraph"><block ref="d79f191c2ec9abafe65a74f3afd2fd3e" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="0c0b50566ad4da42afa0f660dab4882d" category="list-text">Na lista de conetores BlueXP , selecione *Localizar novos ambientes de trabalho* ao lado do conetor onde você deseja descobrir cargas de trabalho.</block>
   <block id="db2242d67fcc7ed40d59b104f2d8d0b1" category="list-text">Selecione os ambientes de trabalho em que você deseja descobrir o workload ou marque a caixa no topo da tabela para localizar workloads em todos os ambientes de workload descobertos.</block>
   <block id="6717014f0e48b7ab08c9846925b42c93" category="list-text">Selecione *Discover*.</block>
   <block id="39d30ea27067e18c7724603fcd547e90" category="paragraph">O serviço detecta dados de workload somente para esses conetores com ambientes de trabalho selecionados.</block>
   <block id="d816d69cfca30588b735f0def37770e3" category="inline-image-macro">Captura de tela de cargas de trabalho descobertas</block>
-  <block id="9d914a2ff1f603b2ce9a3554c86eeec1" category="paragraph"><block ref="9d914a2ff1f603b2ce9a3554c86eeec1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="994043f7651608eba900e66133c89241" category="list-text">Para fazer o download da lista de cargas de trabalho descobertas, selecione *Download Results (CSV)*.</block>
   <block id="955afffb8a05f2f0ed1bf75405e20929" category="list-text">Para exibir o Painel de proteção contra ransomware do BlueXP , selecione *ir para Painel*.</block>
   <block id="54a939b9714096ed5c428eb009f07a1c" category="paragraph">O Dashboard mostra a integridade da proteção de dados. O número de cargas de trabalho protegidas ou em risco aumenta com base nas cargas de trabalho descobertas recentemente.</block>
   <block id="33e99171183cf72ac66db77d8dd5792a" category="section-title">Descubra cargas de trabalho recém-criadas para ambientes de trabalho selecionados anteriormente</block>
-  <block id="055a2247d33d32942c5c4ad943fb3d7f" category="paragraph">Se você já selecionou ambientes de trabalho para descoberta, poderá descobrir cargas de trabalho recém-criadas para esses ambientes.</block>
-  <block id="2150a6bb068130d178b66c1475863b8b" category="list-text">Para identificar a data da última descoberta, no Dashboard, selecione o ícone de informações ao lado do link *Discover workloads* no canto superior direito.</block>
-  <block id="6547b947a69f82515379c94b1e3a0e25" category="list-text">No Dashboard, selecione *Discover cargas de trabalho*.</block>
-  <block id="0299112747d0a3436c05612e53a71f30" category="paragraph">Pode visualizar os ambientes de trabalho previamente selecionados para cada conetor e encontrar novos ambientes de trabalho.</block>
-  <block id="94c1db3cbfbbda5669bcf50936031d18" category="list-text">Para cada conetor, selecione *Localizar novos ambientes de trabalho*.</block>
-  <block id="9974519c4c0c3fdd4160e86f75815fb4" category="inline-image-macro">Captura de tela de ambientes de trabalho recém-descobertos</block>
-  <block id="8d22acdcc31d72cfdcde1917e31f502a" category="paragraph"><block ref="8d22acdcc31d72cfdcde1917e31f502a" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="de73a0aa09da7ce72e71260570480f65" category="paragraph"><block ref="de73a0aa09da7ce72e71260570480f65" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="28f4eac4cfa4a0f9f4579a8d7853aa5d" category="list-text">Selecione os ambientes de trabalho onde você deseja descobrir workloads ou marque a caixa na parte superior da tabela para descobrir workloads em todos os ambientes de workload descobertos.</block>
-  <block id="bcce3fa668de1d6ae5e30e67b7495061" category="list-text">Selecione *ir para Painel*.</block>
   <block id="9c3d907170e1845e766897c24642117c" category="section-title">Outras considerações de licença</block>
   <block id="9655cd831b69781db448703e74b15bf4" category="inline-link">Sobre o Workload Security</block>
   <block id="8c57134a9d3e8421e280c8ad5994173b" category="paragraph">Você pode visualizar um comportamento anômalo do usuário com o Data Infrastructure Insights Workload Security. Isso requer uma licença para a segurança de workload do Insights da infraestrutura de dados e que você a habilite na proteção contra ransomware do BlueXP . Para obter uma visão geral do Data Infrastuture Insights Workload Security, consulte<block ref="4d48aa780e6eb7eaea8fb83a518d416e" category="inline-link-rx"></block></block>
@@ -1555,9 +1535,6 @@
   <block id="be962bd392a7a1672125ea27465c8bd8" category="section-title">Detectar atividades maliciosas e comportamento anômalo do usuário</block>
   <block id="0e7cf92e4233591a071d880a54dd482a" category="paragraph">Olhando para a guia Alertas, você pode identificar se há atividade maliciosa. Os detalhes que aparecem dependem de como o alerta foi acionado:</block>
   <block id="bb74e4460d1a07bd08ea60f0fbde3d0d" category="list-text">Acionado pelo recurso Autonomous ransomware Protection no ONTAP. Isso deteta atividades maliciosas com base no comportamento dos arquivos no volume.</block>
-  <block id="ab43dc365874272db6ecbb675c584d52" category="list-text">Acionado por Data Infrastructure Insights Workload Security. Isso requer uma licença para a segurança de workload do Insights da infraestrutura de dados e que você a habilite na proteção contra ransomware do BlueXP . Esse recurso detecta um comportamento anômalo do usuário nos workloads de storage e permite que você bloqueie acesso adicional a esse usuário.</block>
-  <block id="3fc5d9ffca157e2ca74ccbfa4693e8b4" category="paragraph">Para ativar a segurança de cargas de trabalho na proteção contra ransomware do BlueXP , vá para a página *Configurações* e selecione a opção *conexão de segurança de carga de trabalho*.</block>
-  <block id="f1f0a9b783a270c44e6b93c5d8334d47" category="paragraph">Para obter uma visão geral do Data Infrastuture Insights Workload Security, consulte<block ref="4d48aa780e6eb7eaea8fb83a518d416e" category="inline-link-rx"></block></block>
   <block id="b55691d31ec7a26db4320492b2d4f0ef" category="paragraph">Quando ocorre atividade maliciosa, um alerta é gerado e um instantâneo automatizado é obtido.</block>
   <block id="82a8f74341493482b3be86033ea05272" category="section-title">Visualizar apenas atividades maliciosas do Autonomous ransomware Protection</block>
   <block id="0fc81d6a3ab69e397085199e915209b2" category="paragraph">Quando o Autonomous ransomware Protection aciona um alerta na proteção contra ransomware do BlueXP , você pode visualizar os seguintes detalhes:</block>
@@ -1568,13 +1545,7 @@
   <block id="76449079e275babe381772ebc5fecd7e" category="list-text">Selecione um alerta.</block>
   <block id="2d8d33f13c7be8900f62bd32b802c107" category="paragraph"><block ref="2d8d33f13c7be8900f62bd32b802c107" category="inline-image-macro-rx" type="image"></block></block>
   <block id="24d8050f046c3ac972fd95f26e1a8670" category="list-text">Selecione um incidente para rever os detalhes do incidente.</block>
-  <block id="6692a5cd4ff998126b33f5c9f719cb81" category="inline-image-macro">Página de detalhes do incidente</block>
-  <block id="35ff241ad93185091dce3ec733095f0a" category="paragraph"><block ref="35ff241ad93185091dce3ec733095f0a" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="fe554a7362f32fac0215b88d6f2a55e7" category="section-title">Veja um comportamento anômalo do usuário no Data Infrastructure Insights Workload Security</block>
-  <block id="0a4a7e6849aed4496758237804c85854" category="paragraph">Quando a segurança de workload aciona um alerta na proteção de ransomware do BlueXP , você pode visualizar o usuário suspeito, bloquear o usuário e investigar a atividade do usuário diretamente no sistema de segurança de workloads da infraestrutura de dados.</block>
   <block id="a7334e39028053feb63bc34743ead99e" category="admonition">Esses recursos são além dos detalhes disponíveis no Just Autonomous ransomware Protection.</block>
-  <block id="b2f6df27cb6363c4116ea8ef940fffc7" category="paragraph">Essa opção requer uma licença para segurança de workload do Insights da infraestrutura de dados e sua ativação na proteção contra ransomware do BlueXP .</block>
-  <block id="986c115303ca2b7e46d9c0893c2e2bb2" category="paragraph">Para habilitar a segurança de workloads na proteção contra ransomware do BlueXP , faça o seguinte:</block>
   <block id="030c1747b7d1f2c3e2b71dae79effc97" category="list-text">Vá para a página *Configurações*.</block>
   <block id="c768488528d7d7bfe2f90e65be8e41be" category="list-text">Selecione a opção *conexão de segurança de carga de trabalho*.</block>
   <block id="65a2e5de4522bf32831cf7671d5471ad" category="paragraph">Para obter detalhes, <block ref="5870fcfbb57d837071c2ed4a31f53401" category="inline-link-macro-rx"></block>consulte .</block>
@@ -1582,9 +1553,6 @@
   <block id="b04a596114378a735b6eefaae27c9cee" category="paragraph"><block ref="b04a596114378a735b6eefaae27c9cee" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d8c9d36bb849ff594214ae257c260972" category="list-text">Para bloquear um usuário suspeito de acesso adicional em seu ambiente monitorado pelo BlueXP , selecione o link *Bloquear usuário*.</block>
   <block id="90ddc51d9579b414c4c1b75c96bbb78c" category="list-text">PESQUISE o alerta ou um incidente no alerta:</block>
-  <block id="46d93f33ab06c979266456a7c2ceda52" category="list-text">Para pesquisar o alerta ainda mais no Data Infrastructure Insights Workload Security, selecione o link *Investigate in Workload Security*.</block>
-  <block id="c69af3cdc369620e9d5c366b32264e4a" category="inline-image-macro">Página de detalhes do incidente mostrando os detalhes de Segurança do workload</block>
-  <block id="b0040e1b5382f1cf03ef6cf325ba687a" category="paragraph"><block ref="b0040e1b5382f1cf03ef6cf325ba687a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1e2dad9c643b4658fbeca6157edc3b46" category="paragraph">O Data Infrastructure Insights Workload Security é aberto em uma nova guia.</block>
   <block id="4958f48e49283250f6c050fab5e83329" category="inline-image-macro">Investigue em Segurança de carga de trabalho</block>
   <block id="bd417dbccecc16c9b0d4a140c663f0be" category="paragraph"><block ref="bd417dbccecc16c9b0d4a140c663f0be" category="inline-image-macro-rx" type="image"></block></block>
@@ -1594,9 +1562,7 @@
   <block id="9f192bce5ca79fb324d9c1c93ee5ae51" category="paragraph">A verificação de dados PII na proteção contra ransomware do BlueXP  está disponível para clientes que implantaram a classificação BlueXP . A classificação do BlueXP  está disponível como parte da plataforma BlueXP  sem custo adicional e pode ser implantada no local ou na nuvem do cliente.</block>
   <block id="31456363bdf414a85c5209dd033db620" category="list-text">*Localização da quarentena*: Opcionalmente, selecione onde deseja armazenar dados potencialmente infetados antes de iniciar o processo de restauração para análise posterior após a recuperação.</block>
   <block id="f621881167702633e1e4b49a1ad2e89d" category="summary">Você pode configurar várias opções, incluindo um destino de backup, detecção de ameaças e conexão com a segurança de workload do Insights da infraestrutura de dados no serviço de proteção contra ransomware do BlueXP .</block>
-  <block id="cb8e2ce501a0c8ee9861e86c94a0ff39" category="paragraph">Você pode configurar um destino de backup, habilitar a deteção de ameaças ou configurar a conexão com a segurança de carga de trabalho do Data Infrastructure Insights acessando a opção *Configurações*. A ativação da deteção de ameaças envia automaticamente dados para o seu sistema de gerenciamento de eventos e segurança (SIEM) para análise de ameaças.</block>
   <block id="718603566d80257fc4d2cf4a1edeb8f6" category="list-text">Configure a conexão com a segurança de workload do Data Infrastructure Insights para ver informações suspeitas de usuários em alertas de ransomware.</block>
-  <block id="d34432a58a8d8da2446e2a02a613feb9" category="section-title">Conecte-se à segurança do workload do Data Infrastructure Insights para ver comportamentos anormais de usuários suspeitos</block>
   <block id="940cc1828811d7a42ad55d156280d750" category="paragraph">Antes de visualizar detalhes sobre comportamentos anormais de usuários suspeitos na proteção contra ransomware do BlueXP , é necessário configurar a conexão com o sistema de segurança de workload do Insights da infraestrutura de dados.</block>
   <block id="60b02588d12ca7057fb1416dc0023ff3" category="section-title">Obtenha um token de acesso à API do sistema de segurança Data Infrastructure Insights Workload</block>
   <block id="58816bcdfdf650ed5aa615e9d74f586b" category="paragraph">Obtenha um token de acesso à API do sistema de segurança Data Infrastructure Insights Workload.</block>
@@ -1607,7 +1573,6 @@
   <block id="8543744750bddb60b868a587a9b14d45" category="list-text">Crie um token de acesso à API ou use um já existente.</block>
   <block id="d27c99a2328dca0de41632c1147c3a42" category="list-text">Copie o token de acesso à API.</block>
   <block id="edc8e8eaf404c997fb116a7c6e37197c" category="section-title">Conecte-se à segurança de workload do Data Infrastructure Insights</block>
-  <block id="7467616a5fdc937db5794bcc8492c252" category="list-text">No menu Configurações de proteção contra ransomware do BlueXP , selecione *conexão de segurança de carga de trabalho*.</block>
   <block id="0f265823a78c858e83b858d5e6089fce" category="list-text">Selecione *Connect*.</block>
   <block id="94be154b89b2e226e39d03cfb0ee7428" category="list-text">Insira o URL da interface de usuário de segurança de carga de trabalho da infraestrutura de dados.</block>
   <block id="7b8dea3ad80826211495f59e062f08d1" category="list-text">Insira o token de acesso à API que fornece acesso à segurança do Workload.</block>
@@ -1617,4 +1582,165 @@
   <block id="9ac7153dab130e828e160c247e5ccb61" category="paragraph">Consulte a<block ref="24a34ebfc2a0852de6406d8f5a18bd02" category="inline-link-rx"></block>.</block>
   <block id="22ce28643829ddd0f15a1b23febaeee6" category="summary">Se a proteção contra ransomware do BlueXP  detectar um possível ataque, um alerta será exibido no Painel de proteção contra ransomware do BlueXP  indicando um possível ataque. O serviço também inicia imediatamente a obtenção de uma cópia Snapshot. Neste ponto, você deve olhar para o risco potencial na guia Alertas de proteção contra ransomware do BlueXP .</block>
   <block id="16bb8d2d09aea22c9fad5f111efb3676" category="list-text"><block ref="d322145e637b6e2be162f7cd827e67de" category="inline-xref-macro-rx"></block>.</block>
+  <block id="ad84f24c65dd6930a049e0903256dc97" category="doc">Simule um ataque e responda</block>
+  <block id="6cadf1d9d5289622136d042488809e73" category="paragraph">Com esse lançamento, simule um ataque de ransomware para testar sua resposta a um alerta de ransomware. Esse recurso ajuda você a saber que está preparado no caso de um ataque real de ransomware, testando processos de notificação, resposta e recuperação de alertas.</block>
+  <block id="50b24b085ac9888ffc4b0ba727107bd7" category="inline-link">Faça um exercício de prontidão para ataques de ransomware</block>
+  <block id="9b1eb2dbe181e9f7b73db8a0785c0419" category="paragraph">Para obter detalhes,<block ref="83090590e567818593b829ba2ced1db1" category="inline-link-rx"></block> consulte .</block>
+  <block id="d36ca1f9466b055dd6adb80de5cce7d4" category="section-title">Melhorias no processo de descoberta</block>
+  <block id="61541c0b99aec5f11fccef5bcb3fe5a1" category="paragraph">Esta versão inclui melhorias nos processos seletivos de descoberta e redescoberta:</block>
+  <block id="cb3c0a83218c46d38ab0842ce49a7e6e" category="list-text">Com esta versão, você pode descobrir cargas de trabalho recém-criadas que foram adicionadas aos ambientes de trabalho selecionados anteriormente.</block>
+  <block id="6a4c9cc76f7f432efa274c3ff0dae3dd" category="list-text">Você também pode selecionar _new_ ambientes de trabalho nesta versão. Esse recurso ajuda a proteger novos workloads adicionados ao seu ambiente.</block>
+  <block id="3b7810e8427f006590b006af43d016ef" category="list-text">Se você quiser escolher todas as cargas de trabalho descobertas, você pode fazê-lo usando a opção *Selecionar tudo*.</block>
+  <block id="28573ff4f820730a3eeae9cdd51b54d4" category="list-text">Você pode executar esses processos de descoberta durante o processo de descoberta inicialmente ou dentro da opção Configurações.</block>
+  <block id="16e3b92f9b1f5d1c29b18c748e6a228e" category="inline-link">Configure fetos com a opção Configurações</block>
+  <block id="98e6e30b63e5242616c686684a17c03b" category="paragraph">Para obter mais informações,<block ref="7d31e5b11cc548279f7c20a9569ec8fc" category="inline-link-rx"></block> consulte e<block ref="026d9da5e400c1054ac1084b0f63056d" category="inline-link-rx"></block>.</block>
+  <block id="d957d0c80017f235b131c557ae0876b1" category="section-title">Alertas levantados quando a criptografia alta é detetada</block>
+  <block id="8c8c1a747835015c86248b11a2097c02" category="paragraph">Com essa versão, você pode visualizar alertas quando a alta criptografia é detetada em suas cargas de trabalho, mesmo sem alterações de extensão de arquivo alta. Esse recurso, que usa o ONTAP Autonomous ransomware Protection (ARP) AI, ajuda a identificar cargas de trabalho que correm risco de ataques de ransomware. Use esse recurso e baixe toda a lista de arquivos afetados com ou sem alterações de extensão.</block>
+  <block id="ab27c5853140d6fe360c8b6756a8c2c6" category="summary">A proteção contra ransomware do BlueXP  usa o controle de acesso baseado em funções (RBAC) para controlar o acesso que cada usuário tem a recursos e ações específicos. O serviço usa funções específicas da proteção contra ransomware do BlueXP  (RPS).</block>
+  <block id="51871ed75f741b0dab90d2d1612f6499" category="doc">Acesso baseado em funções à proteção contra ransomware da BlueXP  aos recursos</block>
+  <block id="9f8dac12ddf6d062aacb043cac5a6b8d" category="paragraph">A proteção contra ransomware do BlueXP  emprega funções para controlar o acesso que cada usuário tem a recursos e ações específicos.</block>
+  <block id="a193437feab6ed3dc7fbc145485b64e1" category="paragraph">A proteção contra ransomware do BlueXP  usa as seguintes funções:</block>
+  <block id="72243fb5d86d2f4a3e7b0b0a3b25c24c" category="list-text">Administrador da organização</block>
+  <block id="40abbd4f17fecd4e2269c623d9ecc8f3" category="list-text">Visualizador (administrador não-organização)</block>
+  <block id="38af51c4aaeb25c0489791e4bbad2347" category="paragraph">A tabela a seguir indica que as ações que cada função de proteção de ransomware do BlueXP  pode executar.</block>
+  <block id="6a476d78ce3a8169d99c99c3285fa106" category="cell">Administrador da organização</block>
+  <block id="fb15c53f22336982a182b84aeb2f42eb" category="cell">Visualizador</block>
+  <block id="06135c09643e0b875311a4989ef81443" category="paragraph">O serviço avalia o nível de proteção existente, incluindo as opções atuais de proteção de backup, cópias snapshot e proteção Autonomous ransomware do NetApp. Com base na avaliação, o serviço recomenda como melhorar a proteção contra ransomware.</block>
+  <block id="bcd1f982603e49ee85ee4aa3816ec786" category="list-text">Selecione _new_ ambientes de trabalho. Esse recurso ajuda a proteger novos workloads adicionados ao seu ambiente.</block>
+  <block id="ea84e987da35b78faef15d182ea98e25" category="paragraph">O serviço encontra ambientes de trabalho em seus conetores BlueXP .</block>
+  <block id="1fe55988352f69acacdb9b10814fc08e" category="list-text">Para selecionar ambientes de trabalho para todos os conetores, selecione *Selecionar todos os ambientes de trabalho*.</block>
+  <block id="656ebea707f2c709a19d8f845b2477e7" category="list-text">Para descobrir cargas de trabalho para um conetor específico, selecione *Localizar novos ambientes de trabalho* ao lado do conetor onde você deseja descobrir cargas de trabalho.</block>
+  <block id="4c21761c15d83552dd8cd3a0a8db257d" category="paragraph">É apresentada uma lista de ambientes de trabalho.</block>
+  <block id="546750f8dfe95d6b98eb842b8bf02faf" category="paragraph"><block ref="546750f8dfe95d6b98eb842b8bf02faf" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="683b598a3c2decc48c00425ef8b86635" category="paragraph"><block ref="683b598a3c2decc48c00425ef8b86635" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c02e66aaa8def7a1b94dfd795479c114" category="paragraph">Se você já tiver selecionado ambientes de trabalho para descoberta, poderá descobrir cargas de trabalho recém-criadas para esses ambientes no Dashboard.</block>
+  <block id="70b4939004396411f22f03d5d20bd5e4" category="list-text">Para identificar a data da última descoberta, no Painel de Controle, observe o carimbo de data e hora ao lado do ícone *Atualizar* no canto superior direito.</block>
+  <block id="0b60c421fc6bce0a5ff3b730591a0ac5" category="list-text">No Dashboard, selecione o ícone *Refresh* (Atualizar) e, na dica de ferramenta exibida, selecione *Discover workloads*.</block>
+  <block id="e8d91f884eae05c3d90259b4c84b75d2" category="section-title">Descubra ambientes de trabalho recém-criados</block>
+  <block id="a1b34a4244cd73e84bed71e0bf383360" category="paragraph">Se você já descobriu ambientes de trabalho, pode descobrir qualquer ambiente de trabalho recém-criado no Dashboard.</block>
+  <block id="a048ca602eaaea1a6182ff74398a9c85" category="list-text">No Painel, selecione *Adicionar novo* e, na dica de ferramenta exibida, selecione *Adicionar novos ambientes de trabalho*.</block>
+  <block id="63a31ad1e15ab514cc2378a692e2c8db" category="list-text">No menu de proteção contra ransomware BlueXP , selecione a <block ref="ddacd9651566dbd67045ad6fbaf81a6c" category="inline-image-macro-rx" type="image"></block>opção vertical ... no canto superior direito. No menu suspenso, selecione *Configurações*. No cartão de descoberta de carga de trabalho, selecione *Discover workloads*.</block>
+  <block id="0e6eeee847f00d7ef1cb454555892f49" category="list-text"><block ref="92c4728cc5c0729bcbef66420d0a7a81" category="inline-link-macro-rx"></block>.</block>
+  <block id="63de46c3feae8642d94945ea3e056fed" category="inline-link-macro">Como opção, faça um exercício de prontidão para ataques de ransomware</block>
+  <block id="39bdb514f38135f0ca92651ade127954" category="list-text"><block ref="2280163364b5b58f435fe47eab713eb2" category="inline-link-macro-rx"></block>.</block>
+  <block id="427b8d3f96436f6a74500df89f6e5e4b" category="summary">Faça um drill de prontidão para ransomware simulando um ataque de ransomware em um workload de amostra recém-criado. Em seguida, investigue o ataque simulado e recupere a carga de trabalho de amostra. Você pode executar um exercício de prontidão para ransomware várias vezes.</block>
+  <block id="cb248acef57f259411f32f75047b755b" category="doc">Simule um ataque de ransomware conduzindo um exercício de prontidão</block>
+  <block id="b1912bbcd229334a7b7efe77fde83f5c" category="paragraph">Faça um drill de prontidão para ransomware simulando um ataque de ransomware em um workload de amostra recém-criado. Em seguida, investigue o ataque simulado e recupere a carga de trabalho de amostra. Esse recurso ajuda você a saber que está preparado no caso de um ataque real de ransomware, testando processos de notificação, resposta e recuperação de alertas. Você pode executar um exercício de prontidão para ransomware várias vezes.</block>
+  <block id="f1ff21552749120bb6aec31c31a053e6" category="admonition">Seus dados reais da carga de trabalho não serão afetados.</block>
+  <block id="b6db234bfb48479bbe03939977a7b42c" category="section-title">Configurar um exercício de prontidão para ataques de ransomware</block>
+  <block id="0a05b38a03f35668835b884f316a3a0b" category="paragraph">Antes de realizar uma simulação, você precisa configurar uma análise usando a página Configurações. Pode aceder facilmente à página Definições a partir da opção ações junto do menu superior.</block>
+  <block id="e820571d07203de22d81bf2d3a43c57d" category="list-text">No cartão de preparação na página Configurações, selecione *Configurar*.</block>
+  <block id="66992e57f86c8db0e8a3dba058088f04" category="paragraph">A página Configurar disponibilidade é exibida.</block>
+  <block id="f39a3376d8471d16df7b03506f1e81b3" category="inline-image-macro">Configurar página de exercícios de prontidão</block>
+  <block id="4733f8632e3639026823ab315aa1fde4" category="paragraph"><block ref="4733f8632e3639026823ab315aa1fde4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e8d3b4eb775e09a46424412f734068b0" category="list-text">Selecione o conetor BlueXP  que pretende utilizar para a broca de preparação.</block>
+  <block id="03e372e5a12da124a082cb418529a0c7" category="list-text">Selecione um ambiente de trabalho de teste.</block>
+  <block id="83d67ad1d05b6c81b83e16e427218874" category="list-text">Selecione um novo workload de teste a ser criado.</block>
+  <block id="000346285fa0b7654e9ce18381bba66f" category="paragraph">É apresentada uma mensagem de que o ambiente de exercício de prontidão está configurado. Nessa mensagem, selecione *Iniciar exercício de prontidão* para iniciar a perfuração.</block>
+  <block id="b5ffafbc91e02195737c6716b418141e" category="admonition">Você pode editar a configuração da broca de prontidão mais tarde usando a página Configurações.</block>
+  <block id="187666a138e7f6f15224af7bcef93040" category="section-title">Inicie um exercício de prontidão</block>
+  <block id="b30d5003eb8b470d6df77c1edbb96724" category="paragraph">Depois de configurar o exercício de prontidão, você pode iniciar o exercício.</block>
+  <block id="948feeea05a56419435cc007ac7abd68" category="list-text">No menu Configurações de proteção contra ransomware do BlueXP , selecione *Iniciar exercício de prontidão*.</block>
+  <block id="f577e0a326d286f796539335e08e4b68" category="list-text">OU, na página Configurações, no cartão de preparação, selecione *Iniciar exercício de prontidão*.</block>
+  <block id="48c1e999e8171604f472f6a173e90a06" category="list-text">Se você ainda não configurou o exercício de prontidão, uma mensagem será exibida informando que primeiro você precisa configurar o exercício de prontidão.</block>
+  <block id="2bad3a1005ba6708ddbc592b74412409" category="inline-image-macro">Página de configurações que mostra a mensagem do exercício de prontidão de que você precisa para configurar o exercício de prontidão</block>
+  <block id="fbb94dad4d4b0b642b9e4bcfccb31a40" category="paragraph"><block ref="fbb94dad4d4b0b642b9e4bcfccb31a40" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="648815687f26cfff9af80401c05502e1" category="list-text">Selecione *Configurar ambiente de teste de preparação*.</block>
+  <block id="2e80fabefee51d121eee410fb4a3be19" category="list-text">Continue com as instruções na seção anterior para configurar o ambiente de teste de perfuração na opção Configurações.</block>
+  <block id="e920bf03ef2a5c4203f6db8e43f9ca34" category="list-text">Se você já tiver configurado o exercício de prontidão, a página de exercícios de preparação inicial será exibida:</block>
+  <block id="65a0085cbf921f3e953b8693c2b63281" category="inline-image-macro">Inicie a página de exercícios de prontidão</block>
+  <block id="3c118708db99643af58b322e8633f99e" category="paragraph"><block ref="3c118708db99643af58b322e8633f99e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cc99cd6550a548e2a6a10be11a7acf67" category="list-text">Selecione *Iniciar*.</block>
+  <block id="8c5a9997ae160f52e3c8ede0e2590504" category="admonition">Após o início do exercício, não é possível editar a configuração do exercício de prontidão. Você pode, em vez disso, pará-lo.</block>
+  <block id="c0c593ce47c0b08a83ed2122000f2d53" category="section-title">Limpe e pare um exercício de prontidão</block>
+  <block id="4a19556f13e6b47441abc553ac3daf39" category="paragraph">Se você precisar parar um exercício de prontidão, você pode fazê-lo a qualquer momento. Quando você interrompe o exercício, a proteção contra ransomware do BlueXP  limpa a carga de trabalho de teste e remove os arquivos de teste.</block>
+  <block id="4ee662381f867d717a479a810920b73a" category="list-text">No menu Configurações de proteção contra ransomware do BlueXP , passe o Mouse sobre a opção Editar no bloco de exercícios de preparação e selecione *Limpar disponibilidade*.</block>
+  <block id="629c4b84903c512b14e9482c870995ec" category="list-text">No menu de proteção contra ransomware BlueXP , selecione a <block ref="ddacd9651566dbd67045ad6fbaf81a6c" category="inline-image-macro-rx" type="image"></block>opção vertical ... no canto superior direito e selecione *Limpar disponibilidade*.</block>
+  <block id="a068ddd4cd9819d66507b988292a9d04" category="inline-image-macro">Página de definições que mostra a opção de paragem de perfuração de prontidão</block>
+  <block id="05a4ec5098b9bce4d19d3e7fecddeac2" category="paragraph"><block ref="05a4ec5098b9bce4d19d3e7fecddeac2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f8a4bf2c70949bcbe79cf9fdb34e3b9c" category="admonition">Você também pode parar ou limpar um exercício de prontidão na página Configurações que mostra o cartão de treinamento de prontidão.</block>
+  <block id="220dce46cde86e50505d7d6717501507" category="list-text">Revise as informações de exercícios de prontidão da carga de trabalho.</block>
+  <block id="15462a9fa9524dab33f93bd1451cd0fd" category="list-text">Selecione *Limpar*.</block>
+  <block id="1e4a43fb392ed69a6d5a047ba0d88826" category="section-title">Responda a um alerta de preparação</block>
+  <block id="6128067a6b325891717a7cfc23e60bae" category="paragraph">Teste sua prontidão respondendo a um alerta de prontidão.</block>
+  <block id="845eb30eb602283ce1d22c4b4cbe210f" category="list-text">Ou, no menu, selecione o ícone *notificações*, selecione *Ver alerta* ao lado do alerta de disponibilidade.</block>
+  <block id="b4076ebb4154aa074b806f8ad5c2e03e" category="inline-image-macro">Secção de notificações que mostra o alerta de preparação</block>
+  <block id="511db98909b9ae56251aa794f36145bd" category="paragraph"><block ref="511db98909b9ae56251aa794f36145bd" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ef3efb89176a9b4600c400e3cafc6bc3" category="paragraph">A página Alertas é exibida. Na coluna ID de alerta na página Alertas, "broca de preparação" aparece ao lado da ID.</block>
+  <block id="bfb2eabf2e2f3750c3b857a9c0072bfa" category="inline-image-macro">Página de alertas mostrando o alerta de disponibilidade</block>
+  <block id="fd9f53769c15c2cf878c35f4cbc5a081" category="paragraph"><block ref="fd9f53769c15c2cf878c35f4cbc5a081" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2eaecc134241ebd3fe43cec088fc9216" category="list-text">Selecione o incidente com a indicação "Readiness drill".</block>
+  <block id="bf6725ca3f9665491e02c1818a34d256" category="inline-image-macro">Página do incidente mostrando o alerta de preparação</block>
+  <block id="e4bcff284aee2a73455b69a73101cec5" category="paragraph"><block ref="e4bcff284aee2a73455b69a73101cec5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8fccaa7f058711628b8a8a2f5f4ccc9c" category="list-text">Reveja os detalhes do alerta.</block>
+  <block id="dba36383db70a071d84d9ad78273ce43" category="paragraph">Aqui estão algumas coisas para procurar:</block>
+  <block id="b780e790d05aeda37075d8fd4a6d9b89" category="list-text">Olhe para o tipo de ataque potencial. Se o tipo indicar que um usuário é suspeito de atividade maliciosa, revise o nome do usuário.</block>
+  <block id="8b558629c5c33cde93683d61a4115e2d" category="list-text">Você pode querer bloquear o usuário selecionando *Bloquear usuário*.</block>
+  <block id="989cf4fcfe1664c1f40afc7abd89c986" category="list-text">Você também pode querer investigar mais o usuário no Data Infrastructure Insights Workload Security selecionando *Investigate in Workload security*.</block>
+  <block id="c7243cc109c65ad504b84c3e805c784c" category="list-text">Veja a atividade do arquivo e os processos suspeitos:</block>
+  <block id="fdb29353d86a86580fc253dc319e3e0b" category="list-text">Observe os dados detetados recebidos em comparação com os dados esperados.</block>
+  <block id="929c013ec98095ed1024dac131501e30" category="list-text">Observe a taxa de criação de arquivos detetados em comparação com a taxa esperada.</block>
+  <block id="1a1d9c1ba30af27c48d2816231dc83e8" category="list-text">Observe a taxa de renomeação de arquivos detetada em comparação com a taxa esperada.</block>
+  <block id="452eacf856e21da57eb379e95122df3c" category="list-text">Olhe para a taxa de exclusão em comparação com a taxa esperada.</block>
+  <block id="f86fe9463862bcb6c0a89b3fdbb1028b" category="list-text">Veja a lista de arquivos afetados. Observe as extensões que podem estar causando o ataque.</block>
+  <block id="464d4de9e42b79f0c1893e372df7593d" category="list-text">Determine o impactos e a amplitude do ataque revisando o número de arquivos e diretórios afetados.</block>
+  <block id="d40581f789448c5ecd5a19fb28ec3cd7" category="section-title">Restaure o workload de teste</block>
+  <block id="541251a35dcc8987be0133ffb79d3e39" category="paragraph">Depois de analisar o alerta de perfuratriz de prontidão, talvez você queira restaurar a carga de trabalho de teste.</block>
+  <block id="b1b9ff3cb3c8be033645e7815ff3a231" category="list-text">Voltar à página de detalhes do alerta.</block>
+  <block id="1428f7ff07a53448ce6c5a848493a542" category="list-text">Se a carga de trabalho de teste deve ser restaurada, faça o seguinte:</block>
+  <block id="402892b652810818eb61e703ca333d06" category="list-text">Selecione *Marcar restauração necessária*.</block>
+  <block id="f1a43a1191cd8e11a5db942f4175b31f" category="list-text">Revise a confirmação e selecione *Marcar restauração necessária* na caixa de confirmação.</block>
+  <block id="428f9aacf80ab1666e7e9a35356b08be" category="list-text">Selecione o workload de teste que você deseja restaurar.</block>
+  <block id="98576e747c7efb09ca0d1e50a58ae308" category="list-text">Na página Restaurar , forneça informações para a restauração:</block>
+  <block id="05e2304cb46b92601ea1e826aa3fec0b" category="list-text">Selecione a cópia instantânea de origem.</block>
+  <block id="773018347112b716b659352d9f401251" category="list-text">Selecione o volume de destino.</block>
+  <block id="d945f439c98a4e493f221b959e0eb5a8" category="list-text">Na página Restaurar revisão, selecione *Restaurar*.</block>
+  <block id="1ffe157338e02d753150ec2d35c4e61b" category="paragraph">A página recuperação mostra o status da restauração da broca de preparação como "em andamento".</block>
+  <block id="813e77518ea28b59081d022a305af0c3" category="paragraph">Após a conclusão da restauração, o status da carga de trabalho muda para *Restored*.</block>
+  <block id="5a1452d08b817dee6f550ab72ed5761c" category="list-text">Revise a carga de trabalho restaurada.</block>
+  <block id="225c52e147dc652783f29cce5e5f1205" category="admonition">Para obter detalhes sobre o processo de restauração, <block ref="2318031b9bf9fde86d3a7f04f24d9774" category="inline-link-macro-rx"></block>consulte .</block>
+  <block id="37eb9cec5c575b48f279378f147d9523" category="section-title">Altere o status Alertas após o exercício de prontidão</block>
+  <block id="c5e154a9c9a68a0fdd2cda956aafb0e1" category="paragraph">Depois de analisar o alerta de disponibilidade e restaurar a carga de trabalho, talvez você queira alterar o status do alerta.</block>
+  <block id="b707d985234424bd425b96580911950e" category="list-text">Selecione o alerta novamente.</block>
+  <block id="162c9c11fab2a0b1844f31cfa4184c72" category="list-text">Indique o status selecionando *Editar* e altere o status para um dos seguintes:</block>
+  <block id="e0a30b860c06e610cadc21ebf64426da" category="list-text">Demitido: Se você suspeitar que a atividade não é um ataque de ransomware, altere o status para demitido.</block>
+  <block id="ff8d215b189dca41bf900d6545392594" category="admonition">Depois que você descartar um ataque, você não pode alterá-lo de volta. Se você ignorar um workload, todas as cópias snapshot bloqueado automaticamente em resposta ao possível ataque de ransomware serão excluídas permanentemente. Se você ignorar o alerta, o exercício de prontidão será considerado concluído.</block>
+  <block id="36b45588cbfa3653d0bdeb91883b49f4" category="list-text">Resolvido: O incidente foi mitigado.</block>
+  <block id="1be5568d0c3f299b7d0fa2b810d4b90d" category="section-title">Reveja os relatórios sobre o exercício de prontidão</block>
+  <block id="1618fcb06831249fd4142102d83577f5" category="paragraph">Após a conclusão do exercício de prontidão, você pode querer revisar e salvar um relatório na perfuratriz.</block>
+  <block id="50ca22b8d354f001a742f726d3cf2be9" category="inline-image-macro">Página de relatórios que mostra o relatório de exercícios de prontidão</block>
+  <block id="179e5ea4317177f519c688d15ef67987" category="paragraph"><block ref="179e5ea4317177f519c688d15ef67987" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e462715e9b155f4f9638da4f314c8aff" category="list-text">Selecione *exercícios de prontidão* e *Download* para fazer o download do relatório de exercícios de prontidão.</block>
+  <block id="7491606097f73ec9ee4cd8649e24e37b" category="list-text">Quando a criptografia é alta, sem alterações na extensão do arquivo</block>
+  <block id="0152e4b08d769def55f114d835660cb2" category="list-text">Acionado pela segurança de workload do Data Infrastructure Insights. Isso requer uma licença para a segurança de workload do Insights da infraestrutura de dados e para a habilitar na proteção contra ransomware do BlueXP . Esse recurso detecta um comportamento anômalo do usuário nos workloads de storage e permite que você bloqueie acesso adicional a esse usuário.</block>
+  <block id="900224a7eb4d4424692600ce3e4b5262" category="paragraph">Para ativar a segurança de carga de trabalho na proteção contra ransomware BlueXP , vá para a página *Configurações* e selecione a opção *conexão de segurança de carga de trabalho*.</block>
+  <block id="425da964d78a62f785936af67e3c687f" category="inline-link">Sobre a segurança do workload</block>
+  <block id="d4f7642c0debd8dc1a4caac9d3b8fa1c" category="paragraph">Para obter uma visão geral da segurança de carga de trabalho do Data Infrastucture Insights, consulte<block ref="61a89dd403e895daaa4d98a27b91c870" category="inline-link-rx"></block>.</block>
+  <block id="f45da5a45d45864a04012a2336cb4b3f" category="admonition">Se você não tiver uma licença para a segurança de workload da infraestrutura de dados e não a ativar na proteção contra ransomware do BlueXP , não verá as informações anômalas de comportamento do usuário.</block>
+  <block id="627c9caf27de22ab63a8c85f8e162aeb" category="list-text">Arquivos e diretórios impactados</block>
+  <block id="bf33e88f89f8370f960763fdaf5e0753" category="section-title">Veja um comportamento anômalo do usuário na segurança de workload do Data Infrastructure Insights</block>
+  <block id="d27458084722491c4ddb4bb5f1966d73" category="paragraph">Quando a segurança de workload do Insights da infraestrutura de dados aciona um alerta na proteção de ransomware do BlueXP , você pode visualizar o usuário suspeito, bloquear o usuário e investigar a atividade do usuário diretamente na segurança de carga de trabalho do Insights da infraestrutura de dados.</block>
+  <block id="e908284c251515cdeccdcceee2edd943" category="paragraph">Essa opção requer uma licença para a segurança de workload do Insights da infraestrutura de dados e sua ativação na proteção contra ransomware do BlueXP .</block>
+  <block id="c4594ac420411c136c07306b926ab110" category="paragraph">Para habilitar a segurança de workload na proteção contra ransomware do BlueXP , faça o seguinte:</block>
+  <block id="65be46ab7235d388f0d005087a518abe" category="list-text">Para pesquisar o alerta ainda mais na segurança de carga de trabalho do Data Infrastructure Insights, selecione o link *investigue em segurança de carga de trabalho*.</block>
+  <block id="769b88476b7cff9dc35cfc192348ed80" category="paragraph">Você pode configurar destinos de backup, habilitar a deteção de ameaças, conduzir um exercício de prontidão de ataque, configurar a descoberta de carga de trabalho ou configurar a conexão com a segurança de carga de trabalho do Data Infrastructure Insights acessando a opção *Settings*.</block>
+  <block id="2fdebc69dc6e7b0ee210d7c727cf37e2" category="list-text">Simule um ataque de ransomware realizando um exercício de prontidão e responda a um alerta simulado de ransomware. Para obter detalhes, <block ref="764586bbfc596fce1f2309fe8b2a42c0" category="inline-link-macro-rx"></block>consulte .</block>
+  <block id="3fdd6341b0ef86488ae1a773932c96c7" category="list-text">Configurar a deteção de workload.</block>
+  <block id="7b4447f64e0f45c79278d6c27e4b82f6" category="list-text">Ative a deteção de ameaças e conete seu sistema de gerenciamento de eventos e segurança (SIEM) para análise e deteção de ameaças. Ativar a deteção de ameaças envia automaticamente dados para o SIEM para análise de ameaças.</block>
+  <block id="fd062f03b35e0850abe8729a63d5dfd8" category="section-title">Simular um ataque de ransomware</block>
+  <block id="32061d28c608414124c4b8a09cdbf743" category="paragraph">Para obter detalhes, <block ref="764586bbfc596fce1f2309fe8b2a42c0" category="inline-link-macro-rx"></block>consulte .</block>
+  <block id="95f4d49dba3929bc4382593edcb20316" category="section-title">Configurar a deteção de workload</block>
+  <block id="13610c31818b5f10c6767e80066e91f5" category="paragraph">Você pode configurar o reconhecimento de workload para descobrir automaticamente novos workloads em seu ambiente.</block>
+  <block id="1a05798ddb931c37e9a93c9c6032ebe0" category="list-text">Na página Configurações, localize o bloco *descoberta de carga de trabalho*.</block>
+  <block id="f8c07a3da1bbb04852c9804c697a6a52" category="list-text">No bloco *descoberta de cargas de trabalho*, selecione *descobrir cargas de trabalho*.</block>
+  <block id="7f109b6bf9eb184d6a72270e3bf400fb" category="paragraph">Esta página mostra conetores BlueXP  com ambientes de trabalho que não foram selecionados anteriormente, conetores BlueXP  recém-disponíveis e ambientes de trabalho recém-disponíveis. Esta página não mostra os ambientes de trabalho que foram previamente selecionados.</block>
+  <block id="88b5bdc0fdf255c8b5c7e69c9de9a004" category="list-text">Selecione o conetor onde você deseja descobrir cargas de trabalho.</block>
+  <block id="5efa2dbc5dda8e5cedc881a8f07d4862" category="list-text">Reveja a lista de ambientes de trabalho.</block>
+  <block id="ccea8d2a6db42797e1f577f373d50a5e" category="list-text">Verifique os ambientes de trabalho onde você deseja descobrir cargas de trabalho ou marque a caixa na parte superior da tabela para descobrir cargas de trabalho em todos os ambientes de workload descobertos.</block>
+  <block id="9d055fde32068f867798c725a5de5475" category="list-text">Faça isso para outros ambientes de trabalho, conforme necessário.</block>
+  <block id="2eb64566e7a420d0ec4c96db9675b0b9" category="list-text">Selecione *Discover* para que a proteção contra ransomware BlueXP  descubra automaticamente novas cargas de trabalho no conetor selecionado.</block>
+  <block id="66dc88ca1b2441158c6c8bec79aa9ac4" category="section-title">Veja comportamentos anormais de usuários suspeitos conectando-se à segurança de workload do Data Infrastructure Insights</block>
+  <block id="574f730f175872b7e8ae030664be0b63" category="list-text">No menu Configurações de proteção contra ransomware do BlueXP , localize o bloco *conexão de segurança de carga de trabalho*.</block>
+  <block id="f070435ef55d6c7cc1db59f0a41a4609" category="section-title">10 de março de 2025</block>
+  <block id="a216cb7967dcfa49b3b976657369cd25" category="sidebar">Configure backups, deteção de ameaças e simulações de ataque em Configurações</block>
 </blocks>

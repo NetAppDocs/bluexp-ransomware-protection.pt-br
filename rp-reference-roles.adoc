@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: rp-reference-roles.html 
 keywords: ransomware protection, protect against ransomware attacks, anti-ransomware, role-based access control, rbac, role, permission, access rights, organization,project,account 
-summary: 'A proteção contra ransomware do BlueXP  usa o controle de acesso baseado em funções (RBAC) para controlar o acesso que cada usuário tem a recursos e ações específicos. O serviço usa as principais funções do BlueXP  de Administrador e Visualizador da Organização (não Administrador da Organização).' 
+summary: 'A proteção contra ransomware do BlueXP  usa o controle de acesso baseado em funções (RBAC) para controlar o acesso que cada usuário tem a recursos e ações específicos. O serviço usa funções específicas da proteção contra ransomware do BlueXP  (RPS).' 
 ---
-= Privileges de controle de acesso baseado em funções de proteção contra ransomware da BlueXP 
+= Acesso baseado em funções à proteção contra ransomware da BlueXP  aos recursos
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,13 +12,19 @@ summary: 'A proteção contra ransomware do BlueXP  usa o controle de acesso ba
 
 
 [role="lead"]
-A proteção contra ransomware do BlueXP  usa o controle de acesso baseado em funções (RBAC) para controlar o acesso que cada usuário tem a recursos e ações específicos. O serviço usa as principais funções do BlueXP  de Administrador e Visualizador da Organização (não Administrador da Organização).
+A proteção contra ransomware do BlueXP  emprega funções para controlar o acesso que cada usuário tem a recursos e ações específicos.
 
-A tabela a seguir indica quais ações cada função pode executar.
+A proteção contra ransomware do BlueXP  usa as seguintes funções:
+
+* Administrador da organização
+* Visualizador (administrador não-organização)
+
+
+A tabela a seguir indica que as ações que cada função de proteção de ransomware do BlueXP  pode executar.
 
 [cols="40,20a,20a"]
 |===
-| Recurso e ação | Administrador da Organização BlueXP  | Não Admin (Visualizador) 
+| Recurso e ação | Administrador da organização | Visualizador 
 
 
 | Inicie o teste gratuito  a| 
