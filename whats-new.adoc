@@ -36,7 +36,6 @@ Esta versão inclui melhorias nos processos seletivos de descoberta e redescober
 
 * Com esta versão, você pode descobrir cargas de trabalho recém-criadas que foram adicionadas aos ambientes de trabalho selecionados anteriormente.
 * Você também pode selecionar _new_ ambientes de trabalho nesta versão. Esse recurso ajuda a proteger novos workloads adicionados ao seu ambiente.
-* Se você quiser escolher todas as cargas de trabalho descobertas, você pode fazê-lo usando a opção *Selecionar tudo*.
 * Você pode executar esses processos de descoberta durante o processo de descoberta inicialmente ou dentro da opção Configurações.
 
 

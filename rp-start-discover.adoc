@@ -51,21 +51,16 @@ O serviço encontra ambientes de trabalho em seus conetores BlueXP .
 TIP: Este processo pode demorar alguns minutos.
 
 +
-image:screen-discover-workloads.png["Descobrir captura de tela de cargas de trabalho"]
+image:screen-discover-workloads1.png["Descobrir captura de tela de cargas de trabalho"]
 
-. Execute um dos seguintes procedimentos:
-+
-** Para selecionar ambientes de trabalho para todos os conetores, selecione *Selecionar todos os ambientes de trabalho*.
-** Para descobrir cargas de trabalho para um conetor específico, selecione *Localizar novos ambientes de trabalho* ao lado do conetor onde você deseja descobrir cargas de trabalho.
+. Para descobrir cargas de trabalho para um conetor específico, selecione *Localizar novos ambientes de trabalho* ao lado do conetor onde você deseja descobrir cargas de trabalho.
 +
 É apresentada uma lista de ambientes de trabalho.
-
-
 
 +
 image:screen-discover-workloads-select-no-autodiscovery.png["Descobrir captura de tela de cargas de trabalho"]
 
-. Selecione os ambientes de trabalho em que você deseja descobrir o workload ou marque a caixa no topo da tabela para localizar workloads em todos os ambientes de workload descobertos.
+. Selecione os ambientes de trabalho onde você deseja descobrir workloads ou marque a caixa na parte superior da tabela para descobrir workloads em todos os ambientes de workload descobertos.
 . Selecione *Discover*.
 +
 O serviço detecta dados de workload somente para esses conetores com ambientes de trabalho selecionados.
@@ -99,7 +94,7 @@ Se você já tiver selecionado ambientes de trabalho para descoberta, poderá de
 .Passos
 . Na navegação à esquerda do BlueXP , selecione *proteção* > *proteção contra ransomware*.
 . Para identificar a data da última descoberta, no Painel de Controle, observe o carimbo de data e hora ao lado do ícone *Atualizar* no canto superior direito.
-. No Dashboard, selecione o ícone *Refresh* (Atualizar) e, na dica de ferramenta exibida, selecione *Discover workloads*.
+. No Dashboard, selecione o ícone *Refresh* que inicia a descoberta de novas cargas de trabalho.
 
 
 
@@ -110,10 +105,6 @@ Se você já descobriu ambientes de trabalho, pode descobrir qualquer ambiente d
 
 .Passos
 . Na navegação à esquerda do BlueXP , selecione *proteção* > *proteção contra ransomware*.
-. Execute um dos seguintes procedimentos:
-+
-** No Painel, selecione *Adicionar novo* e, na dica de ferramenta exibida, selecione *Adicionar novos ambientes de trabalho*.
-** No menu de proteção contra ransomware BlueXP , selecione a image:button-actions-vertical.png["Ações verticais"]opção vertical ... no canto superior direito. No menu suspenso, selecione *Configurações*. No cartão de descoberta de carga de trabalho, selecione *Discover workloads*.
-
-
+. No menu de proteção contra ransomware BlueXP , selecione a image:button-actions-vertical.png["Ações verticais"]opção vertical ... no canto superior direito. No menu suspenso, selecione *Configurações*.
+. No cartão de descoberta de carga de trabalho, selecione *Discover workloads*.
 

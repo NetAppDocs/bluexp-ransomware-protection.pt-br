@@ -35,7 +35,7 @@ image:screen-settings-alert-drill-configure.png["Configurar página de exercíci
 
 . Selecione o conetor BlueXP  que pretende utilizar para a broca de preparação.
 . Selecione um ambiente de trabalho de teste.
-. Selecione um novo workload de teste a ser criado.
+. Insira o nome de uma nova carga de trabalho de teste a ser criada.
 . Selecione *Guardar*.
 +
 É apresentada uma mensagem de que o ambiente de exercício de prontidão está configurado. Nessa mensagem, selecione *Iniciar exercício de prontidão* para iniciar a perfuração.
@@ -54,8 +54,8 @@ Depois de configurar o exercício de prontidão, você pode iniciar o exercício
 .Passos
 . Execute um dos seguintes procedimentos:
 +
-** No menu Configurações de proteção contra ransomware do BlueXP , selecione *Iniciar exercício de prontidão*.
-** OU, na página Configurações, no cartão de preparação, selecione *Iniciar exercício de prontidão*.
+** No menu Configurações de proteção contra ransomware do BlueXP , selecione *broca de preparação* e, em seguida, na página de exercícios de preparação, selecione *Iniciar*.
+** OU, na página Configurações, no cartão de preparação, selecione *Iniciar*.
 
 
 . Execute um dos seguintes procedimentos:
@@ -69,41 +69,13 @@ image:screen-settings-alert-drill-needtoconfigure.png["Página de configuraçõe
 *** Continue com as instruções na seção anterior para configurar o ambiente de teste de perfuração na opção Configurações.
 
 
-** Se você já tiver configurado o exercício de prontidão, a página de exercícios de preparação inicial será exibida:
-+
-image:screen-settings-alert-drill-start.png["Inicie a página de exercícios de prontidão"]
+** Se você já configurou o exercício de prontidão, depois de selecionar *Start*, o exercício de prontidão começa.
 
 
-
-. Selecione *Iniciar*.
 
 
 
 NOTE: Após o início do exercício, não é possível editar a configuração do exercício de prontidão. Você pode, em vez disso, pará-lo.
-
-
-
-== Limpe e pare um exercício de prontidão
-
-Se você precisar parar um exercício de prontidão, você pode fazê-lo a qualquer momento. Quando você interrompe o exercício, a proteção contra ransomware do BlueXP  limpa a carga de trabalho de teste e remove os arquivos de teste.
-
-.Passos
-. Execute um dos seguintes procedimentos:
-+
-** No menu Configurações de proteção contra ransomware do BlueXP , passe o Mouse sobre a opção Editar no bloco de exercícios de preparação e selecione *Limpar disponibilidade*.
-** No menu de proteção contra ransomware BlueXP , selecione a image:button-actions-vertical.png["Ações verticais"]opção vertical ... no canto superior direito e selecione *Limpar disponibilidade*.
-+
-image:screen-settings-alert-drill-cleanup.png["Página de definições que mostra a opção de paragem de perfuração de prontidão"]
-
-+
-
-NOTE: Você também pode parar ou limpar um exercício de prontidão na página Configurações que mostra o cartão de treinamento de prontidão.
-
-
-
-. Revise as informações de exercícios de prontidão da carga de trabalho.
-. Selecione *Limpar*.
-
 
 
 
@@ -112,26 +84,19 @@ NOTE: Você também pode parar ou limpar um exercício de prontidão na página 
 Teste sua prontidão respondendo a um alerta de prontidão.
 
 .Passos
-. Execute um dos seguintes procedimentos:
+. No menu de proteção contra ransomware BlueXP , selecione *Alertas*.
 +
-** No menu de proteção contra ransomware BlueXP , selecione *Alertas*.
-** Ou, no menu, selecione o ícone *notificações*, selecione *Ver alerta* ao lado do alerta de disponibilidade.
-+
-image:screen-notifications-alert-drill.png["Secção de notificações que mostra o alerta de preparação"]
+A página Alertas é exibida. Na coluna ID de alerta, "Readiness drill" aparece ao lado da ID.
 
-+
-A página Alertas é exibida. Na coluna ID de alerta na página Alertas, "broca de preparação" aparece ao lado da ID.
-
+. Selecione o alerta com a indicação "Readiness drill". É apresentada uma lista de alertas de incidentes.
 +
 image:screen-alerts-readiness.png["Página de alertas mostrando o alerta de disponibilidade"]
 
-
-
-. Selecione o incidente com a indicação "Readiness drill".
+. Reveja os incidentes de alerta.
+. Selecione um incidente de alerta.
 +
-image:screen-alerts-readiness-incidents.png["Página do incidente mostrando o alerta de preparação"]
+image:screen-alerts-readiness-incidents2.png["Página do incidente mostrando o alerta de preparação"]
 
-. Reveja os detalhes do alerta.
 +
 Aqui estão algumas coisas para procurar:
 
@@ -170,7 +135,7 @@ Depois de analisar o alerta de perfuratriz de prontidão, talvez você queira re
 ** Revise a confirmação e selecione *Marcar restauração necessária* na caixa de confirmação.
 +
 *** No menu de proteção contra ransomware BlueXP , selecione *recuperação*.
-*** Selecione o workload de teste que você deseja restaurar.
+*** Selecione a carga de trabalho de teste marcada com "Readiness drill" que você deseja restaurar.
 *** Selecione *Restaurar*.
 *** Na página Restaurar , forneça informações para a restauração:
 
