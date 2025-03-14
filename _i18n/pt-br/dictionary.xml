@@ -1637,7 +1637,6 @@
   <block id="fbb94dad4d4b0b642b9e4bcfccb31a40" category="paragraph"><block ref="fbb94dad4d4b0b642b9e4bcfccb31a40" category="inline-image-macro-rx" type="image"></block></block>
   <block id="648815687f26cfff9af80401c05502e1" category="list-text">Selecione *Configurar ambiente de teste de preparação*.</block>
   <block id="2e80fabefee51d121eee410fb4a3be19" category="list-text">Continue com as instruções na seção anterior para configurar o ambiente de teste de perfuração na opção Configurações.</block>
-  <block id="8c5a9997ae160f52e3c8ede0e2590504" category="admonition">Após o início do exercício, não é possível editar a configuração do exercício de prontidão. Você pode, em vez disso, pará-lo.</block>
   <block id="1e4a43fb392ed69a6d5a047ba0d88826" category="section-title">Responda a um alerta de preparação</block>
   <block id="6128067a6b325891717a7cfc23e60bae" category="paragraph">Teste sua prontidão respondendo a um alerta de prontidão.</block>
   <block id="bfb2eabf2e2f3750c3b857a9c0072bfa" category="inline-image-macro">Página de alertas mostrando o alerta de disponibilidade</block>
@@ -1675,11 +1674,6 @@
   <block id="e0a30b860c06e610cadc21ebf64426da" category="list-text">Demitido: Se você suspeitar que a atividade não é um ataque de ransomware, altere o status para demitido.</block>
   <block id="ff8d215b189dca41bf900d6545392594" category="admonition">Depois que você descartar um ataque, você não pode alterá-lo de volta. Se você ignorar um workload, todas as cópias snapshot bloqueado automaticamente em resposta ao possível ataque de ransomware serão excluídas permanentemente. Se você ignorar o alerta, o exercício de prontidão será considerado concluído.</block>
   <block id="36b45588cbfa3653d0bdeb91883b49f4" category="list-text">Resolvido: O incidente foi mitigado.</block>
-  <block id="1be5568d0c3f299b7d0fa2b810d4b90d" category="section-title">Reveja os relatórios sobre o exercício de prontidão</block>
-  <block id="1618fcb06831249fd4142102d83577f5" category="paragraph">Após a conclusão do exercício de prontidão, você pode querer revisar e salvar um relatório na perfuratriz.</block>
-  <block id="50ca22b8d354f001a742f726d3cf2be9" category="inline-image-macro">Página de relatórios que mostra o relatório de exercícios de prontidão</block>
-  <block id="179e5ea4317177f519c688d15ef67987" category="paragraph"><block ref="179e5ea4317177f519c688d15ef67987" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e462715e9b155f4f9638da4f314c8aff" category="list-text">Selecione *exercícios de prontidão* e *Download* para fazer o download do relatório de exercícios de prontidão.</block>
   <block id="7491606097f73ec9ee4cd8649e24e37b" category="list-text">Quando a criptografia é alta, sem alterações na extensão do arquivo</block>
   <block id="0152e4b08d769def55f114d835660cb2" category="list-text">Acionado pela segurança de workload do Data Infrastructure Insights. Isso requer uma licença para a segurança de workload do Insights da infraestrutura de dados e para a habilitar na proteção contra ransomware do BlueXP . Esse recurso detecta um comportamento anômalo do usuário nos workloads de storage e permite que você bloqueie acesso adicional a esse usuário.</block>
   <block id="900224a7eb4d4424692600ce3e4b5262" category="paragraph">Para ativar a segurança de carga de trabalho na proteção contra ransomware BlueXP , vá para a página *Configurações* e selecione a opção *conexão de segurança de carga de trabalho*.</block>
@@ -1727,4 +1721,5 @@
   <block id="8094150588327954ce01d91cf529ccfc" category="list-text">Selecione um incidente de alerta.</block>
   <block id="b0e402efbf054d8b9cab93c3c4e53922" category="paragraph"><block ref="b0e402efbf054d8b9cab93c3c4e53922" category="inline-image-macro-rx" type="image"></block></block>
   <block id="001b6bed17667ada4d5dad085e5729b3" category="list-text">Selecione a carga de trabalho de teste marcada com "Readiness drill" que você deseja restaurar.</block>
+  <block id="241197791593ba6fe12006bc7c44e045" category="admonition">Após o início do exercício, não é possível editar a configuração do exercício de prontidão. Você pode redefini-lo para começar de novo.</block>
 </blocks>

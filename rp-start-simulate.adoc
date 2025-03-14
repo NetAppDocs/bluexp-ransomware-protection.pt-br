@@ -75,7 +75,7 @@ image:screen-settings-alert-drill-needtoconfigure.png["Página de configuraçõe
 
 
 
-NOTE: Após o início do exercício, não é possível editar a configuração do exercício de prontidão. Você pode, em vez disso, pará-lo.
+NOTE: Após o início do exercício, não é possível editar a configuração do exercício de prontidão. Você pode redefini-lo para começar de novo.
 
 
 
@@ -177,18 +177,4 @@ IMPORTANT: Depois que você descartar um ataque, você não pode alterá-lo de v
 ** Resolvido: O incidente foi mitigado.
 
 
-
-
-
-
-== Reveja os relatórios sobre o exercício de prontidão
-
-Após a conclusão do exercício de prontidão, você pode querer revisar e salvar um relatório na perfuratriz.
-
-.Passos
-. No menu proteção contra ransomware do BlueXP , selecione *relatórios*.
-+
-image:screen-reports.png["Página de relatórios que mostra o relatório de exercícios de prontidão"]
-
-. Selecione *exercícios de prontidão* e *Download* para fazer o download do relatório de exercícios de prontidão.
 
