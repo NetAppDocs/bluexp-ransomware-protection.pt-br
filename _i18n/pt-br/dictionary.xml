@@ -1603,7 +1603,6 @@
   <block id="6a476d78ce3a8169d99c99c3285fa106" category="cell">Administrador da organização</block>
   <block id="fb15c53f22336982a182b84aeb2f42eb" category="cell">Visualizador</block>
   <block id="06135c09643e0b875311a4989ef81443" category="paragraph">O serviço avalia o nível de proteção existente, incluindo as opções atuais de proteção de backup, cópias snapshot e proteção Autonomous ransomware do NetApp. Com base na avaliação, o serviço recomenda como melhorar a proteção contra ransomware.</block>
-  <block id="bcd1f982603e49ee85ee4aa3816ec786" category="list-text">Selecione _new_ ambientes de trabalho. Esse recurso ajuda a proteger novos workloads adicionados ao seu ambiente.</block>
   <block id="ea84e987da35b78faef15d182ea98e25" category="paragraph">O serviço encontra ambientes de trabalho em seus conetores BlueXP .</block>
   <block id="656ebea707f2c709a19d8f845b2477e7" category="list-text">Para descobrir cargas de trabalho para um conetor específico, selecione *Localizar novos ambientes de trabalho* ao lado do conetor onde você deseja descobrir cargas de trabalho.</block>
   <block id="4c21761c15d83552dd8cd3a0a8db257d" category="paragraph">É apresentada uma lista de ambientes de trabalho.</block>
@@ -1611,8 +1610,6 @@
   <block id="683b598a3c2decc48c00425ef8b86635" category="paragraph"><block ref="683b598a3c2decc48c00425ef8b86635" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c02e66aaa8def7a1b94dfd795479c114" category="paragraph">Se você já tiver selecionado ambientes de trabalho para descoberta, poderá descobrir cargas de trabalho recém-criadas para esses ambientes no Dashboard.</block>
   <block id="70b4939004396411f22f03d5d20bd5e4" category="list-text">Para identificar a data da última descoberta, no Painel de Controle, observe o carimbo de data e hora ao lado do ícone *Atualizar* no canto superior direito.</block>
-  <block id="e8d91f884eae05c3d90259b4c84b75d2" category="section-title">Descubra ambientes de trabalho recém-criados</block>
-  <block id="a1b34a4244cd73e84bed71e0bf383360" category="paragraph">Se você já descobriu ambientes de trabalho, pode descobrir qualquer ambiente de trabalho recém-criado no Dashboard.</block>
   <block id="0e6eeee847f00d7ef1cb454555892f49" category="list-text"><block ref="92c4728cc5c0729bcbef66420d0a7a81" category="inline-link-macro-rx"></block>.</block>
   <block id="63de46c3feae8642d94945ea3e056fed" category="inline-link-macro">Como opção, faça um exercício de prontidão para ataques de ransomware</block>
   <block id="39bdb514f38135f0ca92651ade127954" category="list-text"><block ref="2280163364b5b58f435fe47eab713eb2" category="inline-link-macro-rx"></block>.</block>
@@ -1628,15 +1625,9 @@
   <block id="4733f8632e3639026823ab315aa1fde4" category="paragraph"><block ref="4733f8632e3639026823ab315aa1fde4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e8d3b4eb775e09a46424412f734068b0" category="list-text">Selecione o conetor BlueXP  que pretende utilizar para a broca de preparação.</block>
   <block id="03e372e5a12da124a082cb418529a0c7" category="list-text">Selecione um ambiente de trabalho de teste.</block>
-  <block id="000346285fa0b7654e9ce18381bba66f" category="paragraph">É apresentada uma mensagem de que o ambiente de exercício de prontidão está configurado. Nessa mensagem, selecione *Iniciar exercício de prontidão* para iniciar a perfuração.</block>
   <block id="b5ffafbc91e02195737c6716b418141e" category="admonition">Você pode editar a configuração da broca de prontidão mais tarde usando a página Configurações.</block>
   <block id="187666a138e7f6f15224af7bcef93040" category="section-title">Inicie um exercício de prontidão</block>
   <block id="b30d5003eb8b470d6df77c1edbb96724" category="paragraph">Depois de configurar o exercício de prontidão, você pode iniciar o exercício.</block>
-  <block id="48c1e999e8171604f472f6a173e90a06" category="list-text">Se você ainda não configurou o exercício de prontidão, uma mensagem será exibida informando que primeiro você precisa configurar o exercício de prontidão.</block>
-  <block id="2bad3a1005ba6708ddbc592b74412409" category="inline-image-macro">Página de configurações que mostra a mensagem do exercício de prontidão de que você precisa para configurar o exercício de prontidão</block>
-  <block id="fbb94dad4d4b0b642b9e4bcfccb31a40" category="paragraph"><block ref="fbb94dad4d4b0b642b9e4bcfccb31a40" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="648815687f26cfff9af80401c05502e1" category="list-text">Selecione *Configurar ambiente de teste de preparação*.</block>
-  <block id="2e80fabefee51d121eee410fb4a3be19" category="list-text">Continue com as instruções na seção anterior para configurar o ambiente de teste de perfuração na opção Configurações.</block>
   <block id="1e4a43fb392ed69a6d5a047ba0d88826" category="section-title">Responda a um alerta de preparação</block>
   <block id="6128067a6b325891717a7cfc23e60bae" category="paragraph">Teste sua prontidão respondendo a um alerta de prontidão.</block>
   <block id="bfb2eabf2e2f3750c3b857a9c0072bfa" category="inline-image-macro">Página de alertas mostrando o alerta de disponibilidade</block>
@@ -1644,7 +1635,6 @@
   <block id="bf6725ca3f9665491e02c1818a34d256" category="inline-image-macro">Página do incidente mostrando o alerta de preparação</block>
   <block id="dba36383db70a071d84d9ad78273ce43" category="paragraph">Aqui estão algumas coisas para procurar:</block>
   <block id="b780e790d05aeda37075d8fd4a6d9b89" category="list-text">Olhe para o tipo de ataque potencial. Se o tipo indicar que um usuário é suspeito de atividade maliciosa, revise o nome do usuário.</block>
-  <block id="8b558629c5c33cde93683d61a4115e2d" category="list-text">Você pode querer bloquear o usuário selecionando *Bloquear usuário*.</block>
   <block id="989cf4fcfe1664c1f40afc7abd89c986" category="list-text">Você também pode querer investigar mais o usuário no Data Infrastructure Insights Workload Security selecionando *Investigate in Workload security*.</block>
   <block id="c7243cc109c65ad504b84c3e805c784c" category="list-text">Veja a atividade do arquivo e os processos suspeitos:</block>
   <block id="fdb29353d86a86580fc253dc319e3e0b" category="list-text">Observe os dados detetados recebidos em comparação com os dados esperados.</block>
@@ -1722,4 +1712,7 @@
   <block id="b0e402efbf054d8b9cab93c3c4e53922" category="paragraph"><block ref="b0e402efbf054d8b9cab93c3c4e53922" category="inline-image-macro-rx" type="image"></block></block>
   <block id="001b6bed17667ada4d5dad085e5729b3" category="list-text">Selecione a carga de trabalho de teste marcada com "Readiness drill" que você deseja restaurar.</block>
   <block id="241197791593ba6fe12006bc7c44e045" category="admonition">Após o início do exercício, não é possível editar a configuração do exercício de prontidão. Você pode redefini-lo para começar de novo.</block>
+  <block id="65314129adf0c0a55f929809a17904c9" category="section-title">Descubra novos ambientes de trabalho</block>
+  <block id="2826595d22ba9331559905631772b32d" category="paragraph">Se você já descobriu ambientes de trabalho, pode descobrir quaisquer ambientes de trabalho ou ambientes de trabalho recém-criados que você não selecionou anteriormente durante os processos de descoberta anteriores.</block>
+  <block id="5f214ff0fb35d9a440af52567382d505" category="admonition">Este processo pode demorar alguns minutos, conforme indicado por um ícone de carregamento em processo.</block>
 </blocks>

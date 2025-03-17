@@ -25,7 +25,6 @@ Você pode fazer o seguinte:
 
 * Em cada conetor, selecione os ambientes de trabalho onde você deseja descobrir cargas de trabalho. Você pode se beneficiar desse recurso se quiser proteger cargas de trabalho específicas em seu ambiente e não em outros.
 * Descubra cargas de trabalho recém-criadas para ambientes de trabalho selecionados anteriormente.
-* Selecione _new_ ambientes de trabalho. Esse recurso ajuda a proteger novos workloads adicionados ao seu ambiente.
 
 
 
@@ -99,12 +98,16 @@ Se você já tiver selecionado ambientes de trabalho para descoberta, poderá de
 
 
 
-== Descubra ambientes de trabalho recém-criados
+== Descubra novos ambientes de trabalho
 
-Se você já descobriu ambientes de trabalho, pode descobrir qualquer ambiente de trabalho recém-criado no Dashboard.
+Se você já descobriu ambientes de trabalho, pode descobrir quaisquer ambientes de trabalho ou ambientes de trabalho recém-criados que você não selecionou anteriormente durante os processos de descoberta anteriores.
 
 .Passos
 . Na navegação à esquerda do BlueXP , selecione *proteção* > *proteção contra ransomware*.
 . No menu de proteção contra ransomware BlueXP , selecione a image:button-actions-vertical.png["Ações verticais"]opção vertical ... no canto superior direito. No menu suspenso, selecione *Configurações*.
 . No cartão de descoberta de carga de trabalho, selecione *Discover workloads*.
++
+
+TIP: Este processo pode demorar alguns minutos, conforme indicado por um ícone de carregamento em processo.
+
 

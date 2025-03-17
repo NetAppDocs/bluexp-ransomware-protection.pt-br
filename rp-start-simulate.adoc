@@ -37,9 +37,6 @@ image:screen-settings-alert-drill-configure.png["Configurar página de exercíci
 . Selecione um ambiente de trabalho de teste.
 . Insira o nome de uma nova carga de trabalho de teste a ser criada.
 . Selecione *Guardar*.
-+
-É apresentada uma mensagem de que o ambiente de exercício de prontidão está configurado. Nessa mensagem, selecione *Iniciar exercício de prontidão* para iniciar a perfuração.
-
 
 
 
@@ -58,20 +55,7 @@ Depois de configurar o exercício de prontidão, você pode iniciar o exercício
 ** OU, na página Configurações, no cartão de preparação, selecione *Iniciar*.
 
 
-. Execute um dos seguintes procedimentos:
-+
-** Se você ainda não configurou o exercício de prontidão, uma mensagem será exibida informando que primeiro você precisa configurar o exercício de prontidão.
-+
-image:screen-settings-alert-drill-needtoconfigure.png["Página de configurações que mostra a mensagem do exercício de prontidão de que você precisa para configurar o exercício de prontidão"]
-
-+
-*** Selecione *Configurar ambiente de teste de preparação*.
-*** Continue com as instruções na seção anterior para configurar o ambiente de teste de perfuração na opção Configurações.
-
-
-** Se você já configurou o exercício de prontidão, depois de selecionar *Start*, o exercício de prontidão começa.
-
-
+. Se você já configurou o exercício de prontidão, depois de selecionar *Start*, o exercício de prontidão começa.
 
 
 
@@ -103,7 +87,6 @@ Aqui estão algumas coisas para procurar:
 +
 ** Olhe para o tipo de ataque potencial. Se o tipo indicar que um usuário é suspeito de atividade maliciosa, revise o nome do usuário.
 +
-*** Você pode querer bloquear o usuário selecionando *Bloquear usuário*.
 *** Você também pode querer investigar mais o usuário no Data Infrastructure Insights Workload Security selecionando *Investigate in Workload security*.
 
 
