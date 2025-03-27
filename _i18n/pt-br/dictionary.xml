@@ -1634,8 +1634,6 @@
   <block id="fd9f53769c15c2cf878c35f4cbc5a081" category="paragraph"><block ref="fd9f53769c15c2cf878c35f4cbc5a081" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bf6725ca3f9665491e02c1818a34d256" category="inline-image-macro">Página do incidente mostrando o alerta de preparação</block>
   <block id="dba36383db70a071d84d9ad78273ce43" category="paragraph">Aqui estão algumas coisas para procurar:</block>
-  <block id="b780e790d05aeda37075d8fd4a6d9b89" category="list-text">Olhe para o tipo de ataque potencial. Se o tipo indicar que um usuário é suspeito de atividade maliciosa, revise o nome do usuário.</block>
-  <block id="989cf4fcfe1664c1f40afc7abd89c986" category="list-text">Você também pode querer investigar mais o usuário no Data Infrastructure Insights Workload Security selecionando *Investigate in Workload security*.</block>
   <block id="c7243cc109c65ad504b84c3e805c784c" category="list-text">Veja a atividade do arquivo e os processos suspeitos:</block>
   <block id="fdb29353d86a86580fc253dc319e3e0b" category="list-text">Observe os dados detetados recebidos em comparação com os dados esperados.</block>
   <block id="929c013ec98095ed1024dac131501e30" category="list-text">Observe a taxa de criação de arquivos detetados em comparação com a taxa esperada.</block>
@@ -1660,7 +1658,6 @@
   <block id="37eb9cec5c575b48f279378f147d9523" category="section-title">Altere o status Alertas após o exercício de prontidão</block>
   <block id="c5e154a9c9a68a0fdd2cda956aafb0e1" category="paragraph">Depois de analisar o alerta de disponibilidade e restaurar a carga de trabalho, talvez você queira alterar o status do alerta.</block>
   <block id="b707d985234424bd425b96580911950e" category="list-text">Selecione o alerta novamente.</block>
-  <block id="162c9c11fab2a0b1844f31cfa4184c72" category="list-text">Indique o status selecionando *Editar* e altere o status para um dos seguintes:</block>
   <block id="e0a30b860c06e610cadc21ebf64426da" category="list-text">Demitido: Se você suspeitar que a atividade não é um ataque de ransomware, altere o status para demitido.</block>
   <block id="ff8d215b189dca41bf900d6545392594" category="admonition">Depois que você descartar um ataque, você não pode alterá-lo de volta. Se você ignorar um workload, todas as cópias snapshot bloqueado automaticamente em resposta ao possível ataque de ransomware serão excluídas permanentemente. Se você ignorar o alerta, o exercício de prontidão será considerado concluído.</block>
   <block id="36b45588cbfa3653d0bdeb91883b49f4" category="list-text">Resolvido: O incidente foi mitigado.</block>
@@ -1706,7 +1703,6 @@
   <block id="8d2bd4422410271303c0633a19aefea9" category="list-text">OU, na página Configurações, no cartão de preparação, selecione *Iniciar*.</block>
   <block id="f54a2552361ef76d1d69e95fc2f63e90" category="list-text">Se você já configurou o exercício de prontidão, depois de selecionar *Start*, o exercício de prontidão começa.</block>
   <block id="3764eabaa6dd82955df6528cd4a5a9b7" category="paragraph">A página Alertas é exibida. Na coluna ID de alerta, "Readiness drill" aparece ao lado da ID.</block>
-  <block id="a699ac7dcfe917f4ef6bfe5b42313497" category="list-text">Selecione o alerta com a indicação "Readiness drill". É apresentada uma lista de alertas de incidentes.</block>
   <block id="c7173a995c95a8992913692d7f8b29a3" category="list-text">Reveja os incidentes de alerta.</block>
   <block id="8094150588327954ce01d91cf529ccfc" category="list-text">Selecione um incidente de alerta.</block>
   <block id="b0e402efbf054d8b9cab93c3c4e53922" category="paragraph"><block ref="b0e402efbf054d8b9cab93c3c4e53922" category="inline-image-macro-rx" type="image"></block></block>
@@ -1715,4 +1711,21 @@
   <block id="65314129adf0c0a55f929809a17904c9" category="section-title">Descubra novos ambientes de trabalho</block>
   <block id="2826595d22ba9331559905631772b32d" category="paragraph">Se você já descobriu ambientes de trabalho, pode descobrir quaisquer ambientes de trabalho ou ambientes de trabalho recém-criados que você não selecionou anteriormente durante os processos de descoberta anteriores.</block>
   <block id="5f214ff0fb35d9a440af52567382d505" category="admonition">Este processo pode demorar alguns minutos, conforme indicado por um ícone de carregamento em processo.</block>
+  <block id="e5c9ae1c3da88c26e9ef5e7a52710eef" category="doc">Limitações conhecidas da proteção contra ransomware do BlueXP </block>
+  <block id="1eba71d64e6c5e410e558530711e835b" category="paragraph">As limitações conhecidas identificam plataformas, dispositivos ou funções que não são suportadas por esta versão do produto ou que não interoperam corretamente com ele. Revise essas limitações com cuidado.</block>
+  <block id="e742b92803487dd57d41c5028236224e" category="section-title">Problema de opção de redefinição de broca de prontidão</block>
+  <block id="ac36698324cb58e80610e027dc77d907" category="paragraph">Se você selecionar um volume do ONTAP 9.11.1 para o exercício de prontidão de ataque de ransomware, a proteção contra ransomware da BlueXP  notificará você com um alerta. Se você recuperar os dados usando a opção "clone-to-volume" e redefinir a broca, a operação de reinicialização falhará.</block>
+  <block id="c97840e501e12a9e468c80b3e3aaf1e4" category="list-text">No menu suspenso, selecione *Readiness drill* ou *Settings*.</block>
+  <block id="0b51810a1136dc1d22b2a572727e3531" category="paragraph">Quando você inicia o exercício de prontidão, a proteção contra ransomware do BlueXP  ignora o modo de aprendizado e inicia o exercício no modo ativo. O status de deteção da carga de trabalho é Ativo.</block>
+  <block id="4210647acc9b0dff8ae60481f5dbae02" category="admonition">Uma carga de trabalho pode ter um status de deteção de ransomware *modo de aprendizado* que indica que uma política de detecção de ransomware foi atribuída recentemente à carga de trabalho e o serviço está verificando as cargas de trabalho. Um status de detecção de *Ativo* indica que uma política de proteção para detecção de ransomware é atribuída.</block>
+  <block id="918afe8d47cac8e65affe228df4d1798" category="list-text">Selecione o alerta com a indicação "Readiness drill". Uma lista de alertas de incidentes é exibida na página de detalhes de alertas.</block>
+  <block id="81ec450a746d2846c599b97e0284672a" category="inline-image-macro">Página de detalhes de alertas mostrando o alerta de disponibilidade</block>
+  <block id="2869923d8a7e4947ee11eff41f3267f2" category="paragraph"><block ref="2869923d8a7e4947ee11eff41f3267f2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7a01e31bb54fb84b5dbc9ee51947a45b" category="list-text">Olhe para o tipo de ataque potencial.</block>
+  <block id="7d8343c0bc6249f96b5c9e2c1d4f8d8f" category="paragraph">Se o tipo indicar que um usuário é suspeito de atividade maliciosa, revise o nome do usuário. Você pode querer investigar mais o usuário no Data Infrastructure Insights Workload Security selecionando *Investigate in Workload security*.</block>
+  <block id="2da9a9f4e6a92f5857d147337ae308f7" category="list-text">Indique o status selecionando *Editar status* e altere o status para uma das seguintes opções:</block>
+  <block id="3ce945a70891d1550d3b785a4c8624ed" category="section-title">Faça o download do relatório de exercícios de prontidão</block>
+  <block id="153e13288e2e43aabfecd526b2fef2b5" category="paragraph">Depois que o exercício de prontidão estiver concluído, você pode querer revisar e salvar um relatório CSV no exercício.</block>
+  <block id="bd048471c80988072b8f583ab0ca3a12" category="list-text">Selecione o alerta e selecione a seta *Download* para fazer o download de um arquivo CSV.</block>
+  <block id="482723983a4f2af954e36ff41e567451" category="sidebar">Limitações conhecidas</block>
 </blocks>

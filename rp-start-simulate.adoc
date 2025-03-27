@@ -25,7 +25,7 @@ Antes de realizar uma simulação, você precisa configurar uma análise usando 
 
 .Passos
 . No menu de proteção contra ransomware BlueXP , selecione a image:button-actions-vertical.png["Ações verticais"]opção vertical ... no canto superior direito.
-. No menu suspenso, selecione *Configurações*.
+. No menu suspenso, selecione *Readiness drill* ou *Settings*.
 . No cartão de preparação na página Configurações, selecione *Configurar*.
 +
 A página Configurar disponibilidade é exibida.
@@ -47,6 +47,11 @@ TIP: Você pode editar a configuração da broca de prontidão mais tarde usando
 == Inicie um exercício de prontidão
 
 Depois de configurar o exercício de prontidão, você pode iniciar o exercício.
+
+Quando você inicia o exercício de prontidão, a proteção contra ransomware do BlueXP  ignora o modo de aprendizado e inicia o exercício no modo ativo. O status de deteção da carga de trabalho é Ativo.
+
+
+TIP: Uma carga de trabalho pode ter um status de deteção de ransomware *modo de aprendizado* que indica que uma política de detecção de ransomware foi atribuída recentemente à carga de trabalho e o serviço está verificando as cargas de trabalho. Um status de detecção de *Ativo* indica que uma política de proteção para detecção de ransomware é atribuída.
 
 .Passos
 . Execute um dos seguintes procedimentos:
@@ -72,36 +77,38 @@ Teste sua prontidão respondendo a um alerta de prontidão.
 +
 A página Alertas é exibida. Na coluna ID de alerta, "Readiness drill" aparece ao lado da ID.
 
-. Selecione o alerta com a indicação "Readiness drill". É apresentada uma lista de alertas de incidentes.
 +
 image:screen-alerts-readiness.png["Página de alertas mostrando o alerta de disponibilidade"]
+
+. Selecione o alerta com a indicação "Readiness drill". Uma lista de alertas de incidentes é exibida na página de detalhes de alertas.
++
+image:screen-alerts-readiness-details.png["Página de detalhes de alertas mostrando o alerta de disponibilidade"]
 
 . Reveja os incidentes de alerta.
 . Selecione um incidente de alerta.
 +
 image:screen-alerts-readiness-incidents2.png["Página do incidente mostrando o alerta de preparação"]
 
-+
+
+
 Aqui estão algumas coisas para procurar:
 
+* Olhe para o tipo de ataque potencial.
 +
-** Olhe para o tipo de ataque potencial. Se o tipo indicar que um usuário é suspeito de atividade maliciosa, revise o nome do usuário.
+Se o tipo indicar que um usuário é suspeito de atividade maliciosa, revise o nome do usuário. Você pode querer investigar mais o usuário no Data Infrastructure Insights Workload Security selecionando *Investigate in Workload security*.
+
+
+
+* Veja a atividade do arquivo e os processos suspeitos:
 +
-*** Você também pode querer investigar mais o usuário no Data Infrastructure Insights Workload Security selecionando *Investigate in Workload security*.
+** Observe os dados detetados recebidos em comparação com os dados esperados.
+** Observe a taxa de criação de arquivos detetados em comparação com a taxa esperada.
+** Observe a taxa de renomeação de arquivos detetada em comparação com a taxa esperada.
+** Olhe para a taxa de exclusão em comparação com a taxa esperada.
 
 
-** Veja a atividade do arquivo e os processos suspeitos:
-+
-*** Observe os dados detetados recebidos em comparação com os dados esperados.
-*** Observe a taxa de criação de arquivos detetados em comparação com a taxa esperada.
-*** Observe a taxa de renomeação de arquivos detetada em comparação com a taxa esperada.
-*** Olhe para a taxa de exclusão em comparação com a taxa esperada.
-
-
-** Veja a lista de arquivos afetados. Observe as extensões que podem estar causando o ataque.
-** Determine o impactos e a amplitude do ataque revisando o número de arquivos e diretórios afetados.
-
-
+* Veja a lista de arquivos afetados. Observe as extensões que podem estar causando o ataque.
+* Determine o impactos e a amplitude do ataque revisando o número de arquivos e diretórios afetados.
 
 
 
@@ -149,15 +156,25 @@ Depois de analisar o alerta de disponibilidade e restaurar a carga de trabalho, 
 .Passos
 . Voltar à página de detalhes do alerta.
 . Selecione o alerta novamente.
-. Indique o status selecionando *Editar* e altere o status para um dos seguintes:
+. Indique o status selecionando *Editar status* e altere o status para uma das seguintes opções:
 +
 ** Demitido: Se você suspeitar que a atividade não é um ataque de ransomware, altere o status para demitido.
 +
 
 IMPORTANT: Depois que você descartar um ataque, você não pode alterá-lo de volta. Se você ignorar um workload, todas as cópias snapshot bloqueado automaticamente em resposta ao possível ataque de ransomware serão excluídas permanentemente. Se você ignorar o alerta, o exercício de prontidão será considerado concluído.
 
-** Em curso
 ** Resolvido: O incidente foi mitigado.
 
 
+
+
+
+
+== Faça o download do relatório de exercícios de prontidão
+
+Depois que o exercício de prontidão estiver concluído, você pode querer revisar e salvar um relatório CSV no exercício.
+
+.Passos
+. No menu de proteção contra ransomware BlueXP , selecione *Alertas*.
+. Selecione o alerta e selecione a seta *Download* para fazer o download de um arquivo CSV.
 

@@ -1,0 +1,21 @@
+---
+sidebar: sidebar 
+permalink: rp-reference-limitations.html 
+keywords: ransomware protection, protect against ransomware attacks, anti-ransomware, role-based access control, rbac, role, permission, access rights, organization,project,account 
+summary: 'A proteção contra ransomware do BlueXP  usa o controle de acesso baseado em funções (RBAC) para controlar o acesso que cada usuário tem a recursos e ações específicos. O serviço usa funções específicas da proteção contra ransomware do BlueXP  (RPS).' 
+---
+= Limitações conhecidas da proteção contra ransomware do BlueXP 
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+As limitações conhecidas identificam plataformas, dispositivos ou funções que não são suportadas por esta versão do produto ou que não interoperam corretamente com ele. Revise essas limitações com cuidado.
+
+
+
+== Problema de opção de redefinição de broca de prontidão
+
+Se você selecionar um volume do ONTAP 9.11.1 para o exercício de prontidão de ataque de ransomware, a proteção contra ransomware da BlueXP  notificará você com um alerta. Se você recuperar os dados usando a opção "clone-to-volume" e redefinir a broca, a operação de reinicialização falhará.
