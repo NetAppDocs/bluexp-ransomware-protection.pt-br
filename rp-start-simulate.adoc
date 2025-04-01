@@ -167,14 +167,3 @@ IMPORTANT: Depois que você descartar um ataque, você não pode alterá-lo de v
 
 
 
-
-
-
-== Faça o download do relatório de exercícios de prontidão
-
-Depois que o exercício de prontidão estiver concluído, você pode querer revisar e salvar um relatório CSV no exercício.
-
-.Passos
-. No menu de proteção contra ransomware BlueXP , selecione *Alertas*.
-. Selecione o alerta e selecione a seta *Download* para fazer o download de um arquivo CSV.
-

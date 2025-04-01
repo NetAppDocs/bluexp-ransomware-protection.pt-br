@@ -42,6 +42,6 @@ image:screen-dashboard.png["Página do painel de instrumentos"]
 
 . Se você selecionou a opção *relatórios*, selecione um dos nomes de arquivo CSV pré-configurados e selecione *Download (CSV)* ou *Download (JSON)*.
 +
-image:screen-reports.png["Página de relatórios"]
+image:screen-reports0.png["Página de relatórios"]
 
 

@@ -35,7 +35,7 @@ image:screen-landing.png["Captura de tela da página inicial para proteção con
 Caso contrário, o Dashboard de proteção contra ransomware do BlueXP  será exibido.
 
 +
-image:screen-dashboard.png["Dashboard de proteção contra ransomware da BlueXP "]
+image:screen-dashboard2.png["Dashboard de proteção contra ransomware da BlueXP "]
 
 +
 

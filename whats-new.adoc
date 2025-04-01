@@ -39,7 +39,7 @@ Esta versão inclui melhorias nos processos seletivos de descoberta e redescober
 * Você pode executar esses processos de descoberta durante o processo de descoberta inicialmente ou dentro da opção Configurações.
 
 
-Para obter mais informações, https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["Descubra cargas de trabalho recém-criadas para ambientes de trabalho selecionados anteriormente"] consulte e https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Configure fetos com a opção Configurações"].
+Para obter mais informações, https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["Descubra cargas de trabalho recém-criadas para ambientes de trabalho selecionados anteriormente"] consulte e https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Configure recursos com a opção Configurações"].
 
 
 

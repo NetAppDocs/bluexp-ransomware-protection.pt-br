@@ -26,7 +26,7 @@ Você também pode usar o Painel para analisar e agir de acordo com as recomenda
 Após a descoberta, o Dashboard mostra a integridade da proteção de dados do workload.
 
 +
-image:screen-dashboard.png["Página do painel de instrumentos"]
+image:screen-dashboard2.png["Página do painel de instrumentos"]
 
 . No Dashboard, você pode executar as seguintes ações em cada um dos painéis:
 +
@@ -158,7 +158,7 @@ Os arquivos CSV incluem dados para todos os workloads em todos os ambientes de t
 .Passos
 . Na navegação à esquerda do BlueXP , selecione *proteção* > *proteção contra ransomware*.
 +
-image:screen-dashboard.png["Página do painel de instrumentos"]
+image:screen-dashboard2.png["Página do painel de instrumentos"]
 
 . Na página, selecione a opção *Atualizar* image:button-refresh.png["Opção de atualização"]no canto superior direito para atualizar os dados que aparecerão nos arquivos.
 . Execute um dos seguintes procedimentos:
