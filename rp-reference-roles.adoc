@@ -14,218 +14,322 @@ summary: 'A proteção contra ransomware do BlueXP  usa o controle de acesso ba
 [role="lead"]
 A proteção contra ransomware do BlueXP  emprega funções para controlar o acesso que cada usuário tem a recursos e ações específicos.
 
-A proteção contra ransomware do BlueXP  usa as seguintes funções:
+O serviço usa as funções a seguir específicas da proteção contra ransomware do BlueXP .
 
-* Administrador da organização
-* Visualizador (administrador não-organização)
+* * Administrador de proteção contra ransomware*: Gerencie ações nas guias proteger, Alertas, recuperar, Configurações e relatórios.
+* * Visualizador de proteção contra ransomware*: Visualize dados de carga de trabalho, visualize dados de alerta, baixe dados de recuperação e faça download de relatórios.
 
 
-A tabela a seguir indica que as ações que cada função de proteção de ransomware do BlueXP  pode executar.
+A plataforma BlueXP  para todos os serviços BlueXP  usa os seguintes tipos de funções:
+
+* *As funções da plataforma* permitem gerenciar usuários, atribuí-los a recursos e dar-lhes funções juntamente com outras ações de toda a plataforma.
++
+
+TIP: Para descoberta na proteção contra ransomware do BlueXP , você deve ter a função *Organization admin* além da função *ransomware protection admin*.
+
+* *As funções de serviços de dados* são limitadas apenas a um serviço de dados específico. Você pode ter várias funções de serviços de dados, dependendo do seu trabalho. A proteção contra ransomware da BlueXP  é um dos serviços de dados da BlueXP .
+
+
+Para obter detalhes sobre as funções da plataforma, https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["A documentação de configuração e administração do BlueXP "^] consulte .
+
+A tabela a seguir indica as ações que cada função de proteção de ransomware do BlueXP  pode executar.
 
 [cols="40,20a,20a"]
 |===
-| Recurso e ação | Administrador da organização | Visualizador 
+| Recurso e ação | Administração de proteção contra ransomware | Visualizador de proteção contra ransomware 
+
+
+| Visualize o painel e todas as guias  a| 
+Sim
+ a| 
+Sim
+
+
+
+| No painel, atualize o status da recomendação  a| 
+Sim
+ a| 
+Não
+
 
 
 | Inicie o teste gratuito  a| 
-Y
+Sim
  a| 
-N
-
-
-
-| Visualização do painel  a| 
-Y
- a| 
-Y
-
-
-
-| Ver separador proteção  a| 
-Y
- a| 
-Y
-
-
-
-| Guia Exibir Alertas  a| 
-Y
- a| 
-Y
-
-
-
-| Ver separador recuperar  a| 
-Y
- a| 
-Y
-
-
-
-| Exibir relatórios guia  a| 
-Y
- a| 
-Y
-
-
-
-| Ver separador Definições  a| 
-Y
- a| 
-Y
+Não
 
 
 
 | Inicie a descoberta de cargas de trabalho  a| 
-Y
+Sim
  a| 
-N
+Não
 
 
 
-| Proteger: Modificar ou excluir políticas  a| 
-Y
+| Inicie a redescoberta de cargas de trabalho  a| 
+Sim
  a| 
-N
+Não
 
 
 
-| Proteger: Adicione políticas  a| 
-Y
+3+| *Na guia proteger*: 
+
+
+| Adicione, modifique ou exclua planos de proteção  a| 
+Sim
  a| 
-N
+Não
 
 
 
-| Proteção: Proteja workloads  a| 
-Y
+| Proteja workloads  a| 
+Sim
  a| 
-N
+Não
 
 
 
-| Proteger: Identificar dados confidenciais  a| 
-Y
+| Identificar a exposição a dados confidenciais  a| 
+Sim
  a| 
-N
+Não
 
 
 
-| Proteger: Editar proteção da carga de trabalho  a| 
-Y
+| Listar planos de proteção e detalhes  a| 
+Sim
  a| 
-N
+Sim
 
 
 
-| Proteção: Veja os detalhes da carga de trabalho  a| 
-Y
+| Listar grupos de proteção  a| 
+Sim
  a| 
-Y
+Sim
 
 
 
-| Proteger: Transferir dados  a| 
-Y
+| Veja os detalhes do grupo de proteção  a| 
+Sim
  a| 
-Y
+Sim
 
 
 
-| Alertas: Veja os detalhes do alerta  a| 
-Y
+| Criar, editar ou eliminar grupo de proteçãoão  a| 
+Sim
  a| 
-Y
+Não
 
 
 
-| Alertas: Editar o status do incidente  a| 
-Y
+| Transferir dados  a| 
+Sim
  a| 
-N
+Sim
 
 
 
-| Alertas: Veja os detalhes do incidente  a| 
-Y
+3+| *Na guia Alertas*: 
+
+
+| Veja alertas e detalhes de alerta  a| 
+Sim
  a| 
-Y
+Sim
 
 
 
-| Alertas: Obtenha a lista completa dos arquivos afetados  a| 
-Y
+| Editar o status do incidente  a| 
+Sim
  a| 
-N
+Não
 
 
 
-| Alertas: Baixe dados de alertas  a| 
-Y
+| Marcar alerta para recuperação  a| 
+Sim
  a| 
-Y
+Não
 
 
 
-| Recuperar: Baixe arquivos afetados  a| 
-Y
+| Ver detalhes do incidente  a| 
+Sim
  a| 
-N
+Sim
 
 
 
-| Recuperar: Restaure a carga de trabalho  a| 
-Y
+| Dispensar ou resolver incentes  a| 
+Sim
  a| 
-N
+Não
 
 
 
-| Recuperar: Baixar dados de recuperação  a| 
-Y
+| Bloquear usuário  a| 
+Sim
  a| 
-Y
+Não
 
 
 
-| Recuperar: Baixar relatórios  a| 
-Y
+| Obtenha a lista completa dos arquivos afetados  a| 
+Sim
  a| 
-Y
+Não
 
 
 
-| Configurações: Adicionar ou modificar destinos de backup  a| 
-Y
+| Transferir dados de alertas  a| 
+Sim
  a| 
-N
+Sim
 
 
 
-| Configurações: Adicione ou modifique destinos SIEM  a| 
-Y
+3+| *Na guia recuperar*: 
+
+
+| Transferir ficheiros afetados  a| 
+Sim
  a| 
-N
+Não
 
 
 
-| Relatórios: Baixe relatórios  a| 
-Y
+| Restaure o workload  a| 
+Sim
  a| 
-Y
+Não
 
 
 
-| Documentação: Veja a documentação sobre o produto  a| 
-Y
+| Transferir dados de recuperação  a| 
+Sim
  a| 
-Y
+Sim
 
 
 
-| Documentação: Veja a documentação sobre o que há de novo no produto  a| 
-Y
+| Transferir relatórios  a| 
+Sim
  a| 
-Y
+Sim
+
+
+
+3+| *Na guia Configurações*: 
+
+
+| Adicionar ou modificar destinos de cópia de segurança  a| 
+Sim
+ a| 
+Não
+
+
+
+| Listar destinos de backup  a| 
+Sim
+ a| 
+Sim
+
+
+
+| Ver alvos SIEM conetados  a| 
+Sim
+ a| 
+Sim
+
+
+
+| Adicionar ou modificar alvos SIEM  a| 
+Sim
+ a| 
+Não
+
+
+
+| Conecte os destinos de segurança da carga de trabalho  a| 
+Sim
+ a| 
+Não
+
+
+
+| Ver o status da conexão de segurança da carga de trabalho  a| 
+Sim
+ a| 
+Sim
+
+
+
+| Desconete os destinos de segurança da carga de trabalho  a| 
+Sim
+ a| 
+Não
+
+
+
+| Configure o exercício de prontidão  a| 
+Sim
+ a| 
+Não
+
+
+
+| Inicie o exercício de prontidão  a| 
+Sim
+ a| 
+Não
+
+
+
+| Reiniciar o exercício de prontidão  a| 
+Sim
+ a| 
+Não
+
+
+
+| Edite o exercício de prontidão  a| 
+Sim
+ a| 
+Não
+
+
+
+| Rever o estado do exercício de prontidão  a| 
+Sim
+ a| 
+Sim
+
+
+
+| Atualizar configuração de deteção  a| 
+Sim
+ a| 
+Não
+
+
+
+| Exibir configuração de descoberta  a| 
+Sim
+ a| 
+Sim
+
+
+
+3+| *Na guia relatórios*: 
+
+
+| Transferir relatórios  a| 
+Sim
+ a| 
+Sim
 
 |===

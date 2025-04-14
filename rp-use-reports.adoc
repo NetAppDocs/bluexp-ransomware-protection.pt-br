@@ -12,9 +12,9 @@ summary: Com a proteção contra ransomware do BlueXP , você pode fazer downlo
 
 
 [role="lead"]
-Você pode exportar dados de proteção e fazer o download dos arquivos CSV ou JSON que mostram detalhes de proteção, alertas e recuperação.
+Você pode exportar dados de proteção e fazer download dos arquivos CSV ou JSON que mostram detalhes de exercícios de prontidão de ataque, proteção, alertas e recuperação.
 
-Antes de baixar os arquivos CSV ou JSON, você deve atualizar os dados, o que também atualiza os dados que aparecerão nos arquivos.
+Antes de baixar os arquivos, você deve atualizar os dados, o que também atualiza os dados que aparecerão nos arquivos.
 
 Você pode baixar arquivos de qualquer uma das opções do menu principal:
 
@@ -22,11 +22,15 @@ Você pode baixar arquivos de qualquer uma das opções do menu principal:
 * *Alertas*: Inclui o status e detalhes de todos os alertas, incluindo o número total de alertas e instantâneos automatizados.
 * *Recuperação*: Inclui o status e os detalhes de todas as cargas de trabalho que precisam ser restauradas, incluindo o número total de cargas de trabalho marcadas como "Restaurar necessário", "em andamento", "Restaurar falhou" e "restaurado com sucesso".
 * *Relatórios*: Você pode exportar dados de qualquer uma das páginas e baixar os arquivos.
++
+
+NOTE: Você pode baixar relatórios de exercícios de prontidão somente na página *relatórios*.
 
 
-Se você baixar arquivos CSV da página proteção, Alertas ou recuperação, os dados mostram apenas os dados nessa página.
 
-Os arquivos CSV incluem dados para todos os workloads em todos os ambientes de trabalho do BlueXP .
+Se você baixar arquivos CSV ou JSON da página proteção, Alertas ou recuperação, os dados mostram apenas os dados nessa página.
+
+Os arquivos CSV ou JSON incluem dados para todas as cargas de trabalho em todos os ambientes de trabalho do BlueXP .
 
 .Passos
 . Na navegação à esquerda do BlueXP , selecione *proteção* > *proteção contra ransomware*.
@@ -40,8 +44,8 @@ image:screen-dashboard.png["Página do painel de instrumentos"]
 ** No menu proteção contra ransomware do BlueXP , selecione *relatórios*.
 
 
-. Se você selecionou a opção *relatórios*, selecione um dos nomes de arquivo CSV pré-configurados e selecione *Download (CSV)* ou *Download (JSON)*.
+. Se você selecionou a opção *relatórios*, selecione um dos nomes de arquivo pré-configurados e selecione *Download*.
 +
-image:screen-reports0.png["Página de relatórios"]
+image:screen-reports.png["Página de relatórios que mostra o relatório de exercícios de prontidão"]
 
 

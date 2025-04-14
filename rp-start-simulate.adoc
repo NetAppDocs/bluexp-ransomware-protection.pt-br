@@ -167,3 +167,17 @@ IMPORTANT: Depois que você descartar um ataque, você não pode alterá-lo de v
 
 
 
+
+
+
+== Reveja os relatórios sobre o exercício de prontidão
+
+Após a conclusão do exercício de prontidão, você pode querer revisar e salvar um relatório na perfuratriz.
+
+.Passos
+. No menu proteção contra ransomware do BlueXP , selecione *relatórios*.
++
+image:screen-reports.png["Página de relatórios que mostra o relatório de exercícios de prontidão"]
+
+. Selecione *exercícios de prontidão* e *Download* para fazer o download do relatório de exercícios de prontidão.
+

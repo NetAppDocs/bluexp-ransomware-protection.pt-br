@@ -14,7 +14,9 @@ summary: Comece a usar a proteção contra ransomware do BlueXP  acessando o se
 [role="lead"]
 Você usa o NetApp BlueXP  para fazer login no serviço de proteção contra ransomware da BlueXP .
 
-A proteção contra ransomware do BlueXP  usa o controle de acesso baseado em funções (RBAC) para controlar o acesso que cada usuário tem a ações específicas. Para obter detalhes sobre as ações que cada função pode executar, link:rp-reference-roles.html["Privileges de controle de acesso baseado em funções de proteção contra ransomware da BlueXP "]consulte .
+A proteção contra ransomware do BlueXP  usa o controle de acesso baseado em funções (RBAC) para controlar o acesso que cada usuário tem a ações específicas. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções do BlueXP  para todos os serviços"^].
+
+Para obter detalhes sobre as ações que cada função pode executar, link:rp-reference-roles.html["Privileges de controle de acesso baseado em funções de proteção contra ransomware da BlueXP "]consulte .
 
 Para fazer login no BlueXP , você pode usar as credenciais do site de suporte da NetApp ou se inscrever para fazer login na nuvem do NetApp usando seu e-mail e uma senha. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html["Saiba mais sobre como fazer login"^].
 

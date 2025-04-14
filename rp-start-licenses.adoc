@@ -17,7 +17,7 @@ Com a proteção contra ransomware do BlueXP , você pode usar diferentes plano
 Você pode usar os seguintes tipos de licença:
 
 * Inscreva-se para uma avaliação gratuita de 30 dias.
-* Compre uma assinatura PAYGO (pay-as-you-go) com o Amazon Web Services (AWS) Marketplace, o Google Cloud Marketplace ou o Azure Marketplace (em breve).
+* Compre uma assinatura PAYGO (pay-as-you-go) com o Amazon Web Services (AWS) Marketplace, o Google Cloud Marketplace ou o Azure Marketplace.
 * Traga sua própria licença (BYOL), que é um arquivo de licença NetApp (NLF) que você obtém de seu representante de vendas da NetApp Você pode usar o número de série da licença para ativar o BYOL na carteira digital BlueXP .
 
 
@@ -80,6 +80,8 @@ Para adicionar um conetor, https://docs.netapp.com/us-en/bluexp-setup-admin/conc
 *Após o término da avaliação, obtenha uma assinatura ou licença*
 
 Após o término da avaliação gratuita, você pode se inscrever em um dos marketplaces ou comprar uma licença da NetApp.
+
+Se você já tem uma assinatura PAYGO, a licença é automaticamente alterada para a assinatura após o término da avaliação gratuita.
 
 <<Inscreva-se no AWS Marketplace>> <<Inscreva-se através do Microsoft Azure Marketplace>> <<Inscreva-se no Google Cloud Marketplace>> <<Traga sua própria licença (BYOL)>>
 
@@ -286,4 +288,17 @@ Depois de pagar a licença e esta ser registada no Site de suporte da NetApp, a 
 .. Selecione a guia *licenças de serviços de dados*, selecione o ícone *ações ...* para o número de série do serviço que você está atualizando e selecione *Licença de atualização*.
 
 
+
+
+
+
+== Termine a assinatura PAYGO
+
+Se você quiser encerrar sua assinatura PAYGO, você pode fazê-lo a qualquer momento.
+
+.Passos
+. Na proteção contra ransomware do BlueXP , no canto superior direito, selecione a opção de licença.
+. Selecione *Ver métodos de pagamento*.
+. Nos detalhes da lista suspensa, desmarque a caixa *Use after current payment method expires*.
+. Selecione *Guardar*.
 

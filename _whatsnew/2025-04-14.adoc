@@ -1,0 +1,31 @@
+= Relatórios de exercícios de prontidão
+:allow-uri-read: 
+
+
+
+
+=== Relatórios de exercícios de prontidão
+
+Com esse lançamento, você pode analisar os relatórios de exercícios de prontidão de ataques de ransomware. Um exercício de prontidão permite simular um ataque de ransomware em um workload de amostra recém-criado. Em seguida, investigue o ataque simulado e recupere a carga de trabalho de amostra. Esse recurso ajuda você a saber que está preparado no caso de um ataque real de ransomware, testando processos de notificação, resposta e recuperação de alertas.
+
+Para obter detalhes, https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-simulate.html["Faça um exercício de prontidão para ataques de ransomware"] consulte .
+
+
+
+=== Novas funções e permissões de controle de acesso baseadas em funções
+
+Anteriormente, você poderia atribuir funções e permissões a usuários com base em suas responsabilidades, o que ajuda a gerenciar o acesso de usuários à proteção contra ransomware do BlueXP . Com esta versão, há duas novas funções específicas para a proteção contra ransomware do BlueXP  com permissões atualizadas. As novas funções são:
+
+* Administração de proteção contra ransomware
+* Visualizador de proteção contra ransomware
+
+
+Para obter detalhes sobre permissões, https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-roles.html["Acesso baseado em funções à proteção contra ransomware da BlueXP  aos recursos"] consulte .
+
+
+
+=== Melhorias de pagamento
+
+Esta versão inclui várias melhorias no processo de pagamento.
+
+Para obter detalhes, https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-licenses.html["Configure opções de licenciamento e pagamento"] consulte .

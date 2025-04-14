@@ -78,7 +78,6 @@ TIP: A proteção contra ransomware do BlueXP  identifica o melhor ponto de res
 
 
 . Se o destino original não tiver espaço suficiente para restaurar a carga de trabalho, será exibida uma linha de "armazenamento temporário". Você pode selecionar o armazenamento temporário para restaurar os dados da carga de trabalho. Os dados restaurados serão copiados do armazenamento temporário para o local original. Clique na seta *para baixo* na linha de armazenamento temporário e defina o cluster de destino, a VM de armazenamento e o nível local.
-. *Localização da quarentena*: Opcionalmente, selecione onde deseja armazenar dados potencialmente infetados antes de iniciar o processo de restauração para análise posterior após a recuperação.
 . Selecione *Guardar*.
 . Selecione *seguinte*.
 . Reveja as suas seleções.
@@ -153,7 +152,6 @@ TIP: O novo nome do volume aparece como prefixo, nome do volume original, nome d
 
 
 
-. *Localização da quarentena*: Opcionalmente, selecione onde deseja armazenar dados potencialmente infetados antes de iniciar o processo de restauração para análise posterior após a recuperação.
 . Selecione *Guardar*.
 . Selecione *seguinte*.
 . Reveja as suas seleções.
@@ -194,7 +192,6 @@ TIP: O novo nome do volume aparece como o nome do volume original, o nome da có
 
 
 
-. *Localização da quarentena*: Opcionalmente, selecione onde deseja armazenar dados potencialmente infetados antes de iniciar o processo de restauração para análise posterior após a recuperação.
 . Selecione *Guardar*.
 . Selecione *seguinte*.
 . Reveja as suas seleções.
@@ -272,7 +269,6 @@ TIP: Se você não especificar um caminho para a restauração, os arquivos ser�
 .. Selecione se pretende que os nomes dos ficheiros ou diretório restaurados sejam os mesmos nomes que a localização atual ou nomes diferentes.
 
 
-. *Localização da quarentena*: Opcionalmente, selecione onde deseja armazenar dados potencialmente infetados antes de iniciar o processo de restauração para análise posterior após a recuperação.
 . Selecione *seguinte*.
 . Reveja as suas seleções.
 . Selecione *Restaurar*.
