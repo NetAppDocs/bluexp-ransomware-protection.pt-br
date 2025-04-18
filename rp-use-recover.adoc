@@ -233,7 +233,7 @@ image:screen-alerts-incidents-impacted-files.png["lista de arquivos afetados par
 . *Ponto de restauração*: Selecione a seta para baixo ao lado de *ponto de restauração* para ver os detalhes. Selecione o ponto de restauração que deseja usar para restaurar os dados.
 +
 
-NOTE: A coluna motivo no painel pontos de restauração mostra o motivo do instantâneo ou do backup como "resposta programada" ou "resposta automatizada a incidentes de ransomware".
+NOTE: A coluna Reason (motivo) no painel Restore Points (pontos de restauração) mostra o motivo do snapshot ou do backup como "Scheduled" (resposta automática ao incidente de ransomware).
 
 . *Ficheiros*:
 +

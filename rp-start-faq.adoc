@@ -53,7 +53,7 @@ Para obter uma explicação sobre esses modos em todos os serviços BlueXP , ht
 
 == Interação com outros serviços
 
-*A proteção contra ransomware BlueXP  está ciente das configurações de proteção feitas no NetApp ONTAP?* Sim, a proteção contra ransomware do BlueXP  descobre as programações de snapshot definidas no ONTAP.
+*A proteção contra ransomware BlueXP  está ciente das configurações de proteção feitas no NetApp ONTAP?* Sim, a proteção contra ransomware do BlueXP  descobre programações de snapshot definidas no ONTAP.
 
 *Se você definir uma política usando a proteção contra ransomware do BlueXP , você precisa fazer alterações futuras apenas neste serviço?* Recomendamos que você faça alterações de política em relação ao serviço de proteção contra ransomware da BlueXP .
 
@@ -73,9 +73,9 @@ Além disso, a proteção contra ransomware do BlueXP  usa backup e recuperaç�
 
 *O que compõe uma carga de trabalho?* Uma carga de trabalho é uma aplicação, uma VM ou um compartilhamento de arquivos. Um workload inclui todos os volumes usados por uma única instância de aplicação. Por exemplo, uma instância do Oracle DB implantada no ora3.host.com pode ter vol1 e vol2 para seus dados e logs, respetivamente. Esses volumes juntos constituem a carga de trabalho para essa instância específica da instância do Oracle DB.
 
-*Como a proteção contra ransomware do BlueXP  prioriza os dados da carga de trabalho?* A prioridade de dados é determinada pelas cópias Snapshot feitas e pelos backups programados.
+*Como a proteção contra ransomware do BlueXP  prioriza os dados da carga de trabalho?* A prioridade dos dados é determinada pelas cópias snapshot feitas e pelos backups programados.
 
-A prioridade da carga de trabalho (crítica, padrão, importante) é determinada pelas frequências Snapshot já aplicadas a cada volume associado à carga de trabalho.
+A prioridade da carga de trabalho (crítica, padrão, importante) é determinada pelas frequências de instantâneos já aplicadas a cada volume associado à carga de trabalho.
 
 link:rp-use-protect.html["Saiba mais sobre prioridade ou importância da carga de trabalho"].
 

@@ -40,7 +40,7 @@ image:concept-security-layer-diagram.png["Diagrama da camada de segurança"]
 O serviço de proteção contra ransomware do BlueXP  fornece uso completo de várias tecnologias NetApp para que seu administrador de storage, administrador de segurança de dados ou engenheiro de operações de segurança possam cumprir as seguintes metas:
 
 * *Identifique* todos os workloads gerenciados em NetApp on-premises nas com NFS ou ambientes de trabalho CIFS na BlueXP , em organizações BlueXP , projetos e conetores BlueXP  baseados em aplicações, compartilhamento de arquivos ou VMware. Em seguida, o serviço categoriza a prioridade de dados e fornece recomendações para melhorias na proteção de ransomware.
-* * Proteja* suas cargas de trabalho habilitando backups, cópias Snapshot e estratégias de proteção contra ransomware em seus dados.
+* * Proteja* suas cargas de trabalho habilitando backups, cópias snapshot e estratégias de proteção contra ransomware em seus dados.
 * Nota de rodapé: Embora seja possível que um ataque não seja detetado, nossa pesquisa indica que a tecnologia NetApp resultou em um alto grau de deteção para certos ataques de ransomware baseados em criptografia de arquivos.]
 * *Responda* a potenciais ataques de ransomware iniciando automaticamente um instantâneo NetApp ONTAP inviolável que está bloqueado para que a cópia não possa ser excluída acidentalmente ou maliciosamente. Seus dados de backup permanecerão imutáveis e protegidos de ponta a ponta contra ataques de ransomware na origem e no destino.
 * *Recupere* suas cargas de trabalho que ajudam a acelerar o tempo de atividade da carga de trabalho orquestrando várias tecnologias NetApp. Você pode optar por recuperar volumes específicos. O serviço fornece recomendações sobre as melhores opções.
@@ -61,7 +61,7 @@ A proteção contra ransomware da BlueXP  oferece os seguintes benefícios:
 * Aplica recomendações de proteção de dados orientada por IA/ML com acesso a um clique.
 * Protege dados nos principais workloads baseados em aplicações, como MySQL, Oracle, VMware datastores e compartilhamentos de arquivos.
 * Detecta ataques de ransomware a dados em tempo real no storage primário usando a tecnologia de AI.
-* Inicia ações automatizadas em resposta a possíveis ataques detetados, criando cópias Snapshot e iniciando alertas sobre atividades anormais.
+* Inicia ações automatizadas em resposta a possíveis ataques detetados, criando cópias snapshot e iniciando alertas sobre atividades anormais.
 * Aplica recuperação selecionada para atender às políticas de RPO. A proteção contra ransomware do BlueXP  orquestra a recuperação de incidentes de ransomware usando vários serviços de recuperação do NetApp, incluindo o backup e a recuperação do BlueXP  (antigo backup em nuvem) e o SnapCenter.
 * Usa o controle de acesso baseado em função (RBAC) para controlar o acesso a recursos e operações do serviço, o que aumenta a segurança.
 
@@ -113,8 +113,8 @@ image:diagram-rp-architecture-preview3.png["Diagrama mostrando a arquitetura de 
 | *IDENTIFIQUE*  a| 
 * Encontra todos os dados nas (protocolos NFS e CIFS) e Cloud Volumes ONTAP no local conectados à BlueXP .
 * Identifica os dados dos clientes das APIs de serviço ONTAP e SnapCenter e os associa a cargas de trabalho. Saiba mais sobre https://docs.netapp.com/us-en/ontap-family/["ONTAP"^] e https://docs.netapp.com/us-en/snapcenter/index.html["Software SnapCenter"^].
-* Detecta o nível de proteção atual de cada volume de cópias NetApp Snapshot e políticas de backup, bem como quaisquer recursos de detecção on-box. Em seguida, o serviço associa essa postura de proteção às cargas de trabalho usando backup e recuperação do BlueXP , serviços ONTAP e tecnologias NetApp, como proteção autônoma contra ransomware (ARP ou ARP/AI, dependendo da versão do ONTAP), FPolicy, políticas de backup e políticas de snapshot. Saiba mais sobre https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Proteção autônoma contra ransomware"^], https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html["Backup e recuperação do BlueXP"^] e https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["Política de ONTAP"^].
-* Atribui uma prioridade de negócios a cada workload com base nos níveis de proteção descobertos automaticamente e recomenda políticas de proteção para cargas de trabalho com base em sua prioridade de negócios. A prioridade do workload é baseada nas frequências do Snapshot já aplicadas a cada volume associado à carga de trabalho.
+* Detecta o nível de proteção atual de cada volume de cópias snapshot e políticas de backup do NetApp, bem como quaisquer recursos de detecção on-box. Em seguida, o serviço associa essa postura de proteção às cargas de trabalho usando backup e recuperação do BlueXP , serviços ONTAP e tecnologias NetApp, como proteção autônoma contra ransomware (ARP ou ARP/AI, dependendo da versão do ONTAP), FPolicy, políticas de backup e políticas de snapshot. Saiba mais sobre https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Proteção autônoma contra ransomware"^], https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html["Backup e recuperação do BlueXP"^] e https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["Política de ONTAP"^].
+* Atribui uma prioridade de negócios a cada workload com base nos níveis de proteção descobertos automaticamente e recomenda políticas de proteção para cargas de trabalho com base em sua prioridade de negócios. A prioridade da carga de trabalho baseia-se nas frequências de instantâneos já aplicadas a cada volume associado à carga de trabalho.
 
 
 
@@ -127,7 +127,7 @@ image:diagram-rp-architecture-preview3.png["Diagrama mostrando a arquitetura de 
 
 | *DETECTAR*  a| 
 * Detecta possíveis ataques com um modelo integrado de aprendizado de máquina (ML) que deteta atividade e criptografia potencialmente anômalas.
-* Fornece detecção de camada dupla que começa com a deteção de possíveis ataques de ransomware no storage primário e a resposta a atividades anormais. Basta fazer cópias Snapshot automatizadas adicionais para criar os pontos de restauração de dados mais próximos. O serviço oferece a capacidade de se aprofundar para identificar possíveis ataques com maior precisão sem afetar o desempenho dos workloads primários.
+* Fornece detecção de camada dupla que começa com a deteção de possíveis ataques de ransomware no storage primário e a resposta a atividades anormais. Isso inclui cópias snapshot automatizadas adicionais para criar os pontos de restauração de dados mais próximos. O serviço oferece a capacidade de se aprofundar para identificar possíveis ataques com maior precisão sem afetar o desempenho dos workloads primários.
 * Determina os arquivos e mapas suspeitos específicos que atacam as cargas de trabalho associadas, usando o ONTAP, a proteção autônoma contra ransomware (ARP ou ARP/AI dependendo da versão do ONTAP), a segurança de carga de trabalho de Insights de infraestrutura de dados (anteriormente Cloud Insights) e as tecnologias FPolicy.
 
 

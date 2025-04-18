@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: rp-use-alert.html 
 keywords: ransomware protection alert, ransomware protection attack, detect ransomware alert 
-summary: Se a proteção contra ransomware do BlueXP  detectar um possível ataque, um alerta será exibido no Painel de proteção contra ransomware do BlueXP  indicando um possível ataque. O serviço também inicia imediatamente a obtenção de uma cópia Snapshot. Neste ponto, você deve olhar para o risco potencial na guia Alertas de proteção contra ransomware do BlueXP . 
+summary: Se a proteção contra ransomware do BlueXP  detectar um possível ataque, um alerta será exibido no Painel de proteção contra ransomware do BlueXP  indicando um possível ataque. O serviço também inicia imediatamente a obtenção de uma cópia snapshot. Neste ponto, você deve olhar para o risco potencial na guia Alertas de proteção contra ransomware do BlueXP . 
 ---
 = Responda a um alerta de ransomware detetado
 :hardbreaks:
@@ -57,10 +57,11 @@ Um incidente de alerta é categorizado em um dos seguintes estados:
 * *Demitido*: Se você suspeitar que a atividade não é um ataque de ransomware, você pode alterar o status para "demitido".
 +
 
-CAUTION: Depois de descartar um ataque, você não pode alterar isso de volta. Se você ignorar um workload, todas as cópias Snapshot feitas automaticamente em resposta ao possível ataque de ransomware serão excluídas permanentemente.
+CAUTION: Depois de descartar um ataque, você não pode alterar isso de volta. Se você ignorar um workload, todas as cópias snapshot bloqueado automaticamente em resposta ao possível ataque de ransomware serão excluídas permanentemente.
 
 * *Dismissing*: O incidente está em processo de desistência.
 * *Resolvido*: O incidente foi mitigado.
+* *Auto resolvido*: Para alertas de baixa prioridade, o incidente é resolvido automaticamente se não houver nenhuma ação tomada sobre ele dentro de 5 dias.
 
 
 
@@ -206,7 +207,7 @@ Depois de analisar incidentes, você precisa determinar se os incidentes são po
 
 Você pode ignorar falsos positivos ou decidir recuperar seus dados imediatamente. Se você decidir ignorar o alerta, o serviço irá aprender esse comportamento e associá-lo a operações normais e não iniciar um alerta sobre tal comportamento novamente.
 
-Se você ignorar um workload, todas as cópias Snapshot feitas automaticamente em resposta ao possível ataque de ransomware serão excluídas permanentemente.
+Se você ignorar um workload, todas as cópias snapshot bloqueado automaticamente em resposta ao possível ataque de ransomware serão excluídas permanentemente.
 
 
 CAUTION: Se você ignorar um alerta, não poderá alterar esse status de volta para qualquer outro status e não poderá desfazer essa alteração.
@@ -232,7 +233,7 @@ image:screen-alerts-status-edit.png["Página Status de edição de alerta"]
 
 . Na caixa Editar status, selecione o status *"demitido"*.
 +
-São exibidas informações adicionais sobre o workload e quais cópias Snapshot serão excluídas.
+São exibidas informações adicionais sobre a carga de trabalho e quais cópias snapshot serão excluídas.
 
 . Selecione *Guardar*.
 +

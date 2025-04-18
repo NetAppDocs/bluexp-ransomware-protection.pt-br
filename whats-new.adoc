@@ -257,7 +257,7 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["
 
 === Bloqueio de cópias snapshot no storage primário
 
-Isso permite bloquear as cópias Snapshot no storage primário para que elas não possam ser modificadas ou excluídas por um determinado período, mesmo que um ataque de ransomware gerencie seu caminho até o destino do storage de backup.
+Isso permite bloquear as cópias snapshot no storage primário para que elas não possam ser modificadas ou excluídas por um determinado período, mesmo que um ataque de ransomware gerencie seu caminho até o destino do storage de backup.
 
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Saiba mais sobre como proteger cargas de trabalho e ativar o bloqueio de backup em uma estratégia de proteção contra ransomware"].
 
@@ -317,7 +317,7 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["
 
 === Estratégias de proteção contra ransomware
 
-Se as políticas Snapshot ou Backup não existirem no workload, você poderá criar uma estratégia de proteção contra ransomware, que pode incluir as seguintes políticas criadas neste serviço:
+Se as políticas de snapshot ou backup não existirem na carga de trabalho, você poderá criar uma estratégia de proteção contra ransomware, que pode incluir as seguintes políticas criadas neste serviço:
 
 * Política do Snapshot
 * Política de backup
