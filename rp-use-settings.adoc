@@ -105,6 +105,9 @@ Para proteger esses workloads, você deve adicionar um destino de backup. Você 
 * Microsoft Azure
 
 
+
+NOTE: Os destinos de backup não estão disponíveis para cargas de trabalho no Amazon FSX for NetApp ONTAP. Execute operações de backup usando o serviço de backup do FSX for ONTAP.
+
 Pode adicionar um destino de cópia de segurança com base numa ação recomendada a partir do Painel de controlo ou a partir do acesso à opção Definições no menu.
 
 

@@ -85,7 +85,7 @@ Workloads protegidos contam com a capacidade adquirida ou com a assinatura após
 
 == Licenciamento
 
-Com a proteção contra ransomware do BlueXP , você pode usar diferentes planos de licenciamento, incluindo uma avaliação gratuita, uma assinatura paga conforme o uso em breve ou trazer sua própria licença.
+Com a proteção contra ransomware do BlueXP , você pode usar diferentes planos de licenciamento, incluindo uma avaliação gratuita, uma assinatura paga conforme o uso ou trazer sua própria licença.
 
 O serviço de proteção contra ransomware do BlueXP  requer uma licença do NetApp ONTAP One.
 
@@ -173,6 +173,11 @@ Use a proteção contra ransomware do BlueXP  para ver a resiliência dos dados
 * Cloud Volumes ONTAP 9.11.1 ou posterior para AWS (usando protocolos NFS e CIFS)
 * Cloud Volumes ONTAP 9.11.1 ou posterior para Google Cloud Platform (usando protocolos NFS e CIFS)
 * Cloud Volumes ONTAP 9.12.1 ou superior para Microsoft Azure (usando protocolos NFS e CIFS)
+* O Amazon FSX for NetApp ONTAP, que usa a proteção autônoma contra ransomware (ARP e não ARP/AI).
++
+
+NOTE: ARP/AI requer ONTAP 9,16 ou superior.
+
 
 
 

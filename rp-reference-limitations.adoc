@@ -19,3 +19,13 @@ As limitações conhecidas identificam plataformas, dispositivos ou funções qu
 == Problema de opção de redefinição de broca de prontidão
 
 Se você selecionar um volume do ONTAP 9.11.1 para o exercício de prontidão de ataque de ransomware, a proteção contra ransomware da BlueXP  notificará você com um alerta. Se você recuperar os dados usando a opção "clone-to-volume" e redefinir a broca, a operação de reinicialização falhará.
+
+
+
+== Limitações do Amazon FSX para NetApp ONTAP
+
+O ambiente de trabalho do Amazon FSX for NetApp ONTAP é compatível com a proteção contra ransomware do BlueXP . As seguintes limitações aplicam-se a este ambiente de trabalho:
+
+* As políticas de backup não são compatíveis com o FSX for ONTAP. Nesse ambiente, você deve executar operações de backup usando o serviço de backup do Amazon FS for ONTAP. É possível restaurar esses workloads usando snapshots de proteção contra ransomware da BlueXP .
+* As operações de restauração são executadas somente a partir de snapshots.
+

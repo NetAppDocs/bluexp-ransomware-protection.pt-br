@@ -18,6 +18,33 @@ Saiba o que há de novo na proteção contra ransomware do BlueXP .
 
 
 
+== 29 de abril de 2025
+
+
+
+=== Suporte para o Amazon FSX for NetApp ONTAP
+
+Esta versão suporta o Amazon FSX for NetApp ONTAP. Esse recurso ajuda você a proteger suas cargas de trabalho do FSX for ONTAP com proteção contra ransomware BlueXP .
+
+O FSX para ONTAP é um serviço totalmente gerenciado que fornece o poder do armazenamento NetApp ONTAP na nuvem. Ele oferece os mesmos recursos, performance e funcionalidades administrativas que você usa no local com a agilidade e escalabilidade de um serviço AWS nativo.
+
+As seguintes alterações foram feitas no fluxo de trabalho de proteção contra ransomware do BlueXP :
+
+* A descoberta inclui cargas de trabalho no FSX para ambientes de trabalho do ONTAP 9,15.
+* A guia proteção mostra as cargas de trabalho nos ambientes FSX for ONTAP. Nesse ambiente, você deve executar operações de backup usando o serviço de backup do FSX for ONTAP. É possível restaurar esses workloads usando snapshots de proteção contra ransomware da BlueXP .
++
+
+TIP: As políticas de backup para uma carga de trabalho em execução no FSX for ONTAP não podem ser definidas no BlueXP . Todas as políticas de backup existentes definidas no Amazon FSX for NetApp ONTAP permanecem inalteradas.
+
+* Incidentes de alerta mostram o novo ambiente de trabalho do FSX for ONTAP.
+
+
+Para obter detalhes, https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["Saiba mais sobre a proteção contra ransomware BlueXP  e os ambientes de trabalho"] consulte .
+
+Para obter informações sobre as opções suportadas, consulte o https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-limitations.html["Limitações da proteção contra ransomware do BlueXP "].
+
+
+
 == 14 de abril de 2025
 
 

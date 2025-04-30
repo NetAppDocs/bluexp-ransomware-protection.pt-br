@@ -42,7 +42,7 @@ NOTE: Se você tiver backup e recuperação do BlueXP  e proteção contra rans
 Você pode visualizar um comportamento anômalo do usuário com o Data Infrastructure Insights Workload Security. Isso requer uma licença para a segurança de workload do Insights da infraestrutura de dados e que você a habilite na proteção contra ransomware do BlueXP . Para obter uma visão geral do Data Infrastuture Insights Workload Security, consulte https://docs.netapp.com/us-en/data-infrastructure-insights/cs_intro.html["Sobre o Workload Security"^]
 
 
-TIP: Se você não tiver uma licença para segurança de workload de infraestrutura de dados e não a ativar na proteção contra ransomware do BlueXP , não verá as informações anômalas de comportamento do usuário.
+TIP: Se você não tiver uma licença para segurança de workload do Insights da infraestrutura de dados e não a ativar na proteção contra ransomware do BlueXP , não verá as informações anômalas de comportamento do usuário.
 
 
 
@@ -83,7 +83,7 @@ Após o término da avaliação gratuita, você pode se inscrever em um dos mark
 
 Se você já tem uma assinatura PAYGO, a licença é automaticamente alterada para a assinatura após o término da avaliação gratuita.
 
-<<Inscreva-se no AWS Marketplace>> <<Inscreva-se através do Microsoft Azure Marketplace>> <<Inscreva-se no Google Cloud Marketplace>> <<Traga sua própria licença (BYOL)>>
+<<Inscreva-se no AWS Marketplace>> <<Inscreva-se através do Microsoft Azure Marketplace>> <<Subscribe through Google Cloud Marketplace>> <<Traga sua própria licença (BYOL)>>
 
 
 
@@ -97,11 +97,11 @@ Este procedimento fornece uma visão geral de alto nível de como se inscrever d
 ** Você vê uma mensagem de que o teste gratuito está expirando. Na mensagem, selecione *Exibir métodos de pagamento*.
 ** Clique no aviso *avaliação gratuita* no canto superior direito e selecione *Ver métodos de pagamento*.
 +
-image:screen-license-payment-methods2.png["A página métodos de pagamento de proteção contra ransomware da BlueXP "]
+image:screen-license-payment-methods3.png["A página métodos de pagamento de proteção contra ransomware da BlueXP "]
 
 
 
-. Na página métodos de pagamento, selecione *Inscrever-se no AWS Marketplace*.
+. Na página métodos de pagamento, selecione *Subscribe* para *Amazon Web Services*.
 . No AWS Marketplace, selecione *Exibir opções de compra*.
 . Use o AWS Marketplace para assinar a proteção contra ransomware do BlueXP .
 . Quando você retorna à proteção contra ransomware do BlueXP , uma mensagem indica que você está inscrito.
@@ -145,11 +145,11 @@ Este procedimento fornece uma visão geral de alto nível de como se inscrever d
 ** Você vê uma mensagem de que o teste gratuito está expirando. Na mensagem, selecione *Exibir métodos de pagamento*.
 ** Clique no aviso *avaliação gratuita* no canto superior direito e selecione *Ver métodos de pagamento*.
 +
-image:screen-license-payment-methods2.png["A página métodos de pagamento de proteção contra ransomware da BlueXP "]
+image:screen-license-payment-methods3.png["A página métodos de pagamento de proteção contra ransomware da BlueXP "]
 
 
 
-. Na página métodos de pagamento, selecione *Inscrever-se no Azure Marketplace*.
+. Na página métodos de pagamento, selecione *Subscribe* para *Microsoft Azure Marketplace*.
 . No Azure Marketplace, selecione *Ver opções de compra*.
 . Use o Azure Marketplace para assinar a proteção contra ransomware do BlueXP .
 . Quando você retorna à proteção contra ransomware do BlueXP , uma mensagem indica que você está inscrito.
@@ -183,9 +183,9 @@ image:screen-dw-data-services-license.png["Página de licenças de serviços de 
 
 
 
-== Inscreva-se no Google Cloud Marketplace
+== Inscreva-se no Google Cloud Platform Marketplace
 
-Este procedimento fornece uma visão geral de alto nível de como se inscrever diretamente no Google Cloud Marketplace.
+Este procedimento fornece uma visão geral de alto nível de como se inscrever diretamente no Google Cloud Platform Marketplace.
 
 .Passos
 . Na proteção contra ransomware do BlueXP , siga um destes procedimentos:
@@ -193,17 +193,17 @@ Este procedimento fornece uma visão geral de alto nível de como se inscrever d
 ** Você vê uma mensagem de que o teste gratuito está expirando. Na mensagem, selecione *Exibir métodos de pagamento*.
 ** Clique no aviso *avaliação gratuita* no canto superior direito e selecione *Ver métodos de pagamento*.
 +
-image:screen-license-payment-methods3-gcp.png["A página métodos de pagamento de proteção contra ransomware da BlueXP "]
+image:screen-license-payment-methods3.png["A página métodos de pagamento de proteção contra ransomware da BlueXP "]
 
 
 
-. Na página métodos de pagamento, selecione *Inscrever-se no Google Cloud Marketplace*.
-. No Google Cloud Marketplace, selecione *Subscribe*.
-. Use o Google Cloud Marketplace para assinar a proteção contra ransomware do BlueXP . image:screen-license-payments-gcp.png["Página de assinatura do Google Cloud Marketplace"]
+. Na página métodos de pagamento, selecione *Subscribe* para o Google Cloud Platform Marketplace*.
+. No Google Cloud Platform Marketplace, selecione *Subscribe*.
+. Use o Google Cloud Platform Marketplace para assinar a proteção contra ransomware do BlueXP . image:screen-license-payments-gcp.png["Página de assinatura do Google Cloud Marketplace"]
 . Quando você retorna à proteção contra ransomware do BlueXP , uma mensagem indica que você está inscrito.
 +
 
-NOTE: Um e-mail é enviado a você que inclui o número de série da proteção contra ransomware da BlueXP  e indica que a proteção contra ransomware da BlueXP  está subscrita no Google Cloud Marketplace.
+NOTE: Um e-mail é enviado a você que inclui o número de série da proteção contra ransomware da BlueXP  e indica que a proteção contra ransomware da BlueXP  está subscrita no mercado do Google Cloud Platform.
 
 . Voltar à página métodos de pagamento de proteção contra ransomware BlueXP .
 . Adicione a licença ao BlueXP  selecionando *Adicionar licença ao BlueXP *.

@@ -57,7 +57,7 @@ image:screen-discover-workloads1.png["Descobrir captura de tela de cargas de tra
 É apresentada uma lista de ambientes de trabalho.
 
 +
-image:screen-discover-workloads-select-no-autodiscovery.png["Descobrir captura de tela de cargas de trabalho"]
+image:screen-discover-workloads-select.png["Descobrir captura de tela de cargas de trabalho"]
 
 . Selecione os ambientes de trabalho onde você deseja descobrir workloads ou marque a caixa na parte superior da tabela para descobrir workloads em todos os ambientes de workload descobertos.
 . Selecione *Discover*.
