@@ -1778,15 +1778,6 @@
   <block id="065ced4e95bc23c02a22f53b7d00da49" category="admonition">Os destinos de backup não estão disponíveis para cargas de trabalho no Amazon FSX for NetApp ONTAP. Execute operações de backup usando o serviço de backup do FSX for ONTAP.</block>
   <block id="8855742ef7ac60d26f35536e1d09aef9" category="section-title">29 de abril de 2025</block>
   <block id="3c2a45fff6f8bee383d20bf70ff8535a" category="doc">Geração de relatórios de ambientes de trabalho não compatíveis com a proteção contra ransomware do BlueXP </block>
-  <block id="b42180eb0fa303da5a11adbc08be431f" category="paragraph">Durante o fluxo de trabalho de descoberta, a proteção contra ransomware do BlueXP  relata mais detalhes quando você passa o Mouse sobre cargas de trabalho compatíveis ou não compatíveis. Isso ajudará você a entender por que alguns de seus workloads ou ambientes de trabalho não fazem parte do painel ou gerenciados pelo serviço de proteção contra ransomware. No momento, os seguintes ambientes de trabalho não são compatíveis com o serviço de proteção contra ransomware da BlueXP .</block>
-  <block id="200b74de2e12f861dad63aa0de84ec6c" category="list-text">Cloud Volumes Service</block>
-  <block id="c8e90ee73047c3063b54a44eae9d4af6" category="list-text">Série E.</block>
-  <block id="8496bc8fa09162b4a1d6b5482545d7e5" category="list-text">Google Cloud Platform (GCP)</block>
-  <block id="48b747470192bb1f3eb893cd89cddb83" category="list-text">ONTAP 9.11.1 e versões anteriores</block>
-  <block id="9b705ea007b3ac220c55a333054a1e7c" category="list-text">ONTAP Direct clusters locais que não são gerenciados por um BlueXP  Connector</block>
-  <block id="392d70ca39f31f10bd637936769788df" category="list-text">StorageGRID</block>
-  <block id="579848aa0d8bdd4f7904793483675637" category="paragraph">Você pode exibir os ambientes de trabalho não suportados durante a descoberta inicial e posterior na opção *descoberta de carga de trabalho* na página Configurações. Há muitas razões pelas quais o serviço não suporta um ambiente de trabalho, por exemplo, a versão do ONTAP no seu ambiente de trabalho pode estar abaixo da versão necessária. Quando você passa o Mouse sobre um ambiente de trabalho não suportado, uma dica de ferramenta exibe o motivo.</block>
-  <block id="4c47a495695584c11b9bc39a46126b3f" category="paragraph">Você pode baixar os resultados do processo de descoberta após a descoberta.</block>
   <block id="aad9baa97ac0eac36d06a06e92779e20" category="admonition">As cargas de trabalho com volumes que usam FlexGroup ou iSCSI não serão descobertas. Os workloads no Azure NetApp Files não são compatíveis. O serviço deteta e exibe configurações de ambiente de trabalho suportadas e não suportadas.</block>
   <block id="63e2bb0c5a3c29dbfc9712f5986829f5" category="list-text">Descubra novos ambientes de trabalho.</block>
   <block id="ba0a4542cb75319d2d7ef0f3aedde438" category="paragraph">O serviço encontra ambientes de trabalho suportados e não suportados. Este processo pode demorar alguns minutos.</block>
@@ -1802,4 +1793,7 @@
   <block id="6773f809e3f238c4a8a25adcd8e46f13" category="list-text">Insira o nome de uma nova carga de trabalho de teste a ser criada. Não inclua traços no nome.</block>
   <block id="71df7d09aaee8e6796df0c3d10989fbd" category="section-title">13 de maio de 2025</block>
   <block id="61583743ac80f4ba16bec0d30aa9b643" category="paragraph">Para obter detalhes,<block ref="fccc7436e00c13bc9cd8b09f936b4c8c" category="inline-link-rx"></block> consulte .</block>
+  <block id="670b6a838a9eab9baafd717669b2bcc5" category="paragraph">Durante o fluxo de trabalho de descoberta, a proteção contra ransomware do BlueXP  relata mais detalhes quando você passa o Mouse sobre cargas de trabalho compatíveis ou não compatíveis. Isso ajudará você a entender por que alguns de seus workloads não são descobertos pelo serviço de proteção contra ransomware da BlueXP .</block>
+  <block id="960c5f3106f70ebe4000fa5d5121f60f" category="paragraph">Há muitas razões pelas quais o serviço não suporta um ambiente de trabalho, por exemplo, a versão do ONTAP no seu ambiente de trabalho pode estar abaixo da versão necessária. Quando você passa o Mouse sobre um ambiente de trabalho não suportado, uma dica de ferramenta exibe o motivo.</block>
+  <block id="e7aba228bdeba9407e415c5afb1137a2" category="paragraph">Pode visualizar os ambientes de trabalho não suportados durante a descoberta inicial, onde também pode transferir os resultados. Você também pode exibir os resultados da descoberta na opção *descoberta de carga de trabalho* na página Configurações.</block>
 </blocks>
