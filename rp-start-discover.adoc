@@ -17,7 +17,7 @@ Para usar a proteção contra ransomware da BlueXP , o serviço precisa primeir
 A proteção contra ransomware do BlueXP  avalia aplicações MySQL, aplicações Oracle, datastores VMware e compartilhamentos de arquivos.
 
 
-NOTE: As cargas de trabalho com volumes que usam FlexGroup ou iSCSI não serão descobertas. As cargas de trabalho no Amazon FSX para NetApp ONTAP ou no Azure NetApp Files não são suportadas. Relatórios de proteção contra ransomware do BlueXP  sobre volumes não suportados no painel após o processo de detecção.
+NOTE: As cargas de trabalho com volumes que usam FlexGroup ou iSCSI não serão descobertas. Os workloads no Azure NetApp Files não são compatíveis. O serviço deteta e exibe configurações de ambiente de trabalho suportadas e não suportadas.
 
 O serviço avalia o nível de proteção existente, incluindo as opções atuais de proteção de backup, cópias snapshot e proteção Autonomous ransomware do NetApp. Com base na avaliação, o serviço recomenda como melhorar a proteção contra ransomware.
 
@@ -25,6 +25,7 @@ Você pode fazer o seguinte:
 
 * Em cada conetor, selecione os ambientes de trabalho onde você deseja descobrir cargas de trabalho. Você pode se beneficiar desse recurso se quiser proteger cargas de trabalho específicas em seu ambiente e não em outros.
 * Descubra cargas de trabalho recém-criadas para ambientes de trabalho selecionados anteriormente.
+* Descubra novos ambientes de trabalho.
 
 
 
@@ -43,35 +44,21 @@ image:screen-landing.png["Captura de tela da página inicial para proteção con
 
 . Na página inicial, selecione *Comece descobrindo cargas de trabalho*.
 +
-O serviço encontra ambientes de trabalho em seus conetores BlueXP .
+O serviço encontra ambientes de trabalho suportados e não suportados. Este processo pode demorar alguns minutos.
 
 +
+image:screen-discover-workloads-unsupported.png["Descobrir captura de tela de cargas de trabalho"]
 
-TIP: Este processo pode demorar alguns minutos.
-
-+
-image:screen-discover-workloads1.png["Descobrir captura de tela de cargas de trabalho"]
-
-. Para descobrir cargas de trabalho para um conetor específico, selecione *Localizar novos ambientes de trabalho* ao lado do conetor onde você deseja descobrir cargas de trabalho.
-+
-É apresentada uma lista de ambientes de trabalho.
-
-+
-image:screen-discover-workloads-select.png["Descobrir captura de tela de cargas de trabalho"]
-
-. Selecione os ambientes de trabalho onde você deseja descobrir workloads ou marque a caixa na parte superior da tabela para descobrir workloads em todos os ambientes de workload descobertos.
+. Para descobrir cargas de trabalho de um conetor específico, selecione *Selecione os ambientes de trabalho* ao lado do conetor onde deseja descobrir cargas de trabalho.
+. Selecione os ambientes de trabalho onde você deseja descobrir cargas de trabalho.
 . Selecione *Discover*.
 +
-O serviço detecta dados de workload somente para esses conetores com ambientes de trabalho selecionados.
+O serviço detecta dados de workload somente para esses conetores com ambientes de trabalho selecionados. Este processo pode demorar alguns minutos.
 
 +
+image:screen-discover-workloads-unsupported-collected.png["Captura de tela de cargas de trabalho descobertas"]
 
-TIP: Este processo pode demorar alguns minutos.
-
-+
-image:screen-discover-workloads-found2.png["Captura de tela de cargas de trabalho descobertas"]
-
-. Para fazer o download da lista de cargas de trabalho descobertas, selecione *Download Results (CSV)*.
+. Para fazer o download da lista de cargas de trabalho descobertas, selecione *Download Results*.
 . Para exibir o Painel de proteção contra ransomware do BlueXP , selecione *ir para Painel*.
 +
 O Dashboard mostra a integridade da proteção de dados. O número de cargas de trabalho protegidas ou em risco aumenta com base nas cargas de trabalho descobertas recentemente.
@@ -110,4 +97,6 @@ Se você já descobriu ambientes de trabalho, pode descobrir quaisquer ambientes
 
 TIP: Este processo pode demorar alguns minutos, conforme indicado por um ícone de carregamento em processo.
 
+. O serviço deteta ambientes de trabalho suportados e não suportados. Há muitas razões pelas quais o serviço não suporta um ambiente de trabalho, por exemplo, a versão do ONTAP no seu ambiente de trabalho pode estar abaixo da versão necessária. Quando você passa o Mouse sobre um ambiente de trabalho não suportado, uma dica de ferramenta exibe o motivo. Selecione os ambientes de trabalho onde você deseja descobrir cargas de trabalho.
+. Selecione *Discover*.
 

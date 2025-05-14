@@ -33,9 +33,14 @@ A página Configurar disponibilidade é exibida.
 +
 image:screen-settings-alert-drill-configure.png["Configurar página de exercícios de prontidão"]
 
-. Selecione o conetor BlueXP  que pretende utilizar para a broca de preparação.
-. Selecione um ambiente de trabalho de teste.
-. Insira o nome de uma nova carga de trabalho de teste a ser criada.
+. Faça o seguinte:
++
+.. Selecione o conetor BlueXP  que pretende utilizar para a broca de preparação.
+.. Selecione um ambiente de trabalho de teste.
+.. Selecione um SVM de teste de storage.
+.. Insira o nome de uma nova carga de trabalho de teste a ser criada. Não inclua traços no nome.
+
+
 . Selecione *Guardar*.
 
 
