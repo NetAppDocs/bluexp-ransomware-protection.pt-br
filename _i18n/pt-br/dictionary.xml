@@ -1787,7 +1787,6 @@
   <block id="392d70ca39f31f10bd637936769788df" category="list-text">StorageGRID</block>
   <block id="579848aa0d8bdd4f7904793483675637" category="paragraph">Você pode exibir os ambientes de trabalho não suportados durante a descoberta inicial e posterior na opção *descoberta de carga de trabalho* na página Configurações. Há muitas razões pelas quais o serviço não suporta um ambiente de trabalho, por exemplo, a versão do ONTAP no seu ambiente de trabalho pode estar abaixo da versão necessária. Quando você passa o Mouse sobre um ambiente de trabalho não suportado, uma dica de ferramenta exibe o motivo.</block>
   <block id="4c47a495695584c11b9bc39a46126b3f" category="paragraph">Você pode baixar os resultados do processo de descoberta após a descoberta.</block>
-  <block id="39c54f7d4df40cc8068c415171304f04" category="paragraph">Para obter detalhes,<block ref="52ea2f296b1d66ace77da9b46bb70668" category="inline-link-rx"></block> consulte .</block>
   <block id="aad9baa97ac0eac36d06a06e92779e20" category="admonition">As cargas de trabalho com volumes que usam FlexGroup ou iSCSI não serão descobertas. Os workloads no Azure NetApp Files não são compatíveis. O serviço deteta e exibe configurações de ambiente de trabalho suportadas e não suportadas.</block>
   <block id="63e2bb0c5a3c29dbfc9712f5986829f5" category="list-text">Descubra novos ambientes de trabalho.</block>
   <block id="ba0a4542cb75319d2d7ef0f3aedde438" category="paragraph">O serviço encontra ambientes de trabalho suportados e não suportados. Este processo pode demorar alguns minutos.</block>
@@ -1802,4 +1801,5 @@
   <block id="9d5c8a6e3597683b4559e2c596a2ead9" category="list-text">Selecione um SVM de teste de storage.</block>
   <block id="6773f809e3f238c4a8a25adcd8e46f13" category="list-text">Insira o nome de uma nova carga de trabalho de teste a ser criada. Não inclua traços no nome.</block>
   <block id="71df7d09aaee8e6796df0c3d10989fbd" category="section-title">13 de maio de 2025</block>
+  <block id="61583743ac80f4ba16bec0d30aa9b643" category="paragraph">Para obter detalhes,<block ref="fccc7436e00c13bc9cd8b09f936b4c8c" category="inline-link-rx"></block> consulte .</block>
 </blocks>

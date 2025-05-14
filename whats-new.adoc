@@ -39,7 +39,7 @@ Você pode exibir os ambientes de trabalho não suportados durante a descoberta 
 
 Você pode baixar os resultados do processo de descoberta após a descoberta.
 
-Para obter detalhes, https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discovery.html["Descubra workloads na proteção de ransomware BlueXP "] consulte .
+Para obter detalhes, https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["Descubra workloads na proteção de ransomware BlueXP "] consulte .
 
 
 
