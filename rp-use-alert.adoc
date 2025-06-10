@@ -4,7 +4,7 @@ permalink: rp-use-alert.html
 keywords: ransomware protection alert, ransomware protection attack, detect ransomware alert 
 summary: Se a proteção contra ransomware do BlueXP  detectar um possível ataque, um alerta será exibido no Painel de proteção contra ransomware do BlueXP  indicando um possível ataque. O serviço também inicia imediatamente a obtenção de uma cópia snapshot. Neste ponto, você deve olhar para o risco potencial na guia Alertas de proteção contra ransomware do BlueXP . 
 ---
-= Responda a um alerta de ransomware detetado
+= Lide com alertas de ransomware detectados com a proteção BlueXP contra ransomware
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,16 +12,16 @@ summary: Se a proteção contra ransomware do BlueXP  detectar um possível ata
 
 
 [role="lead"]
-Se a proteção contra ransomware do BlueXP  detectar um possível ataque, um alerta será exibido no Painel de proteção contra ransomware do BlueXP  e nas notificações do BlueXP , no canto superior direito, indicando um possível ataque de ransomware. O serviço também inicia imediatamente a obtenção de uma cópia snapshot. Neste ponto, você deve olhar para o risco potencial na guia *Alertas* de proteção contra ransomware BlueXP .
+Quando a proteção contra ransomware BlueXP detecta um possível ataque, ela exibe um alerta no Painel e na área de Notificações. O serviço tira uma foto instantânea imediatamente. Analise o risco potencial na aba *Alertas* da proteção contra ransomware BlueXP.
 
 Você pode ignorar falsos positivos ou decidir recuperar seus dados imediatamente.
 
 
-TIP: Se você decidir ignorar o alerta, o serviço irá aprender esse comportamento e associá-lo a operações normais e não iniciar um alerta sobre tal comportamento novamente.
+TIP: Se você descartar o alerta, o serviço aprenderá esse comportamento, o associará às operações normais e não iniciará um alerta novamente.
 
 Para começar a recuperar seus dados, marque o alerta como pronto para recuperação para que seu administrador de armazenamento possa iniciar o processo de recuperação.
 
-Cada alerta pode ter vários incidentes em volumes diferentes com status diferentes, portanto, certifique-se de olhar para todos os incidentes.
+Cada alerta pode incluir vários incidentes em diferentes volumes e status. Revise todos os incidentes.
 
 O serviço fornece informações chamadas _Evidence_ sobre o que causou a emissão do alerta, como o seguinte:
 
@@ -38,7 +38,7 @@ Um alerta é classificado como um dos seguintes:
 +
 ** A deteção de uma nova extensão não foi identificada antes e o mesmo comportamento não repete tempos suficientes para declará-la como um ataque.
 ** Alta entropia é observada.
-** As operações de leitura/gravação/renomeação/exclusão de arquivos tiveram um aumento de 100% na atividade além da linha de base.
+** A atividade de leitura, gravação, renomeação ou exclusão de arquivos dobrou em comparação aos níveis normais.
 
 
 
@@ -51,7 +51,7 @@ Um alerta pode ter um dos seguintes Estados:
 * *Inativo*
 
 
-Um incidente de alerta é categorizado em um dos seguintes estados:
+Um incidente de alerta pode ter um dos seguintes estados:
 
 * *Novo*: Todos os incidentes são marcados como "novo" quando são identificados pela primeira vez.
 * *Demitido*: Se você suspeitar que a atividade não é um ataque de ransomware, você pode alterar o status para "demitido".
@@ -60,8 +60,8 @@ Um incidente de alerta é categorizado em um dos seguintes estados:
 CAUTION: Depois de descartar um ataque, você não pode alterar isso de volta. Se você ignorar um workload, todas as cópias snapshot bloqueado automaticamente em resposta ao possível ataque de ransomware serão excluídas permanentemente.
 
 * *Dismissing*: O incidente está em processo de desistência.
-* *Resolvido*: O incidente foi mitigado.
-* *Auto resolvido*: Para alertas de baixa prioridade, o incidente é resolvido automaticamente se não houver nenhuma ação tomada sobre ele dentro de 5 dias.
+* *Resolvido*: O incidente foi corrigido.
+* *Resolvido automaticamente*: Para alertas de baixa prioridade, o incidente é resolvido automaticamente se nenhuma ação for tomada dentro de cinco dias.
 
 
 
@@ -70,11 +70,13 @@ CAUTION: Depois de descartar um ataque, você não pode alterar isso de volta. S
 
 Você pode acessar alertas no Painel de proteção contra ransomware do BlueXP  ou na guia *Alertas*.
 
+*Função BlueXP necessária* Administrador da organização, administrador de pasta ou projeto, administrador de proteção contra ransomware ou função de visualizador de ransomware.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do BlueXP para todos os serviços"^] .
+
 .Passos
 . No Painel de proteção contra ransomware do BlueXP , revise o painel Alertas.
 . Selecione *Ver tudo* em um dos Estados.
-. Clique num alerta para rever todos os incidentes em cada volume para cada alerta.
-. Para rever alertas adicionais, clique em *Alerta* no breadcrumbs no canto superior esquerdo.
+. Selecione um alerta para revisar todos os incidentes em cada volume para cada alerta.
+. Para revisar alertas adicionais, selecione *Alerta* nas trilhas de navegação no canto superior esquerdo.
 . Reveja os alertas na página Alertas.
 +
 image:screen-alerts.png["Página de alertas"]
@@ -92,7 +94,11 @@ image:screen-alerts.png["Página de alertas"]
 
 == Detectar atividades maliciosas e comportamento anômalo do usuário
 
-Olhando para a guia Alertas, você pode identificar se há atividade maliciosa. Os detalhes que aparecem dependem de como o alerta foi acionado:
+Olhando para a guia Alertas, você pode identificar se há atividade maliciosa.
+
+*Função BlueXP necessária* Administrador da organização, administrador de pasta ou projeto ou administrador de proteção contra ransomware.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do BlueXP para todos os serviços"^] .
+
+*Que detalhes aparecem?* Os detalhes que aparecem dependem de como o alerta foi acionado:
 
 * Acionado pelo recurso Autonomous ransomware Protection no ONTAP. Isso deteta atividades maliciosas com base no comportamento dos arquivos no volume.
 * Acionado pela segurança de workload do Data Infrastructure Insights. Isso requer uma licença para a segurança de workload do Insights da infraestrutura de dados e para a habilitar na proteção contra ransomware do BlueXP . Esse recurso detecta um comportamento anômalo do usuário nos workloads de storage e permite que você bloqueie acesso adicional a esse usuário.
@@ -179,7 +185,9 @@ image:screen-alerts-incidents-diiws-diiwspage.png["Investigue em Segurança de c
 
 == Marque os incidentes de ransomware como prontos para recuperação (após os incidentes serem neutralizados)
 
-Depois de atenuar o ataque e estar pronto para recuperar cargas de trabalho, você deve se comunicar com sua equipe de administração de storage que os dados estão prontos para recuperação para que possam iniciar o processo de recuperação.
+Após interromper o ataque, notifique o administrador de armazenamento de que os dados estão prontos para que ele possa iniciar a recuperação.
+
+*Função BlueXP necessária* Administrador da organização, administrador de pasta ou projeto ou administrador de proteção contra ransomware.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do BlueXP para todos os serviços"^] .
 
 .Passos
 . No menu de proteção contra ransomware BlueXP , selecione *Alertas*.
@@ -203,14 +211,16 @@ Depois que o alerta é marcado para restauração, o alerta passa da guia Alerta
 
 == Descarte incidentes que não sejam potenciais ataques
 
-Depois de analisar incidentes, você precisa determinar se os incidentes são potenciais ataques. Se não, eles podem ser demitidos.
+Depois de analisar incidentes, você precisa determinar se os incidentes são potenciais ataques. Caso a condição anterior não seja cumprida, eles podem ser dispensados.
 
-Você pode ignorar falsos positivos ou decidir recuperar seus dados imediatamente. Se você decidir ignorar o alerta, o serviço irá aprender esse comportamento e associá-lo a operações normais e não iniciar um alerta sobre tal comportamento novamente.
+Você pode ignorar falsos positivos ou decidir recuperar seus dados imediatamente. Se você ignorar o alerta, o serviço aprenderá esse comportamento e o associará às operações normais e não iniciará um alerta sobre esse comportamento novamente.
 
-Se você ignorar um workload, todas as cópias snapshot bloqueado automaticamente em resposta ao possível ataque de ransomware serão excluídas permanentemente.
+Se você descartar uma carga de trabalho, todas as cópias de instantâneos feitas automaticamente em resposta a um possível ataque de ransomware serão excluídas permanentemente.
 
 
 CAUTION: Se você ignorar um alerta, não poderá alterar esse status de volta para qualquer outro status e não poderá desfazer essa alteração.
+
+*Função BlueXP necessária* Administrador da organização, administrador de pasta ou projeto ou administrador de proteção contra ransomware.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do BlueXP para todos os serviços"^] .
 
 .Passos
 . No menu de proteção contra ransomware BlueXP , selecione *Alertas*.
@@ -233,7 +243,7 @@ image:screen-alerts-status-edit.png["Página Status de edição de alerta"]
 
 . Na caixa Editar status, selecione o status *"demitido"*.
 +
-São exibidas informações adicionais sobre a carga de trabalho e quais cópias snapshot serão excluídas.
+Aparecem informações adicionais sobre a carga de trabalho e que cópias de instantâneos foram excluídas.
 
 . Selecione *Guardar*.
 +
@@ -246,6 +256,8 @@ O status sobre o incidente ou incidentes muda para "demitido".
 == Exibir uma lista de arquivos afetados
 
 Antes de restaurar uma carga de trabalho de aplicação no nível do ficheiro, pode ver uma lista de ficheiros afetados. Pode aceder à página Alertas para transferir uma lista de ficheiros afetados. Em seguida, use a página recuperação para carregar a lista e escolher quais arquivos restaurar.
+
+*Função BlueXP necessária* Administrador da organização, administrador de pasta ou projeto ou administrador de proteção contra ransomware.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do BlueXP para todos os serviços"^] .
 
 .Passos
 Use a página Alertas para recuperar a lista de arquivos afetados.

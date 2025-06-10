@@ -40,6 +40,8 @@ indexpage:
       url: "/rp-use-dashboard.html"
     - title: Proteja workloads
       url: "/rp-use-protect.html"
+    - title: Procure informações pessoalmente identificáveis com a classificação BlueXP 
+      url: "/rp-use-protect-classify.html"
     - title: Responda a um alerta detetado
       url: "/rp-use-alert.html"
     - title: Recuperar de um ataque

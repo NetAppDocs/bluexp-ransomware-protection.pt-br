@@ -14,11 +14,9 @@ summary: Comece a usar a proteção contra ransomware do BlueXP  acessando o se
 [role="lead"]
 Você usa o NetApp BlueXP  para fazer login no serviço de proteção contra ransomware da BlueXP .
 
-A proteção contra ransomware do BlueXP  usa o controle de acesso baseado em funções (RBAC) para controlar o acesso que cada usuário tem a ações específicas. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções do BlueXP  para todos os serviços"^].
-
-Para obter detalhes sobre as ações que cada função pode executar, link:rp-reference-roles.html["Privileges de controle de acesso baseado em funções de proteção contra ransomware da BlueXP "]consulte .
-
 Para fazer login no BlueXP , você pode usar as credenciais do site de suporte da NetApp ou se inscrever para fazer login na nuvem do NetApp usando seu e-mail e uma senha. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html["Saiba mais sobre como fazer login"^].
+
+*Função BlueXP necessária* Administrador da organização, administrador de pasta ou projeto, administrador de proteção contra ransomware ou função de visualizador de proteção contra ransomware.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do BlueXP para todos os serviços"^] .
 
 .Passos
 . Abra um navegador da Web e vá para o https://console.bluexp.netapp.com/["Consola BlueXP"^].
@@ -31,17 +29,17 @@ Para fazer login no BlueXP , você pode usar as credenciais do site de suporte 
 Se esta for a primeira vez que fizer login neste serviço, a página de destino será exibida.
 
 +
+
+NOTE: Se você não tiver um BlueXP Connector ou se ele não for o ideal para este serviço, será necessário implantar um. link:rp-start-setup.html["Aprenda a configurar um conector"].
+
++
 image:screen-landing.png["Captura de tela da página inicial para proteção contra ransomware BlueXP "]
 
 +
 Caso contrário, o Dashboard de proteção contra ransomware do BlueXP  será exibido.
 
 +
-image:screen-dashboard2.png["Dashboard de proteção contra ransomware da BlueXP "]
-
-+
-
-NOTE: Se você não tiver um conetor BlueXP  ou não for o único para este serviço, talvez seja necessário entrar em Contato com o suporte da NetApp.
+image:screen-dashboard3.png["Dashboard de proteção contra ransomware da BlueXP "]
 
 . Se você ainda não fez isso, selecione a opção *descobrir cargas de trabalho*.
 +

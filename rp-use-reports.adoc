@@ -4,7 +4,7 @@ permalink: rp-use-reports.html
 keywords: ransomware protection, ransomware protection dashboard, detect ransomware attacks, recover from ransomware attack 
 summary: Com a proteção contra ransomware do BlueXP , você pode fazer download de relatórios que mostram detalhes de proteção, alertas e recuperação e salvá-los como arquivos .CSV. 
 ---
-= Transferir relatórios
+= Baixe relatórios sobre proteção contra ransomware BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -14,9 +14,12 @@ summary: Com a proteção contra ransomware do BlueXP , você pode fazer downlo
 [role="lead"]
 Você pode exportar dados de proteção e fazer download dos arquivos CSV ou JSON que mostram detalhes de exercícios de prontidão de ataque, proteção, alertas e recuperação.
 
-Antes de baixar os arquivos, você deve atualizar os dados, o que também atualiza os dados que aparecerão nos arquivos.
 
-Você pode baixar arquivos de qualquer uma das opções do menu principal:
+TIP: Antes de baixar os arquivos, você deve atualizar os dados, o que também atualiza os dados que aparecerão nos arquivos.
+
+*Função BlueXP necessária* Administrador da organização, administrador de pasta ou projeto, administrador de proteção contra ransomware ou função de visualizador de proteção contra ransomware.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do BlueXP para todos os serviços"^] .
+
+*Quais dados você pode baixar?* Você pode baixar arquivos de qualquer uma das opções do menu principal:
 
 * *Proteção*: Contém o status e detalhes de todas as cargas de trabalho, incluindo o número total protegido e em risco.
 * *Alertas*: Inclui o status e detalhes de todos os alertas, incluindo o número total de alertas e instantâneos automatizados.
@@ -35,7 +38,7 @@ Os arquivos CSV ou JSON incluem dados para todas as cargas de trabalho em todos 
 .Passos
 . Na navegação à esquerda do BlueXP , selecione *proteção* > *proteção contra ransomware*.
 +
-image:screen-dashboard.png["Página do painel de instrumentos"]
+image:screen-dashboard3.png["Página do painel de instrumentos"]
 
 . No Painel de instrumentos ou em outra página, selecione a opção *Atualizar* image:button-refresh.png["Opção de atualização"]no canto superior direito para atualizar os dados que aparecerão nos relatórios.
 . Execute um dos seguintes procedimentos:

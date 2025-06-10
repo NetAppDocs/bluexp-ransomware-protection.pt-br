@@ -4,7 +4,7 @@ permalink: rp-use-protect.html
 keywords: ransomware protection, protect against ransomware attacks, anti-ransomware policies, protect, malware, attack 
 summary: Você pode proteger workloads contra ataques de ransomware atribuindo políticas a um workload na proteção contra ransomware do BlueXP . 
 ---
-= Proteja workloads com estratégias de proteção de ransomware
+= Proteja as cargas de trabalho com estratégias de proteção contra ransomware BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,7 +12,11 @@ summary: Você pode proteger workloads contra ataques de ransomware atribuindo p
 
 
 [role="lead"]
-Você pode proteger workloads contra ataques de ransomware executando as seguintes ações usando a proteção contra ransomware do BlueXP .
+Você pode proteger cargas de trabalho contra ataques de ransomware habilitando a proteção consistente da carga de trabalho ou criando estratégias de proteção contra ransomware na proteção contra ransomware BlueXP.
+
+*Função necessária do BlueXP* Administrador da organização, administrador de pasta ou projeto, ou função de administrador de proteção contra ransomware.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do BlueXP para todos os serviços"^] .
+
+*Como você pode proteger cargas de trabalho?* A proteção contra ransomware BlueXP inclui as seguintes tarefas:
 
 * Habilite a proteção consistente com o workload, que funciona com o software SnapCenter ou o plug-in SnapCenter para VMware vSphere.
 * Crie ou gerencie estratégias de proteção contra ransomware, que incluem políticas criadas para snapshots, backups e proteção contra ransomware (conhecidas como _políticas de detecção_).

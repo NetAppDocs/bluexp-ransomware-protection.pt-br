@@ -14,7 +14,9 @@ summary: Você pode configurar várias opções, incluindo um destino de backup,
 [role="lead"]
 Você pode configurar destinos de backup, habilitar a deteção de ameaças, conduzir um exercício de prontidão de ataque, configurar a descoberta de carga de trabalho ou configurar a conexão com a segurança de carga de trabalho do Data Infrastructure Insights acessando a opção *Settings*.
 
-Na página Configurações, você pode fazer o seguinte:
+*Função necessária do BlueXP* Administrador da organização, administrador de pasta ou projeto, ou função de administrador de proteção contra ransomware.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do BlueXP para todos os serviços"^] .
+
+*O que você pode fazer na página Configurações?* Na página Configurações, você pode fazer o seguinte:
 
 * Simule um ataque de ransomware realizando um exercício de prontidão e responda a um alerta simulado de ransomware. Para obter detalhes, link:rp-start-simulate.html["Faça um exercício de prontidão para ataques de ransomware"]consulte .
 * Configurar a deteção de workload.
@@ -120,7 +122,7 @@ O Dashboard fornece muitas recomendações. Uma recomendação pode ser configur
 . Na navegação à esquerda do BlueXP , selecione *proteção* > *proteção contra ransomware*.
 . Revise o painel ações recomendadas do Dashboard.
 +
-image:screen-dashboard.png["Página do painel de instrumentos"]
+image:screen-dashboard3.png["Página do painel de instrumentos"]
 
 . No Painel, selecione *Rever e corrigir* para a recomendação de "preparar <backup provider> como destino de backup".
 . Continue com as instruções, dependendo do provedor de backup.

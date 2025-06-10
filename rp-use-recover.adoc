@@ -4,7 +4,7 @@ permalink: rp-use-recover.html
 keywords: ransomware protection recovery, recover from a ransomware attack, recovery point, RPA 
 summary: 'Após um ataque, a proteção contra ransomware do BlueXP  verifica se os dados de backup no storage secundário estão limpos, recomenda um ponto de recuperação real (RPA) e orquestra o fluxo de trabalho para uma recuperação resistente a falhas.' 
 ---
-= Recuperar de um ataque de ransomware (após os incidentes serem neutralizados)
+= Recupere-se de um ataque de ransomware (após a neutralização dos incidentes) com a proteção contra ransomware BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -59,6 +59,8 @@ Com a proteção contra ransomware do BlueXP , o administrador de storage pode 
 
 O estado da aplicação muda se necessário para a restauração. O aplicativo será restaurado para o seu estado anterior a partir de arquivos de controle, se eles forem incluídos no backup. Após a conclusão da restauração, o aplicativo será aberto no modo LEITURA-GRAVAÇÃO.
 
+*Função BlueXP necessária* Administrador da organização, administrador de pasta ou projeto ou administrador de proteção contra ransomware.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do BlueXP para todos os serviços"^] .
+
 .Passos
 . No menu de proteção contra ransomware BlueXP , selecione *recuperação*.
 . Revise as informações da carga de trabalho na página *recuperação*.
@@ -90,6 +92,8 @@ TIP: A proteção contra ransomware do BlueXP  identifica o melhor ponto de res
 == Restaure um workload não gerenciado pelo SnapCenter
 
 Com a proteção contra ransomware do BlueXP , o administrador de storage pode determinar a melhor maneira de restaurar workloads a partir do ponto de restauração recomendado ou do ponto de restauração preferido.
+
+*Função BlueXP necessária* Administrador da organização, administrador de pasta ou projeto ou administrador de proteção contra ransomware.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do BlueXP para todos os serviços"^] .
 
 O administrador de armazenamento de segurança pode recuperar dados em diferentes níveis:
 

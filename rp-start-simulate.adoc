@@ -4,7 +4,7 @@ permalink: rp-start-simulate.html
 keywords: ransomware protection alert, ransomware protection attack, detect ransomware alert, simulate, readiness drill, practice, ransomware attack, ransomware attack response, ransomware attack readiness drill 
 summary: Faça um drill de prontidão para ransomware simulando um ataque de ransomware em um workload de amostra recém-criado. Em seguida, investigue o ataque simulado e recupere a carga de trabalho de amostra. Você pode executar um exercício de prontidão para ransomware várias vezes. 
 ---
-= Simule um ataque de ransomware conduzindo um exercício de prontidão
+= Realizar um exercício de preparação para ataque de ransomware na proteção contra ransomware BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,23 +12,36 @@ summary: Faça um drill de prontidão para ransomware simulando um ataque de ran
 
 
 [role="lead"]
-Faça um drill de prontidão para ransomware simulando um ataque de ransomware em um workload de amostra recém-criado. Em seguida, investigue o ataque simulado e recupere a carga de trabalho de amostra. Esse recurso ajuda você a saber que está preparado no caso de um ataque real de ransomware, testando processos de notificação, resposta e recuperação de alertas. Você pode executar um exercício de prontidão para ransomware várias vezes.
+Execute um exercício de preparação para ataques de ransomware simulando um ataque a uma nova carga de trabalho de exemplo. Investigue o ataque simulado e recupere a carga de trabalho. Use este recurso para testar notificações de alerta, resposta e recuperação. Execute o exercício sempre que necessário.
 
 
-TIP: Seus dados reais da carga de trabalho não serão afetados.
+TIP: Seus dados reais de carga de trabalho não são afetados.
+
+Você pode executar exercícios de prontidão em cargas de trabalho NFS e CIFS (SMB).
 
 
 
 == Configurar um exercício de prontidão para ataques de ransomware
 
-Antes de realizar uma simulação, você precisa configurar uma análise usando a página Configurações. Pode aceder facilmente à página Definições a partir da opção ações junto do menu superior.
+Antes de executar uma simulação, configure um exercício na página Configurações. Acesse a página Configurações na opção Ações no menu superior.
+
+Você precisará inserir um nome de usuário e uma senha para as seguintes situações:
+
+* Se ocorrerem alterações no nome de usuário ou na senha da VM de armazenamento selecionada anteriormente
+* Se você selecionar uma VM de armazenamento CIFS (SMB) diferente
+* Se você inserir um nome de carga de trabalho de teste diferente
+
+
+*Função BlueXP necessária* Administrador da organização, administrador de pasta ou projeto ou administrador de proteção contra ransomware.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do BlueXP para todos os serviços"^] .
 
 .Passos
-. No menu de proteção contra ransomware BlueXP , selecione a image:button-actions-vertical.png["Ações verticais"]opção vertical ... no canto superior direito.
-. No menu suspenso, selecione *Readiness drill* ou *Settings*.
+. No menu de proteção contra ransomware do BlueXP, selecione o botão *Executar teste de prontidão* no canto superior direito.
++
+image:screen-dashboard3.png["Página do painel mostrando o botão Executar exercício de prontidão"]
+
 . No cartão de preparação na página Configurações, selecione *Configurar*.
 +
-A página Configurar disponibilidade é exibida.
+O BlueXP exibe a página Configurar exercício de prontidão.
 
 +
 image:screen-settings-alert-drill-configure.png["Configurar página de exercícios de prontidão"]
@@ -38,6 +51,7 @@ image:screen-settings-alert-drill-configure.png["Configurar página de exercíci
 .. Selecione o conetor BlueXP  que pretende utilizar para a broca de preparação.
 .. Selecione um ambiente de trabalho de teste.
 .. Selecione um SVM de teste de storage.
+.. Se você selecionou uma VM de armazenamento CIFS (SMB), os campos Nome de usuário e Senha serão exibidos. Insira o nome de usuário e a senha da VM de armazenamento.
 .. Insira o nome de uma nova carga de trabalho de teste a ser criada. Não inclua traços no nome.
 
 
@@ -53,15 +67,20 @@ TIP: Você pode editar a configuração da broca de prontidão mais tarde usando
 
 Depois de configurar o exercício de prontidão, você pode iniciar o exercício.
 
+*Função BlueXP necessária* Administrador da organização, administrador de pasta ou projeto ou administrador de proteção contra ransomware.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do BlueXP para todos os serviços"^] .
+
 Quando você inicia o exercício de prontidão, a proteção contra ransomware do BlueXP  ignora o modo de aprendizado e inicia o exercício no modo ativo. O status de deteção da carga de trabalho é Ativo.
 
 
-TIP: Uma carga de trabalho pode ter um status de deteção de ransomware *modo de aprendizado* que indica que uma política de detecção de ransomware foi atribuída recentemente à carga de trabalho e o serviço está verificando as cargas de trabalho. Um status de detecção de *Ativo* indica que uma política de proteção para detecção de ransomware é atribuída.
+TIP: Uma carga de trabalho pode ter um status de detecção de ransomware *Modo de aprendizagem* quando uma política de detecção é atribuída recentemente e o serviço verifica as cargas de trabalho.
 
 .Passos
 . Execute um dos seguintes procedimentos:
 +
-** No menu Configurações de proteção contra ransomware do BlueXP , selecione *broca de preparação* e, em seguida, na página de exercícios de preparação, selecione *Iniciar*.
+** No menu de proteção contra ransomware do BlueXP, selecione o botão *Executar teste de prontidão* no canto superior direito.
++
+image:screen-dashboard3.png["Página do painel mostrando o botão Executar exercício de prontidão"]
+
 ** OU, na página Configurações, no cartão de preparação, selecione *Iniciar*.
 
 
@@ -77,10 +96,12 @@ NOTE: Após o início do exercício, não é possível editar a configuração d
 
 Teste sua prontidão respondendo a um alerta de prontidão.
 
+*Função BlueXP necessária* Administrador da organização, administrador de pasta ou projeto ou administrador de proteção contra ransomware.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do BlueXP para todos os serviços"^] .
+
 .Passos
 . No menu de proteção contra ransomware BlueXP , selecione *Alertas*.
 +
-A página Alertas é exibida. Na coluna ID de alerta, "Readiness drill" aparece ao lado da ID.
+O BlueXP exibe a página Alertas. Na coluna ID do Alerta, você vê "Exercício de prontidão" ao lado do ID.
 
 +
 image:screen-alerts-readiness.png["Página de alertas mostrando o alerta de disponibilidade"]
@@ -120,7 +141,9 @@ Se o tipo indicar que um usuário é suspeito de atividade maliciosa, revise o n
 
 == Restaure o workload de teste
 
-Depois de analisar o alerta de perfuratriz de prontidão, talvez você queira restaurar a carga de trabalho de teste.
+Após revisar o alerta do exercício de prontidão, restaure a carga de trabalho de teste, se necessário.
+
+*Função BlueXP necessária* Administrador da organização, administrador de pasta ou projeto ou administrador de proteção contra ransomware.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do BlueXP para todos os serviços"^] .
 
 .Passos
 . Voltar à página de detalhes do alerta.
@@ -141,10 +164,10 @@ Depois de analisar o alerta de perfuratriz de prontidão, talvez você queira re
 
 . Na página Restaurar revisão, selecione *Restaurar*.
 +
-A página recuperação mostra o status da restauração da broca de preparação como "em andamento".
+O BlueXP exibe o status da restauração do exercício de prontidão como "Em andamento" na página Recuperação.
 
 +
-Após a conclusão da restauração, o status da carga de trabalho muda para *Restored*.
+Após a conclusão da restauração, o BlueXP altera o status da carga de trabalho para *Restaurada*.
 
 . Revise a carga de trabalho restaurada.
 
@@ -156,7 +179,9 @@ TIP: Para obter detalhes sobre o processo de restauração, link:rp-use-recover.
 
 == Altere o status Alertas após o exercício de prontidão
 
-Depois de analisar o alerta de disponibilidade e restaurar a carga de trabalho, talvez você queira alterar o status do alerta.
+Depois de revisar o alerta do exercício de prontidão e restaurar a carga de trabalho, altere o status do alerta, se necessário.
+
+*Função BlueXP necessária* Administrador da organização, administrador de pasta ou projeto ou administrador de proteção contra ransomware.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do BlueXP para todos os serviços"^] .
 
 .Passos
 . Voltar à página de detalhes do alerta.
@@ -178,6 +203,8 @@ IMPORTANT: Depois que você descartar um ataque, você não pode alterá-lo de v
 == Reveja os relatórios sobre o exercício de prontidão
 
 Após a conclusão do exercício de prontidão, você pode querer revisar e salvar um relatório na perfuratriz.
+
+*Função BlueXP necessária* Administrador da organização, administrador de pasta ou projeto, administrador de proteção contra ransomware ou função de visualizador de ransomware.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do BlueXP para todos os serviços"^] .
 
 .Passos
 . No menu proteção contra ransomware do BlueXP , selecione *relatórios*.

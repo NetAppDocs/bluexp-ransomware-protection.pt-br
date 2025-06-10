@@ -23,14 +23,10 @@ O serviço usa as funções a seguir específicas da proteção contra ransomwar
 A plataforma BlueXP  para todos os serviços BlueXP  usa os seguintes tipos de funções:
 
 * *As funções da plataforma* permitem gerenciar usuários, atribuí-los a recursos e dar-lhes funções juntamente com outras ações de toda a plataforma.
-+
-
-TIP: Para descoberta na proteção contra ransomware do BlueXP , você deve ter a função *Organization admin* além da função *ransomware protection admin*.
-
 * *As funções de serviços de dados* são limitadas apenas a um serviço de dados específico. Você pode ter várias funções de serviços de dados, dependendo do seu trabalho. A proteção contra ransomware da BlueXP  é um dos serviços de dados da BlueXP .
 
 
-Outras funções de plataforma do BlueXP  são tratadas como visualizadores na proteção contra ransomware do BlueXP . Por exemplo, a função *Organization Viewer* permite que você visualize os planos de proteção, mas não permite que você execute nenhuma ação na proteção contra ransomware BlueXP .
+Outras funções de plataforma do BlueXP  são tratadas como visualizadores na proteção contra ransomware do BlueXP . Por exemplo, a função *Visualizador de proteção contra ransomware* permite que você visualize os planos de proteção, mas não permite que você execute nenhuma ação na proteção contra ransomware do BlueXP.
 
 Para obter detalhes sobre todas as funções da plataforma BlueXP , https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["A documentação de configuração e administração do BlueXP "^] consulte .
 

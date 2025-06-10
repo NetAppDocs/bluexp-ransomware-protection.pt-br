@@ -24,3 +24,11 @@ TIP: As políticas de backup para uma carga de trabalho em execução no FSX for
 Para obter detalhes, https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["Saiba mais sobre a proteção contra ransomware BlueXP  e os ambientes de trabalho"] consulte .
 
 Para obter informações sobre as opções suportadas, consulte o https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-limitations.html["Limitações da proteção contra ransomware do BlueXP "].
+
+
+
+=== Função de acesso BlueXP necessária
+
+Agora você precisa de uma das seguintes funções de acesso para visualizar, descobrir ou gerenciar a proteção contra ransomware BlueXP: Administrador da organização, Administrador de pasta ou projeto, Administrador de proteção contra ransomware ou Visualizador de proteção contra ransomware.
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do BlueXP para todos os serviços"^].
