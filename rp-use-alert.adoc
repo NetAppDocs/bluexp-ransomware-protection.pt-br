@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: rp-use-alert.html 
 keywords: ransomware protection alert, ransomware protection attack, detect ransomware alert 
-summary: Se a proteção contra ransomware do BlueXP  detectar um possível ataque, um alerta será exibido no Painel de proteção contra ransomware do BlueXP  indicando um possível ataque. O serviço também inicia imediatamente a obtenção de uma cópia snapshot. Neste ponto, você deve olhar para o risco potencial na guia Alertas de proteção contra ransomware do BlueXP . 
+summary: Se a proteção contra ransomware do BlueXP  detectar um possível ataque, um alerta será exibido no Painel de proteção contra ransomware do BlueXP  indicando um possível ataque. Neste ponto, você deve olhar para o risco potencial na guia Alertas de proteção contra ransomware do BlueXP . 
 ---
 = Lide com alertas de ransomware detectados com a proteção BlueXP contra ransomware
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Se a proteção contra ransomware do BlueXP  detectar um possível ata
 [role="lead"]
 Quando a proteção contra ransomware BlueXP detecta um possível ataque, ela exibe um alerta no Painel e na área de Notificações. O serviço tira uma foto instantânea imediatamente. Analise o risco potencial na aba *Alertas* da proteção contra ransomware BlueXP.
 
-Se a BlueXP ransomware protection detectar um possível ataque, uma notificação será exibida nas Notificações do BlueXP e um e-mail será enviado para o endereço de e-mail que você configurou, indicando um possível ataque de ransomware. O serviço também inicia imediatamente um snapshot. Neste ponto, você deve olhar para o risco potencial na guia *Alertas* de proteção contra ransomware BlueXP .
+Se a BlueXP ransomware protection detectar um possível ataque, uma notificação será exibida nas Notificações do BlueXP e um e-mail será enviado para o endereço configurado. O e-mail inclui informações sobre a gravidade, a carga de trabalho afetada e um link para o alerta na aba *Alertas* da BlueXP ransomware protection .
 
 Você pode ignorar falsos positivos ou decidir recuperar seus dados imediatamente.
 
@@ -152,12 +152,12 @@ Olhando para a guia Alertas, você pode identificar se há atividade maliciosa.
 Para ativar a segurança de carga de trabalho na proteção contra ransomware BlueXP , vá para a página *Configurações* e selecione a opção *conexão de segurança de carga de trabalho*.
 
 +
-Para obter uma visão geral da segurança de carga de trabalho do Data Infrastucture Insights, consulte https://docs.netapp.com/us-en/data-infrastructure-insights/cs_intro.html["Sobre a segurança do workload"^].
+Para uma visão geral da segurança da carga de trabalho do Data Infrastructure Insights , revise  https://docs.netapp.com/us-en/data-infrastructure-insights/cs_intro.html["Sobre a segurança do workload"^] .
 
 
 
 
-TIP: Se você não tiver uma licença para a segurança de workload da infraestrutura de dados e não a ativar na proteção contra ransomware do BlueXP , não verá as informações anômalas de comportamento do usuário.
+TIP: Se você não tiver uma licença para a segurança da carga de trabalho da infraestrutura de dados e não a habilitar na BlueXP ransomware protection, você não verá as informações de comportamento anômalo do usuário.
 
 Quando ocorre atividade maliciosa, um alerta é gerado e um instantâneo automatizado é obtido.
 
@@ -262,7 +262,7 @@ Depois que o alerta é marcado para restauração, o alerta passa da guia Alerta
 
 Depois de analisar incidentes, você precisa determinar se os incidentes são potenciais ataques. Caso a condição anterior não seja cumprida, eles podem ser dispensados.
 
-Você pode ignorar falsos positivos ou decidir recuperar seus dados imediatamente. Se você ignorar o alerta, o serviço aprenderá esse comportamento e o associará às operações normais e não iniciará um alerta sobre esse comportamento novamente.
+Você pode ignorar falsos positivos ou decidir recuperar seus dados imediatamente. Se você ignorar o alerta, o serviço aprenderá esse comportamento, o associará às operações normais e não iniciará um alerta sobre esse comportamento novamente.
 
 Se você descartar uma carga de trabalho, todas as cópias de instantâneos feitas automaticamente em resposta a um possível ataque de ransomware serão excluídas permanentemente.
 
