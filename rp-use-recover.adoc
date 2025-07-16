@@ -103,7 +103,7 @@ O administrador de armazenamento de segurança pode recuperar dados em diferente
 * Recupere de um datastore em um nível de VM.
 
 
-O processo difere ligeiramente dependendo do tipo de carga de trabalho.
+O processo difere dependendo do tipo de carga de trabalho.
 
 .Passos
 . No menu de proteção contra ransomware BlueXP , selecione *recuperação*.
@@ -115,6 +115,10 @@ O processo difere ligeiramente dependendo do tipo de carga de trabalho.
 ** Todos os volumes
 ** Por volume
 ** Por arquivo: Você pode especificar uma pasta ou arquivos únicos para restaurar.
++
+
+IMPORTANT: Para cargas de trabalho SAN, você só pode restaurar por carga de trabalho.
+
 +
 
 TIP: Pode selecionar até 100 ficheiros ou uma única pasta.

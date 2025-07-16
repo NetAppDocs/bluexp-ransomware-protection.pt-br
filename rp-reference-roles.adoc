@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: rp-reference-roles.html 
 keywords: ransomware protection, protect against ransomware attacks, anti-ransomware, role-based access control, rbac, role, permission, access rights, organization,project,account 
-summary: 'A proteção contra ransomware do BlueXP  usa o controle de acesso baseado em funções (RBAC) para controlar o acesso que cada usuário tem a recursos e ações específicos. O serviço usa funções específicas da proteção contra ransomware do BlueXP  (RPS).' 
+summary: A proteção contra ransomware do BlueXP  emprega funções para controlar o acesso que cada usuário tem a recursos e ações específicos. 
 ---
 = Acesso baseado em funções à proteção contra ransomware da BlueXP  aos recursos
 :hardbreaks:
@@ -20,15 +20,7 @@ O serviço usa as funções a seguir específicas da proteção contra ransomwar
 * * Visualizador de proteção contra ransomware*: Visualize dados de carga de trabalho, visualize dados de alerta, baixe dados de recuperação e faça download de relatórios.
 
 
-A plataforma BlueXP  para todos os serviços BlueXP  usa os seguintes tipos de funções:
-
-* *As funções da plataforma* permitem gerenciar usuários, atribuí-los a recursos e dar-lhes funções juntamente com outras ações de toda a plataforma.
-* *As funções de serviços de dados* são limitadas apenas a um serviço de dados específico. Você pode ter várias funções de serviços de dados, dependendo do seu trabalho. A proteção contra ransomware da BlueXP  é um dos serviços de dados da BlueXP .
-
-
-Outras funções de plataforma do BlueXP  são tratadas como visualizadores na proteção contra ransomware do BlueXP . Por exemplo, a função *Visualizador de proteção contra ransomware* permite que você visualize os planos de proteção, mas não permite que você execute nenhuma ação na proteção contra ransomware do BlueXP.
-
-Para obter detalhes sobre todas as funções da plataforma BlueXP , https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["A documentação de configuração e administração do BlueXP "^] consulte .
+Essas funções são adicionais às funções da plataforma BlueXP que controlam o acesso ao serviço BlueXP e outros serviços, como proteção de dados, gerenciamento de carga de trabalho e assim por diante. Para obter detalhes sobre todas as funções da plataforma BlueXP , https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["A documentação de configuração e administração do BlueXP "^] consulte .
 
 A tabela a seguir indica as ações que cada função de proteção de ransomware do BlueXP  pode executar.
 

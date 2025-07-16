@@ -1,0 +1,31 @@
+= Suporte de carga de trabalho SAN
+:allow-uri-read: 
+
+
+
+
+=== Suporte de carga de trabalho SAN
+
+Esta versão inclui suporte para cargas de trabalho SAN na BlueXP ransomware protection. Agora você pode proteger cargas de trabalho SAN, além de cargas de trabalho NFS e CIFS.
+
+Para obter mais informações, link:https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-prerequisites.html["Pré-requisitos de proteção contra ransomware da BlueXP "]consulte .
+
+
+
+=== Proteção de carga de trabalho aprimorada
+
+Esta versão inclui um fluxo de trabalho aprimorado para proteger cargas de trabalho com ou sem proteção de dados. Se você usa outras ferramentas de proteção de dados da NetApp , como SnapCenter ou BlueXP backup and recovery , para seus snapshots ou backups, a BlueXP ransomware protection os detecta e permite que você mantenha as políticas que os regem. Com esta versão, você pode substituir essas políticas pelas políticas de BlueXP ransomware protection ou continuar usando as políticas existentes.
+
+Para obter detalhes, https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Proteja workloads"] consulte .
+
+
+
+=== Notificações por e-mail
+
+Se a BlueXP ransomware protection detectar um possível ataque, uma notificação será exibida nas Notificações do BlueXP e um e-mail será enviado para o endereço de e-mail que você configurou. O serviço também inicia imediatamente um snapshot.
+
+Neste ponto, você deve visualizar o e-mail, que lista a gravidade e os recursos afetados, e verificar o risco potencial na guia *Alertas* da BlueXP ransomware protection .
+
+Se você configurou um gerenciamento de segurança e eventos (SIEM) na BlueXP ransomware protection, o serviço envia detalhes de alerta para seu sistema SIEM.
+
+Para obter detalhes, https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["Lidar com alertas de ransomware detectados"] consulte .

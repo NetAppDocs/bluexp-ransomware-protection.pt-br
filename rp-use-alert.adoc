@@ -14,6 +14,8 @@ summary: Se a proteção contra ransomware do BlueXP  detectar um possível ata
 [role="lead"]
 Quando a proteção contra ransomware BlueXP detecta um possível ataque, ela exibe um alerta no Painel e na área de Notificações. O serviço tira uma foto instantânea imediatamente. Analise o risco potencial na aba *Alertas* da proteção contra ransomware BlueXP.
 
+Se a BlueXP ransomware protection detectar um possível ataque, uma notificação será exibida nas Notificações do BlueXP e um e-mail será enviado para o endereço de e-mail que você configurou, indicando um possível ataque de ransomware. O serviço também inicia imediatamente um snapshot. Neste ponto, você deve olhar para o risco potencial na guia *Alertas* de proteção contra ransomware BlueXP .
+
 Você pode ignorar falsos positivos ou decidir recuperar seus dados imediatamente.
 
 
@@ -43,6 +45,9 @@ Um alerta é classificado como um dos seguintes:
 
 
 
+
+NOTE: Para ambientes SAN, os avisos são baseados apenas em alta entropia.
+
 As evidências são baseadas em informações da proteção autônoma contra ransomware no ONTAP. Para obter detalhes, https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Visão geral da proteção autônoma contra ransomware"^] consulte .
 
 Um alerta pode ter um dos seguintes Estados:
@@ -65,6 +70,9 @@ CAUTION: Depois de descartar um ataque, você não pode alterar isso de volta. S
 
 
 
+TIP: Se você configurou um sistema de gerenciamento de segurança e eventos (SIEM) na BlueXP ransomware protection na página Configurações, o serviço envia detalhes de alerta para seu sistema SIEM.
+
+
 
 == Ver alertas
 
@@ -81,7 +89,45 @@ Você pode acessar alertas no Painel de proteção contra ransomware do BlueXP 
 +
 image:screen-alerts.png["Página de alertas"]
 
-. Continuar:
+. Continue com um dos seguintes:
++
+** <<Detectar atividades maliciosas e comportamento anômalo do usuário>>.
+** <<Marque os incidentes de ransomware como prontos para recuperação (após os incidentes serem neutralizados)>>.
+** <<Descarte incidentes que não sejam potenciais ataques>>.
+
+
+
+
+
+
+== Responder a um e-mail de alerta
+
+Quando a BlueXP ransomware protection detecta um possível ataque, ela envia uma notificação por e-mail aos usuários inscritos, com base nas preferências de notificação da assinatura. O e-mail contém informações sobre o alerta, incluindo a gravidade e os recursos afetados.
+
+Você pode receber notificações por e-mail sobre alertas de BlueXP ransomware protection . Este recurso ajuda você a se manter informado sobre alertas, sua gravidade e recursos afetados.
+
+
+TIP: Para assinar notificações por e-mail, consulte  https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#set-email-notification-settings["Defina as configurações de notificação por e-mail"^] .
+
+. Na BlueXP ransomware protection, acesse a página *Configurações*.
+. Em *Notificações*, localize as configurações de notificação por e-mail.
+. Digite o endereço de e-mail onde você deseja receber alertas.
+. Salve suas alterações.
+
+
+Agora você receberá notificações por e-mail quando novos alertas forem gerados.
+
+*Função BlueXP necessária* Administrador da organização, administrador de pasta ou projeto, administrador de proteção contra ransomware ou função de visualizador de ransomware.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Saiba mais sobre as funções de acesso do BlueXP para todos os serviços"^] .
+
+.Passos
+. Ver o e-mail.
+. No e-mail, selecione *Exibir alerta* e faça login na BlueXP ransomware protection.
++
+A página Alertas é exibida.
+
+. Revise todos os incidentes em cada volume para cada alerta.
+. Para rever alertas adicionais, clique em *Alerta* no breadcrumbs no canto superior esquerdo.
+. Continue com um dos seguintes:
 +
 ** <<Detectar atividades maliciosas e comportamento anômalo do usuário>>.
 ** <<Marque os incidentes de ransomware como prontos para recuperação (após os incidentes serem neutralizados)>>.
@@ -127,6 +173,9 @@ Quando o Autonomous ransomware Protection aciona um alerta na proteção contra 
 * Taxa de renomeação esperada dos arquivos em comparação com a taxa detetada
 * Arquivos e diretórios impactados
 
+
+
+NOTE: Esses detalhes podem ser visualizados para cargas de trabalho NAS. Para ambientes SAN, apenas os dados de entropia estão disponíveis.
 
 .Passos
 . No menu de proteção contra ransomware BlueXP , selecione *Alertas*.

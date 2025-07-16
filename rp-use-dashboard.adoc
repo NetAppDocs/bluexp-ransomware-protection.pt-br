@@ -97,7 +97,7 @@ Aqui está uma amostra das recomendações que o serviço oferece.
 | Adicionar uma política de proteção contra ransomware. | No momento, a carga de trabalho não está protegida. | Atribua uma política à carga de trabalho. link:rp-use-protect.html["Proteja workloads contra ataques de ransomware"]Consulte a . 
 
 
-| Conete-se ao SEIM para relatórios de ameaças. | Envie dados para um sistema de gerenciamento de eventos e segurança (SIEM) para análise e deteção de ameaças. | Insira os detalhes do servidor SIEM/XDR para habilitar a deteção de ameaças. link:rp-use-settings.html["Configure as definições de proteçãoão"]Consulte a . 
+| Conete-se ao SIEM para relatórios de ameaças. | Envie dados para um sistema de gerenciamento de eventos e segurança (SIEM) para análise e deteção de ameaças. | Insira os detalhes do servidor SIEM/XDR para habilitar a deteção de ameaças. link:rp-use-settings.html["Configure as definições de proteçãoão"]Consulte a . 
 
 
 | Habilite a proteção consistente com o workload para aplicações ou VMware. | Essas cargas de trabalho não são gerenciadas pelo software SnapCenter ou pelo plug-in SnapCenter para VMware vSphere. | Para gerenciá-los pelo SnapCenter, habilite a proteção consistente com o workload. link:rp-use-protect.html["Proteger a carga de trabalho contra ataques de ransomware"]Consulte a . 
@@ -128,7 +128,7 @@ Aqui está uma amostra das recomendações que o serviço oferece.
 |===
 .Passos
 . Na navegação à esquerda do BlueXP , selecione *proteção* > *proteção contra ransomware*.
-. No painel ações recomendadas, selecione uma recomendação e selecione *Revisão e correção*.
+. No painel Ações recomendadas, selecione uma recomendação e selecione *Revisar e corrigir*.
 . Para ignorar a ação até mais tarde, selecione *Dismiss*.
 +
 A recomendação é eliminada da lista to do (tarefas) e aparece na lista descartada.
@@ -169,7 +169,7 @@ image:screen-dashboard2.png["Página do painel de instrumentos"]
 ** No menu proteção contra ransomware do BlueXP , selecione *relatórios*.
 
 
-. Se você selecionou a opção *relatórios*, selecione um dos arquivos nomeados pré-configurados e selecione *Download (CSV)* ou *Download (JSON)*.
+. Se você selecionou a opção *Relatórios*, selecione um dos arquivos nomeados pré-configurados e selecione *Baixar (CSV)* ou *Baixar (JSON)*.
 
 
 
