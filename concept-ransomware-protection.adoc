@@ -157,9 +157,7 @@ image:diagram-rp-architecture-preview3.png["Diagrama mostrando a arquitetura de 
 
 == Destinos de backup compatíveis, ambientes de trabalho e fontes de dados de workload
 
-Use a BlueXP ransomware protection para verificar a resiliência dos seus dados a um ataque cibernético nos seguintes tipos de alvos de backup, ambientes de trabalho e fontes de dados de carga de trabalho:
-
-O ransomware BlueXP oferece suporte aos seguintes ambientes de trabalho e destinos de backup:
+O ransomware BlueXP oferece suporte aos seguintes alvos de backup, ambientes de trabalho e fontes de dados:
 
 *Os destinos de backup são suportados*
 

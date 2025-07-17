@@ -1762,8 +1762,6 @@
   <block id="4282433f8f5c0e6acad137adab28f337" category="paragraph">Se você tiver o BlueXP backup and recovery e a BlueXP ransomware protection, todos os dados comuns protegidos por ambos os produtos serão cobrados somente pela BlueXP ransomware protection .</block>
   <block id="feccdf428c2b7a1a214161ac19c68ca0" category="list-text">Encontra todos os dados NAS (protocolos NFS e CIFS) locais do cliente, SAN (FC, iSCSI e NVMe) e Cloud Volumes ONTAP conectados ao BlueXP.</block>
   <block id="26871f0800751ffb8b48674992b42dfe" category="list-text">Orquestra a recuperação de cargas de trabalho, incluindo VMs, compartilhamentos de arquivos, armazenamento em bloco e bancos de dados com consistência de aplicativos.</block>
-  <block id="78e699264ce91050e8afe900e83193b2" category="paragraph">Use a BlueXP ransomware protection para verificar a resiliência dos seus dados a um ataque cibernético nos seguintes tipos de alvos de backup, ambientes de trabalho e fontes de dados de carga de trabalho:</block>
-  <block id="ec756c3d78ad9564b3bcd967a807328f" category="paragraph">O ransomware BlueXP oferece suporte aos seguintes ambientes de trabalho e destinos de backup:</block>
   <block id="36471da59b7d9b72aa431fd1f5059d05" category="list-text">SAN ONTAP local (usando protocolos FC, iSCSI e NVMe) com ONTAP versão 9.17.1 e superior</block>
   <block id="35042137939d246a1fd01199cb942d15" category="list-text">Cloud Volumes ONTAP 9.17.1 ou superior para AWS, Google Cloud Platform e Microsoft Azure (usando protocolos FC, iSCSI e NVMe)</block>
   <block id="54d1e9634870c74de38de33364a86d27" category="list-text">Amazon FSx for NetApp ONTAP, que usa proteção autônoma contra ransomware (ARP e não ARP/AI)</block>
@@ -1885,4 +1883,5 @@
   <block id="fc16f99f8f194db3c5491ab6fef98d3c" category="paragraph">Para uma visão geral da segurança da carga de trabalho do Data Infrastructure Insights , revise <block ref="61a89dd403e895daaa4d98a27b91c870" category="inline-link-rx"></block> .</block>
   <block id="a411a37a314e9f2b77d0a4559ae70ea2" category="admonition">Se você não tiver uma licença para a segurança da carga de trabalho da infraestrutura de dados e não a habilitar na BlueXP ransomware protection, você não verá as informações de comportamento anômalo do usuário.</block>
   <block id="05526b7ad3e4bf2881f5ccf1a99ea6c2" category="paragraph">Você pode ignorar falsos positivos ou decidir recuperar seus dados imediatamente. Se você ignorar o alerta, o serviço aprenderá esse comportamento, o associará às operações normais e não iniciará um alerta sobre esse comportamento novamente.</block>
+  <block id="a815e68282b1aa9bd3ce4985ebc97a8f" category="paragraph">O ransomware BlueXP oferece suporte aos seguintes alvos de backup, ambientes de trabalho e fontes de dados:</block>
 </blocks>
