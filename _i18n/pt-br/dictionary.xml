@@ -902,7 +902,6 @@
   <block id="f29be3377655fbc2e89f86e482ef5ca2" category="paragraph">A página Configurações mostra "conectado".</block>
   <block id="c9df4195a305212ffd7b56d24f67129d" category="summary">O NetApp fornece suporte para BlueXP  de várias maneiras. Amplas opções gratuitas de suporte autônomo estão disponíveis 24 horas por dia, 7 dias por semana, como artigos da base de conhecimento (KB) e um fórum da comunidade. O seu registo de suporte inclui suporte técnico remoto através de Bilheteira na Web.</block>
   <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">Obtenha ajuda</block>
-  <block id="7c5661ab6b39ee901cea00a6e7020a49" category="paragraph">A NetApp oferece suporte ao BlueXP  e seus serviços de nuvem de várias maneiras. Amplas opções gratuitas de suporte autônomo estão disponíveis 24 horas por dia, 7 dias por semana, como artigos da base de conhecimento (KB) e um fórum da comunidade. O seu registo de suporte inclui suporte técnico remoto através de Bilheteira na Web.</block>
   <block id="522cbb900314aeb84eb5a961c5f94672" category="section-title">Obtenha suporte para um serviço de arquivos do provedor de nuvem</block>
   <block id="f6185bb12f5e53c800be8cda7fbca65b" category="paragraph">Para obter suporte técnico relacionado a um serviço de arquivo de provedor de nuvem, sua infraestrutura ou qualquer solução usando o serviço, consulte "obter ajuda" na documentação do BlueXP  para esse produto.</block>
   <block id="18cf072964a583150dd247485ba75b92" category="inline-link-macro">Amazon FSX para ONTAP</block>
@@ -1001,8 +1000,6 @@
   <block id="0c788a722f31f8f0cf36539ee04615cf" category="list-text">Selecione *Adicionar credenciais NSS* e siga o prompt de autenticação do site de suporte da NetApp (NSS).</block>
   <block id="cfc5506589d5a4d055e721267d5f0732" category="list-text">Para confirmar que o processo de Registro foi bem-sucedido, selecione o ícone Ajuda e selecione *suporte*.</block>
   <block id="2ba7f9eae7a02f9c3ac0fc07517d1c48" category="paragraph">A página *recursos* deve mostrar que sua organização do BlueXP  está registrada para suporte.</block>
-  <block id="10c56875db7a47f791d653e5d5bff0e9" category="inline-image-macro">Uma captura de tela que mostra um número de série de conta e uma caixa de seleção verde e o texto registrado para suporte.</block>
-  <block id="3d183819a15163ef2e2e7d9d764254a9" category="paragraph"><block ref="3d183819a15163ef2e2e7d9d764254a9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c05e530d1466e986d570cfe3f92656c3" category="paragraph">Observe que outros usuários do BlueXP  não verão esse mesmo status de Registro de suporte se não tiverem associado uma conta do site de suporte da NetApp ao login do BlueXP . No entanto, isso não significa que sua organização do BlueXP  não esteja registrada para suporte. Desde que um usuário na organização tenha seguido esses passos, sua organização foi registrada.</block>
   <block id="1ff5aefce774ec72a211f2b3bb10b950" category="section-title">Cliente existente, mas sem conta NSS</block>
   <block id="bdd862f49d428a850400bcf2f53cdaf2" category="paragraph">Se você já é um cliente NetApp com licenças e números de série existentes, mas _no_ conta NSS, você precisa criar uma conta NSS e associá-la ao seu login no BlueXP .</block>
@@ -1884,4 +1881,22 @@
   <block id="a815e68282b1aa9bd3ce4985ebc97a8f" category="paragraph">O ransomware BlueXP oferece suporte aos seguintes alvos de backup, ambientes de trabalho e fontes de dados:</block>
   <block id="1215f8190533dfdf63d2224a6d88266f" category="inline-link-macro">Google Cloud NetApp Volumes</block>
   <block id="cb4bf32603c89d08cad17e7e7dd302f2" category="list-text"><block ref="cb4bf32603c89d08cad17e7e7dd302f2" category="inline-link-macro-rx"></block></block>
+  <block id="7e15fa4f52a2b2bbe9c0fde780818748" category="paragraph-title">Sobre os dados do evento enviados para um SIEM</block>
+  <block id="c3ea2ea9eda0d30909acf8f3da44184e" category="paragraph">A BlueXP ransomware protection pode enviar os seguintes dados de eventos para seu sistema SIEM:</block>
+  <block id="5976a11ab4dca8b4245edb915c6dfbd7" category="list-text">*contexto*:</block>
+  <block id="c01e6c1876fd41a917ea803c3ef48d66" category="list-text">*os*: Esta é uma constante com o valor de ONTAP.</block>
+  <block id="4ce1af6db0b7df02b195e4f7c30882be" category="list-text">*os_version*: A versão do ONTAP em execução no ambiente de trabalho.</block>
+  <block id="25a4742d179cd759793bc39ccefdd462" category="list-text">*connector_id*: O ID do conector que gerencia o ambiente de trabalho.</block>
+  <block id="41666dddb2dd6789196dfc1183e219c8" category="list-text">*cluster_id*: O ID do cluster relatado pelo ONTAP para o ambiente de trabalho.</block>
+  <block id="262ebd5abbf16e73f5fabe65a492b6fc" category="list-text">*svm_name*: O nome do SVM onde o alerta foi encontrado.</block>
+  <block id="481c8fc04854f327e5cb7147753f228f" category="list-text">*volume_name*: O nome do volume no qual o alerta é encontrado.</block>
+  <block id="293f7fc5e89030b45a78f1244c3fa921" category="list-text">*volume_id*: O ID do volume relatado pelo ONTAP para o ambiente de trabalho.</block>
+  <block id="fbc1ce5001bb72336a31bd6789ea9410" category="list-text">*incidente*:</block>
+  <block id="d9302760dcf4ba292a94a28e1de80e58" category="list-text">*incident_id*: O ID do incidente gerado pela BlueXP ransomware protection para o volume sob ataque no serviço.</block>
+  <block id="fc971b044a752949d181c3330f8b3e64" category="list-text">*alert_id*: O ID gerado pela BlueXP ransomware protection para a carga de trabalho.</block>
+  <block id="09471f7939b8b27b32ee107cd9b1c44b" category="list-text">*gravidade*: Um dos seguintes níveis de alerta: "CRÍTICO", "ALTO", "MÉDIO", "BAIXO".</block>
+  <block id="6f51b5c965cb508d8d37085592031c21" category="list-text">*description*: Detalhes sobre o alerta que foi detectado, por exemplo, "Um possível ataque de ransomware detectado na carga de trabalho arp_learning_mode_test_2630"</block>
+  <block id="bbbc9b55f08bfe80f146b5207bdb7728" category="paragraph">A NetApp oferece suporte para o BlueXP e seus serviços de nuvem de diversas maneiras. Oferecemos amplas opções gratuitas de autossuporte 24 horas por dia, 7 dias por semana, como artigos da base de conhecimento (KB) e um fórum da comunidade. Seu cadastro no suporte inclui suporte técnico remoto por meio de tickets online.</block>
+  <block id="759d32287efdf88cd8ac71dccc0ecf8d" category="inline-image-macro">Uma captura de tela que mostra um número de série da conta, uma caixa de seleção verde e o texto Registrado para suporte.</block>
+  <block id="4c441b388bebcddf8c08fb782095b864" category="paragraph"><block ref="4c441b388bebcddf8c08fb782095b864" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
